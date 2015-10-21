@@ -28,9 +28,10 @@ date
 ################################################################################
 # Blastplus
 ################################################################################
-# $SLURM_ARRAY_TASK_ID will loop from 0-14 based on the `-array=0-14` paramter above
-PRETTY_NUMBER=$(printf %02d $SLURM_ARRAY_TASK_ID)
-DB="nr.$PRETTY_NUMBER"
+# $SLURM_ARRAY_TASK_ID will loop from 0-14 based on the `-array=0-14` paramter 
+# above.  The `nr` database is 00-14, so we need to pad the number with 0
+PADDED_NUMBER=$(printf %02d $SLURM_ARRAY_TASK_ID)
+DB="nr.$PADDED_NUMBER"
 QUERY="protein1.fasta"
 NUMBER_OF_THREADS=1
 BLAST_RESULTS="$WORKDIR/$SLURM_ARRAY_JOB_ID.$SLURM_ARRAY_TASK_ID.blast-results-$NUMBER_OF_THREADS.txt"
