@@ -1,5 +1,5 @@
 # RCC-Utilities
-Useful scripts for The University of Chicago's RCC resource.
+Useful scripts for The University of Chicago's RCC resource (https://rcc.uchicago.edu).
 
 ### .bashrc
 A starter .bashrc file to put in your shell so that you don't accidentally rm *
