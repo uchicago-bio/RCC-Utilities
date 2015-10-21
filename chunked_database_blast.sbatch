@@ -28,6 +28,7 @@ date
 ################################################################################
 # Blastplus
 ################################################################################
+# $SLURM_ARRAY_TASK_ID will loop from 0-14 based on the `-array=0-14` paramter above
 PRETTY_NUMBER=$(printf %02d $SLURM_ARRAY_TASK_ID)
 DB="nr.$PRETTY_NUMBER"
 QUERY="protein1.fasta"
