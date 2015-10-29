@@ -6,7 +6,7 @@
 #SBATCH --nodes=2                                                                                                                                                                                       
 #SBATCH --ntasks-per-node=8                                                                                                                                                                             
 #SBATCH --mail-type=ALL                                                                                                                                                                                 
-#SBATCH --mail-user=abinkowski@uchicago.edu                                                                                                                                                             
+#SBATCH --mail-user=cnet@uchicago.edu                                                                                                                                                             
 #SBATCH --partition=sandyb                                                                                                                                                                              
 # this job requests exclusive access to the nodes it is given                                                                                                                                           
 # this mean it will be the only job running on the node                                                                                                                                                 
