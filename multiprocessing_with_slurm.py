@@ -38,6 +38,7 @@ print("Number of CPUs: %d" % ncpus)
 start = time.time()
 # Change processes to what you want
 pool = multiprocessing.Pool(processes=2)
+# Notice that only the number of processes you select will be run at at a time.
 pool.map(workOnNode, ["db1", "db2","db3","db4","db5","db6","db7","db8","db9","db10","db11","db12","db13","db14","db15"])
 print "Parallel time: %f" % (time.time() - start)
 
