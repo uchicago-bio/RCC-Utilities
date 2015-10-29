@@ -39,14 +39,16 @@ except KeyError:
 ## use the paramter however best fits your application design.
 ##################################################################
 def process_worker(database):
+    # Log out the process
+    print multiprocessing.current_process()
+    
     # Pretend there is something happending that takes 60 secsonds
     time.sleep(60) 
     
     # Write output to file
     outfile="output_%s.txt" % database
     f1=open(database, 'w+')
-    f1.write('This is a test using database %s on %s.' % (database,platform.node())
-    print multiprocessing.current_process()
+    f1.write('This is a test using database %s on %s.' % (database,platform.node()))
     f1.close()
 
 
