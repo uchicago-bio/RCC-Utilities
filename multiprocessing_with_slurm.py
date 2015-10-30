@@ -47,7 +47,7 @@ def process_worker(database):
     time.sleep(random.randint(5,120))
 
     # Write output to file                                                                                                                                                                             
-    outfile="output_%dx%d_%s.txt" % (nodes,tasks,database)
+    outfile="output_%dx%d_%s.txt" % (nodes,cpus,database)
     f1=open(outfile, 'w+')
     f1.write('This is a test using the passed number %s on %s.\n' % (database,platform.node()))
     f1.close()
