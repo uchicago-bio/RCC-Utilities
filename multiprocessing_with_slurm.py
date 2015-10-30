@@ -65,7 +65,8 @@ print("Start time: %s" % start)
 # your application to determine this                                                                                                                                                                   
 pool = multiprocessing.Pool(processes=SLURM_NPROCS)
 
-# The array of parameters that will be passed to your process worker                                                                                                                                   
+# The array of parameters that will be passed to your process worker.  
+# This creates array ["00","01"....]
 database_chunks =  [format(x,'02d') for x in range(0,100)]
 
 # Distribute the jobs to workers                                                                                                                                                                       
