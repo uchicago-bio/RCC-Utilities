@@ -4,38 +4,52 @@
 #SBATCH --job-name=blast-single-node
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16
+#SBATCH --mail-type=ALL                                                                                
+#SBATCH --mail-user=abinkowski@uchicago.edu                                                            
 
 ###########################################################################################
-# load your modules here
+# Load the blastplus module (preloaded on RCC)  
 ###########################################################################################
 module load blastplus
 
 ###########################################################################################
-# Create an output directory with the same name as your `SLURM_JOBID`
+# Create an output directory; blastplus creates many different files                                   
+# that you will want to keep track of per job                                                          
+# Example of writing to a different path:                                                              
+#                         WORKDIR=/scratch/midway/$USER/$SLURM_JOBID                                   
+# For convienence, we have an extra argument that we can use to                                        
+# differentiate runs ($1 means the first argument after the executable name                            
+#
+# Note: In practice you should write data to /scratch and then move the data later
 ###########################################################################################
-# In practice, you would write your data to the /scratch partition instead of /home
-#WORKDIR=/scratch/midway/$USER/$SLURM_JOBID
-WORKDIR=$SLURM_JOBID
+JOBNAME=$1
+WORKDIR=$SLURM_JOBID"-"$JOBNAME
 mkdir -p $WORKDIR
 
+
 ################################################################################
-# Dump the Start time to STDOUT
+# We are interested in tracking how long these take to run.  We also                                   
+# want to track how long the job was in the queue.  Slurm keeps an                                     
+# output and error file for each job.  All the standard output and                                     
+# error will be directed there. 
 ################################################################################
 echo "Starting Job id: $SLURM_JOBID"
 date
 
 ################################################################################
-# Blastplus
-################################################################################
+# Blast arguments
 # `nr` is located in /projects/databases/blast on RCC; there are also the chunked 
-# versions in the format nr.00 - nr.14
-DB='nr'
+################################################################################
+DB="/project/mpcs56420/databases/pdb/pdb.fasta"
+#DB='nr'
 QUERY="protein1.fasta"
-NUMBER_OF_THREADS=16
-BLAST_RESULTS="$SLURM_JOBID.blast-results-$NUMBER_OF_THREADS.txt"
+BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE.txt"
 
-# The blast+ command; look at all the different options that are available for output, etc.
-blastp -query protein1.fasta -db $DB -out $BLAST_RESULTS -num_threads $NUMBER_OF_THREADS
+# Run blastp (use time in front to track runtime)                                                      
+time blastp -query protein1.fasta \
+     -db $DB \
+     -out $BLAST_RESULTS \
+     -num_threads $SLURM_TASKS_PER_NODE
 
 ################################################################################
 # Dump the Finished time to stdout
@@ -44,7 +58,8 @@ echo "Done with processing..."
 date
 
 ################################################################################
-# Copy all the output files to that directory
+# All the files are written to current directory.  Copy all                                            
+# the output files that were created to our job directory 
 ################################################################################
 `cp $0 $WORKDIR`
 `cp $QUERY $WORKDIR`
