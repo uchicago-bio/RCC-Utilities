@@ -3,7 +3,9 @@
 #SBATCH --error=%j.err
 #SBATCH --job-name=blast-single-node
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=16
+#SBATCH --tasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1  # Number of threads per task
 #SBATCH --mail-type=ALL                                                                                
 #SBATCH --mail-user=abinkowski@uchicago.edu                                                            
 
@@ -40,10 +42,9 @@ date
 # Blast arguments
 # `nr` is located in /projects/databases/blast on RCC; there are also the chunked 
 ################################################################################
-DB="/project/mpcs56420/databases/pdb/pdb.fasta"
-#DB='nr'
+DB="/project/mpcs56420/nr/nr"
 QUERY="protein1.fasta"
-BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE.txt"
+BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_TASK.txt"
 
 # Run blastp (use time in front to track runtime)                                                      
 time blastp -query protein1.fasta \
