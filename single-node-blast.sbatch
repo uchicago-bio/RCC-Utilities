@@ -52,7 +52,7 @@ BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_
 time blastp -query protein1.fasta \
      -db $DB \
      -out $BLAST_RESULTS \
-     -num_threads $SLURM_TASKS_PER_NODE
+     -num_threads $SLURM_CPUS_PER_TASK
 
 ################################################################################
 # Dump the Finished time to stdout
