@@ -3,7 +3,7 @@
 #SBATCH --error=%A-%a.err
 #SBATCH --job-name=blast-per-node
 #SBATCH --ntasks=1
-#SBATCH --array=0-14
+#SBATCH --array=0-55
 #SBATCH --partition=sandyb
 
 ################################################################################
@@ -14,8 +14,8 @@ module load blastplus
 ################################################################################
 # Create an output directory
 ################################################################################
-#WORKDIR=/scratch/midway/$USER/$SLURM_JOBID
-WORKDIR="$SLURM_ARRAY_JOB_ID"
+JOBNAME=$1
+WORKDIR=$SLURM_ARRAY_JOB_ID"-"$JOBNAME
 mkdir -p $WORKDIR
 
 ################################################################################
@@ -31,7 +31,7 @@ date
 # $SLURM_ARRAY_TASK_ID will loop from 0-14 based on the `-array=0-14` paramter 
 # above.  The `nr` database is 00-14, so we need to pad the number with 0
 PADDED_NUMBER=$(printf %02d $SLURM_ARRAY_TASK_ID)
-DB="nr.$PADDED_NUMBER"
+DB="/project/mpcs56420/nr/nr.$PADDED_NUMBER"
 QUERY="protein1.fasta"
 NUMBER_OF_THREADS=1
 BLAST_RESULTS="$WORKDIR/$SLURM_ARRAY_JOB_ID.$SLURM_ARRAY_TASK_ID.blast-results-$NUMBER_OF_THREADS.txt"

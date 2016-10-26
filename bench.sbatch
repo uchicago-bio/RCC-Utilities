@@ -5,9 +5,9 @@
 #SBATCH --nodes=1
 #SBATCH --tasks=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=1    # Number of threads per task
+#SBATCH --cpus-per-task=2    # Number of threads per task
 #SBATCH --partition=sandyb   # 'sandby' has 16 cores/ 32G memory; look up what is appropriate for job
-#SBATCH --mem-per-cpu=16000  # Default is 2000 (2G)
+#SBATCH --mem-per-cpu=16000   # Default is 2000 (2G)
 #SBATCH --mail-type=ALL                                                                                
 #SBATCH --mail-user=abinkowski@uchicago.edu                                                            
 
@@ -30,11 +30,6 @@ JOBNAME=$1
 WORKDIR=$SLURM_JOBID"-"$JOBNAME
 mkdir -p $WORKDIR
 
-################################################################################
-# Copy all of the input files to the directory. 
-################################################################################
-`cp $0 $WORKDIR`
-`cp $QUERY $WORKDIR`
 
 ################################################################################
 # We are interested in tracking how long these take to run.  We also                                   
@@ -50,6 +45,7 @@ date
 # `nr` is located in /projects/databases/blast on RCC; there are also the chunked 
 ################################################################################
 DB="/project/mpcs56420/nr/nr"
+#DB="/project/mpcs56420/databases/pdb/pdb.fasta"
 QUERY="protein1.fasta"
 BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_TASK.txt"
 
@@ -69,5 +65,7 @@ date
 # All the files are written to current directory.  Copy all                                            
 # the output files that were created to our job directory 
 ################################################################################
+`cp $0 $WORKDIR`
+`cp $QUERY $WORKDIR`
 `mv $SLURM_JOBID.out $SLURM_JOBID.err $WORKDIR`
 `mv $BLAST_RESULTS $WORKDIR`
