@@ -3,10 +3,10 @@
 #SBATCH --error=%j.err                                                                                                                                                                         
 #SBATCH --job-name=mpi-blast                                                                                                                                                                   
 # Use 2 nodes with 8 tasks each, for 16 MPI task:s                                                                                                                                             
-#SBATCH --nodes=2                                                                                                                                                                              
-#SBATCH --ntasks-per-node=8                                                                                                                                                                    
-#SBATCH --mail-type=ALL                                                                                                                                                                        
-#SBATCH --mail-user=cnet@uchicago.edu                                                                                                                                                    
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=8
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=abinkowski@uchicago.edu
 #SBATCH --partition=sandyb                                                                                                                                                                     
 # this job requests exclusive access to the nodes it is given                                                                                                                                  
 # this mean it will be the only job running on the node                                                                                                                                        
@@ -30,13 +30,18 @@ mkdir -p $WORKDIR
 echo "Starting Job: $1 with id: $SLURM_JOBID"; date
 
 ################################################################################                                                                                                               
-# Blastplus                                                                                                                                                                                    
+# Blast arguments
 ################################################################################                                                                                                               
-DB=pdb.fasta
+DB=pdb.fasta  # This is a small database of proteins; useful to check if you have everything set up correctly
+#DB=nr # Full NCBI nr database
+
 QUERY="protein1.fasta"
 BLAST_RESULTS="mpiblast-results.txt"
 
-# using default folder (/gpfs/scratch/shared/mpiblast)                                                                                                                                         
+################################################################################                                                                                                               
+# Run mpiblast (results will be written to location specied in the .ncbri
+# path
+################################################################################                                                                                                               
 SLURM_NPROCS=$(( $SLURM_NNODES * $SLURM_NTASKS_PER_NODE ))
 time mpirun -n $SLURM_NPROCS mpiblast  -p blastp -d $DB  -i $QUERY -o $BLAST_RESULTS --time-profile=time.txt --removedb --use-parallel-write
 #-m 8 -b 1                                                                                                                                                                                     

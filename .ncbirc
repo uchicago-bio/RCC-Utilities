@@ -1,0 +1,18 @@
+[NCBI]
+### Data - this is where blast grabs the scoring matrices,
+Data=/software/mpiblast-trunk-el6-x86_64/data/
+
+
+[BLAST]
+BLASTDB=/scratch/midway/abinkowski/databases/mpi
+
+### BLASTMAT - is in 99% of use cases the same as the "Data" above, where matrices are stored.
+BLASTMAT=/software/mpiblast-trunk-el6-x86_64/data/
+
+
+[mpiBLAST]
+### Shared - is some dir where you want to read/write database files
+Shared=/scratch/midway/abinkowski/databases/mpi
+
+### Local - is a dir on the local node, so somewhere under /scratch should be fine
+Local=/scratch/midway/abinkowski/mpiblast
