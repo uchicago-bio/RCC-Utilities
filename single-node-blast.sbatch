@@ -1,4 +1,9 @@
 #!/bin/bash
+
+## Update these variables for your own runs.  
+## Make sure to change the `mail` flag or I 
+## will get the emails, not you :)
+
 #SBATCH --output=%j.out
 #SBATCH --error=%j.err
 #SBATCH --job-name=blast-single-node
@@ -6,9 +11,13 @@
 #SBATCH --tasks=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1    # Number of threads per task
+
 #SBATCH --partition=sandyb   # 'sandby' has 16 cores/ 32G memory; look up what is appropriate for job
 #SBATCH --mem-per-cpu=16000  # Default is 2000 (2G)
-#SBATCH --mail-type=ALL                                                                                
+
+## Change this to you email or I will get your jobs
+## status emails.
+#SBATCH --mail-type=ALL                                                      
 #SBATCH --mail-user=abinkowski@uchicago.edu                                                            
 
 ###########################################################################################
@@ -21,6 +30,7 @@ module load blastplus
 # that you will want to keep track of per job                                                          
 # Example of writing to a different path:                                                              
 #                         WORKDIR=/scratch/midway/$USER/$SLURM_JOBID                                   
+#
 # For convienence, we have an extra argument that we can use to                                        
 # differentiate runs ($1 means the first argument after the executable name                            
 #
@@ -31,7 +41,8 @@ WORKDIR=$SLURM_JOBID"-"$JOBNAME
 mkdir -p $WORKDIR
 
 ################################################################################
-# Copy all of the input files to the directory. 
+# Copy all of the input files to the directory. This way you can recreate the 
+# run again.
 ################################################################################
 `cp $0 $WORKDIR`
 `cp $QUERY $WORKDIR`
@@ -46,10 +57,11 @@ echo "Starting Job id: $SLURM_JOBID"
 date
 
 ################################################################################
-# Blast arguments
-# `nr` is located in /projects/databases/blast on RCC; there are also the chunked 
+# BLAST arguments
 ################################################################################
-DB="/project/mpcs56420/nr/nr"
+# Full `nr` database.  Look in the directory and see how BLAST structures the 
+# files.  They chuck them into groups.
+DB="/project2/mpcs56420/nr/nr"
 QUERY="protein1.fasta"
 BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_TASK.txt"
 
@@ -60,7 +72,7 @@ time blastp -query protein1.fasta \
      -num_threads $SLURM_CPUS_PER_TASK
 
 ################################################################################
-# Dump the Finished time to stdout
+# Dump the Finished time to stdout so we know we are done
 ################################################################################
 echo "Done with processing..."
 date
@@ -71,3 +83,6 @@ date
 ################################################################################
 `mv $SLURM_JOBID.out $SLURM_JOBID.err $WORKDIR`
 `mv $BLAST_RESULTS $WORKDIR`
+
+echo "All files were moved..."
+echo "Script completed"
