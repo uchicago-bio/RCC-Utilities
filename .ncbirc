@@ -3,14 +3,14 @@
 Data=/software/mpiblast-trunk-el6-x86_64/data/
 
 [BLAST]
-BLASTDB=/project/mpcs56420/databases/mpi
+BLASTDB=/project2/mpcs56420/db/mpi
 
 ### BLASTMAT - is in 99% of use cases the same as the "Data" above, where matrices are stored.
 BLASTMAT=/software/mpiblast-trunk-el6-x86_64/data/
 
 [mpiBLAST]
 ### Shared - is some dir where you want to read/write database files
-Shared=/project/mpcs56420/databases/mpi
+Shared=/project2/mpcs56420/db/mpi
 
 ### Local - is a dir on the local node, so somewhere under /scratch should be fine
-Local=/scratch/midway/abinkowski/mpiblast
+Local=/scratch/midway2/abinkowski/mpiblast
