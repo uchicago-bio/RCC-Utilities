@@ -13,6 +13,6 @@ echo "> Running plot script on a single CPU core"
 pwd; hostname; date
 
 echo "> Staring blastp"
-blastp -query spike.fasta -db /project2/mpcs56420/db/pdbaa -out dog_node.out -num_threads 1
+blastp -query spike.fasta -db /project2/mpcs56420/db/swissprot -out /scratch/midway2/abinkowski/out.txt -num_threads 1
 echo "> Done Running"
 

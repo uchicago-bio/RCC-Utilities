@@ -23,7 +23,7 @@
 ###########################################################################################
 JOBNAME=$1
 WORKDIR=$SLURM_JOBID"-"$JOBNAME
-mkdir -p $WORKDIR
+mkdir -p "/scratch/midway2/abinkowski/"$WORKDIR
 
 ################################################################################
 # Copy all of the input files to the directory. This way you can recreate the

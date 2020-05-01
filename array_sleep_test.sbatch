@@ -7,6 +7,7 @@
 #SBATCH --time=00:15:00               # Time limit hrs:min:sec
 #SBATCH --output=%j.array_job.out
 #SBATCH --error=%j.array_job.err
+
 #SBATCH --array=0-10
 
 
