@@ -1,4 +1,4 @@
-# Updated: 2018-04-25
+# Updated: May 1, 2020
 
 # RCC-Utilities
 Useful scripts for The University of Chicago's RCC resource (https://rcc.uchicago.edu).  Check out this repositories [wiki](https://github.com/uchicago-bio/RCC-Utilities/wiki) for instructions on running the scripts.
