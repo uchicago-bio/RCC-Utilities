@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=serial_job_test    # Job name
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
+#SBATCH --mail-user=bbao@uchicago.edu    # Where to send mail
 #SBATCH --ntasks=1                    # Run on a single CPU
 #SBATCH --cpus-per-task=1             # Number of threads per task
 #SBATCH --mem=1gb                     # Job memory request
