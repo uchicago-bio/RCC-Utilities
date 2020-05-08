@@ -1,6 +1,7 @@
 from sequenceAlignment import sequenceAlignScore
 import sys
 import time
+import argparse
 
 def noSpace(line, lineNumber):
 	global warning
@@ -87,7 +88,7 @@ def printFasta(query_seq, database_seq_list, alignment, gappenalty, scoringmatri
 	output.append("Query Sequence:")
 	output.append(">" + query_seq)
 	output.append("")
-	output.append("Database: " + databasefile)
+	output.append("Database: " + args.databasefile)
 	output.append("")
 
 	temp = []
@@ -113,6 +114,11 @@ def printFasta(query_seq, database_seq_list, alignment, gappenalty, scoringmatri
 
 #execution
 #Inputs 
+
+'''
+parser = argparse.ArgumentParser()
+
+
 print("Enter the query sequence fasta file with extension: ")
 queryfile = sys.stdin.readline().strip()
 
@@ -131,21 +137,33 @@ gappenalty = int(g)
 
 print("Enter the output name with the extension: ")
 output = sys.stdin.readline().strip()
+'''
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--queryfile', type=str, required=True)
+parser.add_argument('--databasefile', type=str, required=True)
+parser.add_argument('--scoringmatrix', type=str, choices = ['PAM250', 'BLOSUM62'], required=True)
+parser.add_argument('--alignment', type=str, choices = ['global', 'local'], required=True)
+parser.add_argument('--gappenalty', type=int, required=True)
+parser.add_argument('--output', type=str, required=True)
+
+args = parser.parse_args()
+print(args.queryfile)
 
 #finding bad sequences
-q = readFasta(queryfile, "Protein")
+q = readFasta(args.queryfile, "Protein")
 query = q[0][2]	#query sequence 
 
 #finding bad sequences
-s = readFasta(databasefile, "Protein") #output list of [good(0), bad(1), header, sequence]
+s = readFasta(args.databasefile, "Protein") #output list of [good(0), bad(1), header, sequence]
 
 #execution and scoring 
-o = printFasta(query, s, alignment, gappenalty, scoringmatrix)
+o = printFasta(query, s, args.alignment, args.gappenalty, args.scoringmatrix)
 
 for elem in o:
 	print(elem)
 
 #write to file
-with open(output, 'w') as out:
+with open(args.output, 'w') as out:
     for elem in o:
         out.write(str(elem) + '\n')
