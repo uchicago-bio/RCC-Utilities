@@ -4,17 +4,11 @@
 #SBATCH --mail-user=bbao@uchicago.edu    # Where to send mail
 #SBATCH --ntasks=1                    # Run on a single CPU
 #SBATCH --cpus-per-task=1             # Number of threads per task
-#SBATCH --mem=1gb                     # Job memory request
-#SBATCH --time=00:15:00               # Time limit hrs:min:sec
+#SBATCH --mem=20gb                     # Job memory request
+#SBATCH --time=20:00:00               # Time limit hrs:min:sec
 #SBATCH --output=%j.serial_job.out
 #SBATCH --error=%j.serial_job.err
 
-#SBATCH --array=0-21
-
-echo "Starting Job: $SLURM_ARRAY_TASK_ID -- $SLURM_TASK_ID with id: $SLURM_JOBID"
-date
-
-PADDED_NUMBER=$(printf %02d $SLURM_ARRAY_TASK_ID)
 
 ###########################################################################################
 # Create an output directory; blastplus creates many different files
@@ -54,18 +48,21 @@ pwd; hostname;
 ################################################################################
 # Use `pdb` database.  Look in the directory and see how BLAST structures the
 # files.  They chuck them into groups.
-DB="/project2/mpcs56420/db/refseq_protein.$PADDED_NUMBER"
+DB="swissprot.fasta"
 QUERY="spike.fasta"
-BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_TASK.txt"
+BLAST_RESULTS="output.txt"
+ALIGNMENT="global"
+SCORINGMATRIX="PAM250"
+G=3
 
-# Run blastp (use time in front to track runtime)
-time blastp -query spike.fasta \
-     -db $DB \
-     -out $BLAST_RESULTS \
-     -num_threads $SLURM_CPUS_PER_TASK
-
-echo "HI from $SLURM_ARRAY_TASK_ID $SLURM_TASK_ID PRETTY_NUMBER: $PADDED_NUMBER"
-
+# Run 9.py (use time in front to track runtime)
+time python 9.py --queryfile spike.fasta \
+     --databasefile $DB \
+     --scoringmatrix $SCORINGMATRIX \
+     --alignment $ALIGNMENT \
+     --gappenalty $G \
+     --output $BLAST_RESULTS \
+   
 ################################################################################
 # Dump the Finished time to stdout so we know we are done
 ################################################################################
@@ -78,7 +75,7 @@ date
 # the output files that were created to our job directory
 ################################################################################
 `mv $SLURM_JOBID.out $SLURM_JOBID.err $WORKDIR`
-`mv $BLAST_RESULTS $WORKDIR`
+`mv $BLAST_RESULTS $WORKDIR/$BLAST_RESULTS`
 
 echo "All files were moved..."
 echo "Script completed"

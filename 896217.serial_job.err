@@ -1,0 +1,8 @@
+cp: missing destination file operand after ‘896217-’
+Try 'cp --help' for more information.
+
+real	0m7.005s
+user	0m3.084s
+sys	0m1.395s
+mv: cannot stat ‘896217.out’: No such file or directory
+mv: cannot stat ‘896217.err’: No such file or directory

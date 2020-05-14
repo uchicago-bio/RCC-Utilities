@@ -1,0 +1,444 @@
+BLASTP 2.9.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: NCBI Protein Reference Sequences
+           7,880,166 sequences; 2,992,119,317 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+YP_009755890.1 spike protein [Alphacoronavirus Bat-CoV/P.kuhlii/I...  340        8e-95
+YP_009200735.1 spike glycoprotein [BtRf-AlphaCoV/YN2012]              327        1e-91
+WP_063602516.1 C40 family peptidase [Clostridium coskatii]            42.0       0.39 
+WP_071610173.1 chromosome partition protein MukF, partial [Glaess...  42.0       0.40 
+WP_111278251.1 phage tail protein [Aggregatibacter aphrophilus]       41.6       0.81 
+WP_016701666.1 MULTISPECIES: hypothetical protein [Pseudomonas]       40.0       1.5  
+WP_045859363.1 helix-turn-helix transcriptional regulator [Raoult...  39.7       1.9  
+XP_032223031.1 mitochondria-eating protein isoform X3 [Nematostel...  39.7       2.4  
+WP_087063926.1 viral A-type inclusion protein [Enterococcus faecium]  39.3       2.9  
+WP_111860893.1 hypothetical protein [Acinetobacter sp. CFCC 10889]    37.4       3.2  
+WP_021104252.1 GuaB3 family IMP dehydrogenase-related protein [Cu...  38.9       4.1  
+WP_021105745.1 GuaB3 family IMP dehydrogenase-related protein [Cu...  38.9       4.1  
+WP_166325117.1 glutamine synthetase [Leucobacter sp. HDW9B]           38.9       5.0  
+WP_117970063.1 ribonuclease H-like domain-containing protein [Eub...  38.5       5.4  
+WP_063744707.1 nuclear transport factor 2 family protein [Parabur...  37.4       6.1  
+WP_050378999.1 methyl-accepting chemotaxis protein [Gottschalkia ...  38.5       7.3  
+WP_077619809.1 LPXTG cell wall anchor domain-containing protein [...  38.1       8.6  
+WP_162425172.1 heavy metal translocating P-type ATPase [Myxacorys...  38.1       9.3  
+
+
+>YP_009755890.1 spike protein [Alphacoronavirus Bat-CoV/P.kuhlii/Italy/3398-19/2015]
+Length=1399
+
+ Score = 340 bits (873),  Expect = 8e-95, Method: Compositional matrix adjust.
+ Identities = 233/775 (30%), Positives = 367/775 (47%), Gaps = 115/775 (15%)
+
+Query  536   NKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAV---RDPQTLEILDITPCSF  592
+             N C  +N  G  G GV+  SN  +L     G   +D++ A+   ++  T E+  I PC  
+Sbjct  666   NVCTEYNIYGYAGKGVIMRSNSTYLA----GISYSDSSGALVSFKNTTTGEVFSIRPCQ-  720
+
+Query  593   GGVSVITPGTNTSNQVAVLYQDV-----NCTEVPVAIHADQLTPTWRVYSTGSNVFQTRA  647
+                        TS Q AV+  ++       +++ V+ +    TPT+              
+Sbjct  721   -----------TSRQFAVINDNIVGVISASSDINVSFNHTIETPTFYY------------  757
+
+Query  648   GCLIGAEHVNNSYECDIPI----GAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAEN  703
+                    H N S  C  P+      GICA        P   +   +  I+          
+Sbjct  758   -------HANTSRNCTNPVLTYATIGICADGAMGYVYPTAIKEPPATPIVT---------  801
+
+Query  704   SVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQL  763
+                    +I+IP NFT+SV  E + VS+    VDC  ++C  +  C  LL QY + C+ +
+Sbjct  802   ------GNISIPVNFTVSVQAEYVQVSLRPVVVDCATFVCNGNERCLQLLKQYVTACSSI  855
+
+Query  764   NRALTGIAVEQDKNTQEVF----AQVKQIYKTPPIKDFGGFNFSQILPDPSKPSKRSFIE  819
+               AL   A  + ++   +     A  +Q  +    +    FN S +LP  +  +K SFIE
+Sbjct  856   ENALALNARLESQDVASLLTYDEAAYRQALELKTSQFQNDFNISAVLP--AGENKGSFIE  913
+
+Query  820   DLLFNKVTLADAGFIK-QYGDCL--GDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSA  876
+             DLLF+KV     G ++  Y  C+     AA D+ C Q +NG++VLP L  D  +  Y+++
+Sbjct  914   DLLFDKVITTGLGTVEADYKACIERAGTAAADITCRQYYNGISVLPALTDDGRLGLYSAS  973
+
+Query  877   LLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQ-  935
+             L+ G IT G  FG   AL  PF++ +  + N + +  + + ENQK++AN FN+A+G I  
+Sbjct  974   LMGG-ITLGAFFGGAVAL--PFSLAVFSKLNYLALQTDAIQENQKILANAFNTAMGNITN  1030
+
+Query  936   -------------DSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILS  982
+                          D++ + A+AL K+Q+ VN    AL  L  QL+ NF AISS + DI +
+Sbjct  1031  AFTDVNNAIQQTGDAIKTVANALNKVQEAVNTQGAALEKLTAQLALNFEAISSSIEDIYN  1090
+
+Query  983   RLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDF  1042
+             RLD + A+ Q+DRLI GRL +L T+ + QL++ +E+++S  LA  K++ECV  QS R  F
+Sbjct  1091  RLDALAADAQVDRLINGRLAALSTFTSSQLVKYSEVKSSRALALQKVNECVKSQSSRYGF  1150
+
+Query  1043  CGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPR--EGVFVSNGT  1100
+             CG G HL S    AP G++FLH   +P + +   +   +C   KA+  R  + V      
+Sbjct  1151  CGNGTHLFSMVTGAPEGLLFLHTVLLPTEYRQVESWAGLCVSNKAYVLRDVQQVLYKYND  1210
+
+Query  1101  HWFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPEL----DSFKEELDKYF  1156
+              +FVT RN ++P++    +     +C V    +    ++ + P+      + ++ +D   
+Sbjct  1211  SYFVTPRNMFQPRVPVVADFVQIQSCAVTYVNLTTEEFETVVPDFIDVNKTLQDLVDALP  1270
+
+Query  1157  K-NHTSPDVDL-----------GDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELG  1204
+             K N+T P+  L             I  + A  + ++    RL     ++N +L+DL+ L 
+Sbjct  1271  KPNYTLPNFPLDQFNHTYLNLTAQIGELEARALALENISARLQGHIDSINNTLVDLEWLD  1330
+
+Query  1205  KYEQYIKWPWYIWLGFIAGLIAIVMVTIMLCCMTSCCSCLKGCC-----SCGSCC  1254
+             ++E YIKWPWY+WL     LI +  + +  C  T CC    GCC     SC  CC
+Sbjct  1331  RFETYIKWPWYVWLAIFVVLIILAGLMLWCCIATGCC----GCCSCITASCAGCC  1381
+
+
+>YP_009200735.1 spike glycoprotein [BtRf-AlphaCoV/YN2012]
+Length=1132
+
+ Score = 327 bits (839),  Expect = 1e-91, Method: Compositional matrix adjust.
+ Identities = 233/742 (31%), Positives = 364/742 (49%), Gaps = 63/742 (8%)
+
+Query  538   CVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSV  597
+             C+ +     T  GVL ESN     F Q+  ++      ++  + L I+      F     
+Sbjct  411   CMTYTVEKTTFQGVLYESN---FTFSQY-YNLLYAGSQLKYVRILGIVYEVAACFEASYD  466
+
+Query  598   ITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQTRAGCLIGAEHVN  657
+             +   +N+S    +LY+  +C ++   I+A++          G+    T  GCL  A +  
+Sbjct  467   VLFASNSS--YGLLYRSFDCNQI--HINAERFRSRLLPQHNGT---ATALGCLFNATYAP  519
+
+Query  658   NS--YECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIP  715
+             N     C  P+G G CA  +      R        + +A  +S             I++ 
+Sbjct  520   NDTFVNCSNPLGDGFCADLKGTVAVRRMGFEAHDTTYVANVIS----------ERYISLA  569
+
+Query  716   TNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQD  775
+              +  + +T + L  +M K SV+C  YIC  S  C NLL +YG FC ++   + G  V  D
+Sbjct  570   IDQQLVLTEQFLQTTMPKFSVNCETYICDVSKACKNLLFRYGGFCQKIEADIRGAGVLLD  629
+
+Query  776   KNTQEVFAQ-VKQIYKTPPIKDFGGFNFSQI-LPDPSKPSKRSF------IEDLLFNKVT  827
+              +  E+++  V +     P  D   FN SQ  LP  + PS  S       IED+LF+K+ 
+Sbjct  630   SDISELYSTIVAKSSSLVPQTD--RFNVSQFFLPKNTAPSPPSPYSSRSAIEDILFSKIE  687
+
+Query  828   LADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWT  887
+                 GF   Y +C  + A +DL CAQ  NG+ V+PP++  E +  Y   + AG ++ G  
+Sbjct  688   TTGPGFYGDYYNCKKN-AIQDLTCAQYHNGILVIPPIMDAETMGMY-GGIAAGAVSLG-I  744
+
+Query  888   FGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGK  947
+             FG  AA+   +   +A R N +GV QN L ++   +AN FN    ++     ST+SAL  
+Sbjct  745   FGGQAAIAT-WNTAIAGRLNALGVVQNALVDDVNKLANGFNQLTSQVGKLALSTSSALQA  803
+
+Query  948   LQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTY  1007
+             +Q VVNQNA  + +LV  ++ NFGAIS+    I  RLDK+EA+VQ+DRLI GR+  LQ +
+Sbjct  804   IQAVVNQNAAQVESLVSGITENFGAISTNFKVISQRLDKLEADVQMDRLINGRMNVLQLF  863
+
+Query  1008  VTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTY  1067
+             VT   ++ AE+R +     + ++ECV  QS R  FCG+G H++S  Q+AP G++F H + 
+Sbjct  864   VTNYKLKIAELRNTHRYVQSLINECVYAQSLRNGFCGQGLHVLSLMQNAPSGIMFFHYSL  923
+
+Query  1068  VPAQEKNFTTAPAICHD----GKAHFPREGVFVS-NGTHWFVTQRNFYEPQIITTDNTFV  1122
+             +P       T P +C       K    + G+FVS N ++W  + RN Y+P+ +T  N   
+Sbjct  924   IPNNTITVKTTPGLCESDEIGAKCIVAKNGIFVSANLSYWQWSPRNIYKPENLTFTN---  980
+
+Query  1123  SGNCDVVIGIVNNTVYDPLQ-----PELDS---FKEELDKYFKNHTSPDVDLGDISGINA  1174
+                   VI +     Y  L      PEL+      EE  +YF+N +S    L +++  + 
+Sbjct  981   ------VIAVSRGANYTTLNRTFDIPELNQSFPIDEEFREYFQNMSSELQALKNLTA-DM  1033
+
+Query  1175  SVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMVTIML  1234
+             S +NI +EI  +NE+A N++   +++++  KY  Y+KW W+ WL     L  +  + +  
+Sbjct  1034  SKLNISEEIKLINEIAHNVSMMHVEVEKFQKYVNYVKWAWWQWLLIFIALTLLAGLMVWC  1093
+
+Query  1235  CCMTSCCSCLKGC--CSCGSCC  1254
+             C  T CC  + GC   +C SCC
+Sbjct  1094  CLATGCCG-MCGCLAATCASCC  1114
+
+
+>WP_063602516.1 C40 family peptidase [Clostridium coskatii]
+Length=345
+
+ Score = 42.0 bits (97),  Expect = 0.39, Method: Compositional matrix adjust.
+ Identities = 34/94 (36%), Positives = 53/94 (56%), Gaps = 5/94 (5%)
+
+Query  912   TQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFG  971
+             T N L  N+K IA+  NS I + Q ++ S  +++   Q V NQ A+A+ T    +S   G
+Sbjct  59    TMNDLENNKKSIASVSNS-IKQTQANIDSVQASIESQQKVFNQRAKAMYT--NNMSGYLG  115
+
+Query  972   AI--SSVLNDILSRLDKVEAEVQIDRLITGRLQS  1003
+             AI  ++ LND +SR+D V   +  D+ + G L+S
+Sbjct  116   AILNANNLNDFISRVDNVGKVMSFDKNVVGNLKS  149
+
+
+>WP_071610173.1 chromosome partition protein MukF, partial [Glaesserella parasuis]
+Length=375
+
+ Score = 42.0 bits (97),  Expect = 0.40, Method: Composition-based stats.
+ Identities = 33/135 (24%), Positives = 65/135 (48%), Gaps = 20/135 (15%)
+
+Query  897   PFAMQMAYRFNGIGVTQNVLYENQK--------LIANQFNSAIGKIQDSLSSTASALGKL  948
+             P    +A  F+ I ++Q ++ ENQ+        L++  ++ AI   Q  L  T+  L +L
+Sbjct  92    PLKFSVAEIFDSIDLSQRMMDENQQQIRERIATLLSQNWHEAIATCQQLLDETSGNLREL  151
+
+Query  949   QDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQ--IDRLITGRLQSLQT  1006
+             QDV+N +   L + + ++ S       +  D L  +D++   +Q  +DR+I+   Q++  
+Sbjct  152   QDVLNASGDKLQSQLLRIQSCL-----IGRDDLDFVDQLIVNLQNKLDRIISWGQQAIDL  206
+
+Query  1007  YV-----TQQLIRAA  1016
+             ++       + IR A
+Sbjct  207   WIGYDRHVHKFIRTA  221
+
+
+>WP_111278251.1 phage tail protein [Aggregatibacter aphrophilus]
+Length=1356
+
+ Score = 41.6 bits (96),  Expect = 0.81, Method: Compositional matrix adjust.
+ Identities = 34/151 (23%), Positives = 67/151 (44%), Gaps = 13/151 (9%)
+
+Query  907   NGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQL  966
+             N I    N + E  K      N+AI +I +  ++T +A+ KL+      A+ + T+  + 
+Sbjct  823   NDINSANNAVSEETKARIAAVNNAIQQINNQAAATGTAIQKLEKADKAQAETIKTVTAKA  882
+
+Query  967   SSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAA  1026
+              S   A+S +  +  +R D    E Q  + + GR+ + ++ +       A +R + N   
+Sbjct  883   ES---ALSGITAEQKARADGDRVEAQARQALAGRVANAESGI-------ASLRETVNQKD  932
+
+Query  1027  TKMSECVLGQSKRVD---FCGKGYHLMSFPQ  1054
+             +  +  +   S +VD     G+ Y L++  Q
+Sbjct  933   SARATEIRNLSAKVDGVSVGGRNYALLTGSQ  963
+
+
+>WP_016701666.1 MULTISPECIES: hypothetical protein [Pseudomonas]
+Length=298
+
+ Score = 40.0 bits (92),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 23/58 (40%), Positives = 34/58 (59%), Gaps = 4/58 (7%)
+
+Query  933  KIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAE  990
+            K+QD L S+A+ L KL+D+VN  A+    L+++L  N G+ SS     +S L K   E
+Sbjct  69   KLQDGLKSSAAELEKLKDLVNSQAR----LIEELKRNTGSSSSANASEMSNLKKTTGE  122
+
+
+>WP_045859363.1 helix-turn-helix transcriptional regulator [Raoultella terrigena]
+Length=317
+
+ Score = 39.7 bits (91),  Expect = 1.9, Method: Compositional matrix adjust.
+ Identities = 26/76 (34%), Positives = 33/76 (43%), Gaps = 2/76 (3%)
+
+Query  207  HTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYY  266
+            H   +L RD+    SAL+      +G ++  F     L R+    G  S GWT   AAYY
+Sbjct  233  HCLCDLARDVGISVSALKSKFQAVMGQSVFAFLRDQRLTRA--RQGLESEGWTVKQAAYY  290
+
+Query  267  VGYLQPRTFLLKYNEN  282
+            VGY  P  F   Y   
+Sbjct  291  VGYQHPSNFSTAYRRK  306
+
+
+>XP_032223031.1 mitochondria-eating protein isoform X3 [Nematostella vectensis]
+Length=436
+
+ Score = 39.7 bits (91),  Expect = 2.4, Method: Compositional matrix adjust.
+ Identities = 31/125 (25%), Positives = 61/125 (49%), Gaps = 7/125 (6%)
+
+Query  877  LLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQD  936
+            LL      G T+G    L+      M    NG+ ++     E+ KL+ +++   + +++D
+Sbjct  61   LLQLCCDEGGTYGGFQPLKNKL---MPLLCNGLVMSHIGGSEDVKLVRDKYEHMVSRLED  117
+
+Query  937  SLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDK---VEAEVQI  993
+             L S    +G+L+  +++N + +  + +QL  ++ A   V  ++  RL K   VE E + 
+Sbjct  118  DLKSAQREVGELRLKLSENEEDVKCIRRQLKDSYFADRQV-TELQKRLQKQMLVENESEP  176
+
+Query  994  DRLIT  998
+             R+IT
+Sbjct  177  VRMIT  181
+
+
+>WP_087063926.1 viral A-type inclusion protein [Enterococcus faecium]
+Length=305
+
+ Score = 39.3 bits (90),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 31/95 (33%), Positives = 46/95 (48%), Gaps = 21/95 (22%)
+
+Query  1143  PELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDL--  1200
+             P++D   EE +KY +  T+ D D   I+ ++A V+  Q EI+RLNE  K +N  + DL  
+Sbjct  143   PKID---EEWEKYSQPETT-DYD-KKINELDAKVITAQTEIERLNEQIKEINRQMTDLDD  197
+
+Query  1201  --------------QELGKYEQYIKWPWYIWLGFI  1221
+                           QEL K +Q +      WL +I
+Sbjct  198   NKGFLNRKKIEEEIQELEKKKQVLSNEKLGWLPYI  232
+
+
+>WP_111860893.1 hypothetical protein [Acinetobacter sp. CFCC 10889]
+Length=139
+
+ Score = 37.4 bits (85),  Expect = 3.2, Method: Composition-based stats.
+ Identities = 21/67 (31%), Positives = 35/67 (52%), Gaps = 1/67 (1%)
+
+Query  1148  FKEELDKYFK-NHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKY  1206
+             F E +++Y+  NHT   ++   + G      + Q E+DRLNEV     +  ++  ELGKY
+Sbjct  25    FNESINQYYHPNHTEHRLNYAFLMGAWVVWQSRQAEVDRLNEVLDERTKEWLEAIELGKY  84
+
+Query  1207  EQYIKWP  1213
+              + +  P
+Sbjct  85    FENVAKP  91
+
+
+>WP_021104252.1 GuaB3 family IMP dehydrogenase-related protein [Cutibacterium 
+granulosum]
+Length=367
+
+ Score = 38.9 bits (89),  Expect = 4.1, Method: Composition-based stats.
+ Identities = 29/79 (37%), Positives = 41/79 (52%), Gaps = 20/79 (25%)
+
+Query  614  DVNCTEVPVAIHADQLTP--TWR----VYSTGSNVFQTRAGCLIGAEHVNNS--------  659
+            ++   +VPVA     L+P  T R    V ++G + F  R G  + AEHV++S        
+Sbjct  125  EIRAADVPVAA---ALSPKNTARFADTVVASGVDFFVIR-GTTVSAEHVSDSPDVLDLRK  180
+
+Query  660  --YECDIPIGAGICASYQT  676
+              YE D+P+  G CASYQT
+Sbjct  181  FIYELDVPVIVGGCASYQT  199
+
+
+>WP_021105745.1 GuaB3 family IMP dehydrogenase-related protein [Cutibacterium 
+granulosum]
+Length=367
+
+ Score = 38.9 bits (89),  Expect = 4.1, Method: Composition-based stats.
+ Identities = 29/79 (37%), Positives = 41/79 (52%), Gaps = 20/79 (25%)
+
+Query  614  DVNCTEVPVAIHADQLTP--TWR----VYSTGSNVFQTRAGCLIGAEHVNNS--------  659
+            ++   +VPVA     L+P  T R    V ++G + F  R G  + AEHV++S        
+Sbjct  125  EIRAADVPVAA---ALSPKNTARFADTVVASGVDFFVIR-GTTVSAEHVSDSPDVLDLRK  180
+
+Query  660  --YECDIPIGAGICASYQT  676
+              YE D+P+  G CASYQT
+Sbjct  181  FIYELDVPVIVGGCASYQT  199
+
+
+>WP_166325117.1 glutamine synthetase [Leucobacter sp. HDW9B]
+Length=456
+
+ Score = 38.9 bits (89),  Expect = 5.0, Method: Compositional matrix adjust.
+ Identities = 22/64 (34%), Positives = 29/64 (45%), Gaps = 2/64 (3%)
+
+Query  435  AWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQS  494
+            AW     D   G +YN  Y L   + ++P  RDI   +  AG   C GV+G  C F  Q 
+Sbjct  160  AWQKGYRDLTAGSDYNVDYALHASTRMEPLLRDIRNSMDGAGMY-CEGVKG-ECNFGQQE  217
+
+Query  495  YGFQ  498
+              F+
+Sbjct  218  IAFR  221
+
+
+>WP_117970063.1 ribonuclease H-like domain-containing protein [Eubacterium ventriosum]
+Length=366
+
+ Score = 38.5 bits (88),  Expect = 5.4, Method: Composition-based stats.
+ Identities = 27/96 (28%), Positives = 47/96 (49%), Gaps = 11/96 (11%)
+
+Query  117  LLIVNNATNVVIKVCE--FQFCNDPFLGVYY--------HKNNKSWMESEFRVYSSANNC  166
+            L I NN  N+ I +C   F++    +   Y+        HK+   +M+ +FR  ++A+ C
+Sbjct  248  LNIQNNTLNISINLCNGTFKYFFKNYKDYYFLPLEDRAIHKSIGEFMDKKFRKAATASTC  307
+
+Query  167  TFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFK  202
+             +E  S  FL   + K  NF+N  +  +K+ + Y K
+Sbjct  308  -YEKFSGSFLPIFDSKSKNFENCFKLEYKDKNQYIK  342
+
+
+>WP_063744707.1 nuclear transport factor 2 family protein [Paraburkholderia oxyphila]
+Length=174
+
+ Score = 37.4 bits (85),  Expect = 6.1, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 35/80 (44%), Gaps = 15/80 (19%)
+
+Query  348  ASVYAWNRKRI----SNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIR  403
+             SV  WN KR        +A Y+ L+ SASFST   Y             NVY D+ V+R
+Sbjct  76   GSVAEWNNKRTYATRDQKIAGYNALFRSASFSTVFSYDA----------INVYGDTAVVR  125
+
+Query  404  GDEVRQIAPGQTG-KIADYN  422
+                   A  + G K+ DYN
+Sbjct  126  THHHVGAAVIENGKKVTDYN  145
+
+
+>WP_050378999.1 methyl-accepting chemotaxis protein [Gottschalkia purinilytica]
+Length=678
+
+ Score = 38.5 bits (88),  Expect = 7.3, Method: Compositional matrix adjust.
+ Identities = 27/107 (25%), Positives = 52/107 (49%), Gaps = 7/107 (7%)
+
+Query  916   LYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISS  975
+             L E  K   NQ  S +G+IQ  +  +  A+ K  ++V+ N +     V +    F  I+ 
+Sbjct  539   LAEESKKSTNQIESIVGEIQSEIVESVKAIKKSNELVDNNVKT----VGETKVIFNNIAK  594
+
+Query  976   VLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASA  1022
+              +NDI + +D++   V+    +T +   +   +T  L+++ E  AS+
+Sbjct  595   TINDIKNEVDRINRVVE---EMTQKKNEVSQTITNLLLKSEETAASS  638
+
+
+>WP_077619809.1 LPXTG cell wall anchor domain-containing protein [Bacillus sinesaloumensis]
+Length=451
+
+ Score = 38.1 bits (87),  Expect = 8.6, Method: Compositional matrix adjust.
+ Identities = 35/109 (32%), Positives = 46/109 (42%), Gaps = 25/109 (23%)
+
+Query  797  FGGFNFSQILPDPSKPSKRSF---IEDLLFNKVTLADAGFIKQYGDCLG-----------  842
+            FG   + +  PD SKPSK +F   I D  F+   L+  G+    GD LG           
+Sbjct  48   FGWNLYGEDEPDKSKPSKHAFPNYILDGAFDVTNLSFPGWTS--GDLLGQIKTNPVYLPA  105
+
+Query  843  ---------DIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTI  882
+                     +I   DL+ A   N L   P  LTDE IA+ T  + A +I
+Sbjct  106  ITEADVITLNIGNNDLLKAADINNLLNNPEPLTDEKIAEITEKIEAASI  154
+
+
+>WP_162425172.1 heavy metal translocating P-type ATPase [Myxacorys almedinensis]
+Length=765
+
+ Score = 38.1 bits (87),  Expect = 9.3, Method: Compositional matrix adjust.
+ Identities = 47/176 (27%), Positives = 76/176 (43%), Gaps = 25/176 (14%)
+
+Query  829  ADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSAL--LAGTITSGW  886
+            A+ G + + GD L  +   D I   K   LT   P++TD ++ Q    L  LA ++  G 
+Sbjct  423  AERGLLIRGGDVLEQVHHLDTIVFDKTGTLTAGQPIVTDSLVVQTGVPLLQLAASVERGT  482
+
+Query  887  TFGAGAAL-------QIP-FAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSL  938
+                  A+        +P  A Q  Y   G GV+ NVL+E             G  Q  L
+Sbjct  483  RHPLAQAITQAARQQAVPELAAQDFYTEAGFGVSANVLWE-------------GTYQPVL  529
+
+Query  939  SSTASALGKLQDVVNQ--NAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQ  992
+              TA+ L + Q  + Q  +AQA +   +  +  + A++S L  +L+  D + A+ +
+Sbjct  530  LGTAAWLEQHQVKIEQTVHAQAADLAAQGKTVVYVALASSLVGLLAVTDVLRADAK  585
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 2054086592625
+
+
+  Database: NCBI Protein Reference Sequences
+    Posted date:  Apr 23, 2020  5:38 AM
+  Number of letters in database: 2,992,119,317
+  Number of sequences in database:  7,880,166
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

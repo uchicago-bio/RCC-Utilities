@@ -1,0 +1,519 @@
+BLASTP 2.9.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: NCBI Protein Reference Sequences
+           7,878,503 sequences; 2,992,121,155 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+YP_009273005.1 spike protein [Rousettus bat coronavirus]              602        0.0  
+YP_001876437.1 spike protein [Beluga whale coronavirus SW1]           320        1e-87
+YP_008439202.1 spike glycoprotein [Bat coronavirus CDPHE15/USA/2006]  315        4e-86
+WP_055039104.1 YhgE/Pip domain-containing protein [Roseburia inul...  45.4       0.055
+XP_022792964.1 uncharacterized protein LOC111331983 [Stylophora p...  44.7       0.079
+WP_114581236.1 hypothetical protein [Ferruginivarius sediminum]       40.8       0.68 
+XP_023459940.1 Paramyosin [Cercospora beticola]                       41.6       0.86 
+XP_028590290.1 laminin subunit beta-3 [Podarcis muralis]              40.0       2.5  
+XP_016692879.1 PREDICTED: golgin subfamily B member 1-like isofor...  40.0       2.6  
+XP_031900885.1 glycoside hydrolase [Aspergillus alliaceus]            39.7       2.7  
+WP_023457566.1 EAL domain-containing protein [Asticcacaulis sp. A...  39.7       3.2  
+WP_121169456.1 flagellar basal body rod protein FlgB [Thermovibri...  36.6       4.8  
+WP_115882455.1 alkaline phosphatase family protein [Lutibacter oc...  38.5       5.6  
+XP_020394252.1 histone-lysine N-methyltransferase SUVR5 isoform X...  38.9       5.7  
+WP_013641734.1 DivIVA domain-containing protein [Lactobacillus am...  38.1       6.5  
+WP_089612565.1 C40 family peptidase [Dehalobacterium formicoaceti...  38.5       7.0  
+WP_048308243.1 hypothetical protein [Halomonas sp. PR-M31]            38.1       8.0  
+WP_104722575.1 class I SAM-dependent methyltransferase [Helicobac...  37.7       8.1  
+WP_018131010.1 hypothetical protein [Effusibacillus pohliae]          35.8       9.8  
+
+
+>YP_009273005.1 spike protein [Rousettus bat coronavirus]
+Length=1290
+
+ Score = 602 bits (1552),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 369/1029 (36%), Positives = 563/1029 (55%), Gaps = 69/1029 (7%)
+
+Query  266   YVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTES  325
+             Y+  +QP+  L+KYN+ G   +  DC+ D   E  C   +FT   G+YQ S +R +  + 
+Sbjct  296   YIAPVQPKELLVKYNDQGMPVEIADCSADSTQELYCITGTFTPSVGVYQLSRYRAE-AKK  354
+
+Query  326   IVRFPNITNLC--PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVS  383
+             +V+     + C  P+  +      A   AW R  ISNC  D+  L  +      KCYG+S
+Sbjct  355   LVQVTQQEDSCAIPYTTILEPPSPA---AWVRATISNCTFDFESLLRTLPTYNLKCYGIS  411
+
+Query  384   PTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDS  443
+             P +L+ +C+  V  D F +    +  +       ++ YNY LP +F GCV A++ N+   
+Sbjct  412   PARLSTMCYAGVTLDIFKLNTTHLSNMLGSVPDAVSIYNYALPSNFYGCVHAYHLNSTTP  471
+
+Query  444   KVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGV  503
+                      Y +  K   +       +++  + ++ C                  P N +
+Sbjct  472   YAVAVPPGAYPI--KPGGRQLFNSFVSQVLDSPTSQCT-----------------PANCM  512
+
+Query  504   GYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQ  563
+             G     VVV+          VC     T +++ +CV +NF G  GTGV+ +S+      +
+Sbjct  513   G-----VVVIGLTPASGSNLVCPKANDTQVIEGQCVKYNFYGYAGTGVINQSDLAIPNNK  567
+
+Query  564   QFGRDIADTTDAVRDPQTLEILDITPCSFGGVSV-ITPGTNTSNQVAVLYQDVNCTEVPV  622
+              F    +    AVR     ++  ITPC    VSV I+ G +  +Q A+++  ++C+    
+Sbjct  568   LFVTSKSGAVLAVRAGD--KVYSITPC----VSVPISVGYDPGHQRALVFNGLDCSARAN  621
+
+Query  623   AIH---ADQLTPTWRVYSTGSN-VFQTRAGCLIGAEHVNNSYE-----CDIPIGAGIC-A  672
+             A+    ++  T      + GS  V  T +GC+    +VNN        C++PIG  +C  
+Sbjct  622   AVSMPASEYWTAAASTTARGSEPVLDTPSGCVY---NVNNCTTHTVSVCEMPIGNSLCLV  678
+
+Query  673   SYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMT  732
+             S  T ++    + S    S++ Y  +  A   V      ++IPTNFT++ TTE +  +  
+Sbjct  679   SNFTCSDVATASLSPNLLSLVVYDPT-DAGLKVLTPVYWVSIPTNFTLAATTEYIQTTAP  737
+
+Query  733   KTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQ--IYK  790
+             K +VDC  Y+CGDS  C ++L QYG+FC  +N+AL  ++   D +   + +++    ++ 
+Sbjct  738   KVNVDCVKYLCGDSERCIDVLSQYGAFCEDVNKALADVSAIIDSSMVTMVSELTAGVMWS  797
+
+Query  791   TPPIKDFGGFNFSQIL----PDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDI--  844
+               P  + G +NFS ++     +  +   RS I DLL+NKV +AD GF+  Y  C+ +   
+Sbjct  798   ETPQANVGSYNFSGLMGCLGSNCQEKQYRSAISDLLYNKVKVADPGFMGAYQKCIDEQWG  857
+
+Query  845   -AARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMA  903
+              + RDLIC Q FNG++VLPP+++  M A YTS L+    +SG+TFG  +   IPFA Q+ 
+Sbjct  858   GSVRDLICTQTFNGISVLPPIVSPGMQALYTSLLVGAVASSGYTFGITSVGVIPFATQLQ  917
+
+Query  904   YRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLV  963
+             +R NG+GVT NVL ENQKLIAN FN+A+  IQ    +T  AL K+Q V+NQ+AQ L+TLV
+Sbjct  918   FRLNGLGVTTNVLMENQKLIANAFNNALTGIQKGFDATNMALAKMQSVINQHAQQLSTLV  977
+
+Query  964   KQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASAN  1023
+              QL ++FGAISS +N+I SRLD++EA  Q+DRLI GR+  L TYVTQ LIRA+E++A A 
+Sbjct  978   DQLGNSFGAISSSINEIFSRLDELEANAQVDRLINGRMVVLNTYVTQLLIRASEVKAQAA  1037
+
+Query  1024  LAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICH  1083
+             LA+ K+SECV  QS+R DFCG G H++S PQ AP+GV+FLH +Y P       TA  +C 
+Sbjct  1038  LASQKISECVKAQSQRNDFCGNGTHVLSIPQMAPNGVLFLHYSYQPTAYNLVRTAAGLCF  1097
+
+Query  1084  DGKAHFPREGVFV--SNGTHWFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPL  1141
+             +   + P  G+FV  +N   W  T+ +FY+P  I+  NT V   C +    VN TV   L
+Sbjct  1098  NDTGYAPLGGLFVLPNNTDRWLFTKMSFYDPVNISVSNTQVLAACGLNYSSVNYTV---L  1154
+
+Query  1142  QPELDS----FKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESL  1197
+             +P +D+    F EE +K++ N +    +  + S  N S+V++ +++  L +V   LN+S 
+Sbjct  1155  EPAVDTSSFNFTEEFEKWYVNQSHIFNNTFNASAFNFSLVDVNEQLAILTDVVNQLNQSY  1214
+
+Query  1198  IDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMVTIMLCCMTSCCSCLKGCCSCGSCCKFD  1257
+             IDL++LG YE  +KWPWY+WLG IAGL+ +V+  ++L CMT+CCSC +G CSC SC   +
+Sbjct  1215  IDLKQLGTYEYTVKWPWYVWLGMIAGLVGLVLAVVLLLCMTNCCSCARGVCSCKSCAYEE  1274
+
+Query  1258  EDDSEPVLK  1266
+              +D  P ++
+Sbjct  1275  HEDVYPAVR  1283
+
+
+>YP_001876437.1 spike protein [Beluga whale coronavirus SW1]
+Length=1472
+
+ Score = 320 bits (820),  Expect = 1e-87, Method: Compositional matrix adjust.
+ Identities = 192/580 (33%), Positives = 299/580 (52%), Gaps = 66/580 (11%)
+
+Query  712   IAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIA  771
+             + +P    +  TTE +     K  +DCT Y+CG S  C  +L++YG FC  + R L G+ 
+Sbjct  856   VQLPRTLMLHTTTEFIQTHSPKIVIDCTKYVCGSSERCRRILVKYGGFCESIMRLLNGVN  915
+
+Query  772   VEQDKNTQEVFAQVKQIYK--------TPPIKDFGGFNFSQILP-----DPSKP-SKRSF  817
+             +  D +  +                        F G+ F + LP     D S P   RS 
+Sbjct  916   MADDVSVTDFLDNFNSFDNISVSLQNLNASFGQFEGYGFQKFLPKSFDFDGSDPRDARST  975
+
+Query  818   IEDLLFNKVTLADAGFIK-QYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSA  876
+             IED+LF+KVT    G +   Y  C   ++  DL+CAQ +NG+ VLP +   E +A YT A
+Sbjct  976   IEDILFDKVTTVGLGTVDADYDKCTKGLSVADLVCAQYYNGIMVLPGVADAEKMAMYTGA  1035
+
+Query  877   LLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGK---  933
+             L+ G +  G T    +A  IPFA Q+  R N + +TQN + ENQK+I  QFN AI     
+Sbjct  1036  LVGGMVLGGIT----SAAAIPFATQIQARVNYLALTQNAIQENQKIIVQQFNKAIDSMTS  1091
+
+Query  934   ----IQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEA  989
+                 + +  S+ +SA+ ++Q+ VN  +QAL  L+ QL+ NFGA +S + ++  RL K+EA
+Sbjct  1092  AFQSVNEGFSAVSSAITEVQNAVNAQSQALTKLLGQLNYNFGATTSSIKELYERLAKLEA  1151
+
+Query  990   EVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHL  1049
+             +VQ+DRLI GRL +L  +V  + + AA++ +   LAA K++ECV   S R  FCG G H+
+Sbjct  1152  DVQVDRLINGRLTALSAFVAARQVEAAKVASQRVLAAEKINECVKSTSNRYGFCGNGAHI  1211
+
+Query  1050  MSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHD---GKAHFPREGVFV--SNGTH---  1101
+             +SFPQ+AP+G++F+H + VP +         +C +   G       G+F+  SNGT+   
+Sbjct  1212  ISFPQNAPNGMLFVHFSLVPNETITVKGIIGLCLNNSIGIVPAKDRGMFIQCSNGTYCPE  1271
+
+Query  1102  ----------------WFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPEL  1145
+                             + +T R  Y P+ ITT +  +  +C+     +  +    + P  
+Sbjct  1272  FENSFNESKNGNVTFPFAITSREQYNPRQITTGDIQMLTSCNSGYTHIEWSQLPLVAPPY  1331
+
+Query  1146  DSFKEELDKYFK--NHTSPDVDLGDISGINASV--VNIQKEIDRLNEVA-------KNLN  1194
+             D F +E DK ++  N+T     L ++  +N +   +N+ ++ID +N          +NLN
+Sbjct  1332  DDFDKEFDKLYEKWNYT-----LEELEKLNVTFPYLNVSEQIDIINSAMENIKSQIQNLN  1386
+
+Query  1195  ESLIDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMVTIML  1234
+              S IDL+ L KYE+Y KWPW++WL  +    A  ++   +
+Sbjct  1387  SSYIDLEWLNKYERYSKWPWWVWLIIVLCFAAFCLLVFWI  1426
+
+
+>YP_008439202.1 spike glycoprotein [Bat coronavirus CDPHE15/USA/2006]
+Length=1364
+
+ Score = 315 bits (806),  Expect = 4e-86, Method: Compositional matrix adjust.
+ Identities = 229/748 (31%), Positives = 362/748 (48%), Gaps = 100/748 (13%)
+
+Query  526   GPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEIL  585
+             G +  + +  + C  ++  G TG G++  +N   L    +           ++  T EI 
+Sbjct  627   GIRDVSKIHLDVCSTYSIYGHTGDGIIRLTNDTLLGGLYYTSP-GGALLGFKNVTTGEIY  685
+
+Query  586   DITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQT  645
+              +TPCS             + QVAV+  ++       A  +DQ + T   Y+T +  F  
+Sbjct  686   SVTPCSL------------TQQVAVVSDEIVGVVSSSANVSDQFSFT---YTTVTEQFYY  730
+
+Query  646   RAGCLIGAEHVNNSYECDIPI----GAGICASYQTQTNSPRRARSVASQSIIAYTMSLGA  701
+                        + +  C  P+      G+C     +   PR   +  +  +         
+Sbjct  731   MT---------DGNSSCSEPVLTYSSLGVCKDGALRILQPREDTTQPTPIV---------  772
+
+Query  702   ENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCT  761
+                    +  I+I TNFT+SV TE + ++ T  SVDC MY+C  +  C+ LL QY S C 
+Sbjct  773   -------SGVISIATNFTLSVVTEYIQLANTPISVDCAMYVCNGNPRCNMLLAQYSSACQ  825
+
+Query  762   QLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDF--GGFNFSQILPDPSKPSKRSFIE  819
+              +  AL   A  +      +    +   +   I  F  GG+NF+ ++   +  S +S +E
+Sbjct  826   TIENALQLSAKLESIEVTNMLTVSEDNLQIANISTFNGGGYNFTNLMG--TTYSTKSVVE  883
+
+Query  820   DLLFNKVTLADAGFIK-QYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALL  878
+             D+LF+KV  +  G +   Y  C   ++  DL+CAQ + G+ VLP ++    +  Y+++L+
+Sbjct  884   DILFDKVVTSGLGTVDADYKACSNGLSIADLVCAQYYQGVMVLPGVVDAAKLHMYSASLM  943
+
+Query  879   AGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDS-  937
+              G    G T    AA  +PF+  +  R N + +  +VL  NQ+++A  FN+AIG I ++ 
+Sbjct  944   GGMALGGVT----AAAALPFSYAVQARLNYVALQTDVLQRNQQILAESFNNAIGNITNAF  999
+
+Query  938   -------------LSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRL  984
+                          LS+ A AL K+QDVVN    ALN L  QL +NF AISS + DI  RL
+Sbjct  1000  ASVNDAISQTAEGLSTVAEALSKVQDVVNNQGMALNHLTLQLQNNFQAISSSIADIYRRL  1059
+
+Query  985   DKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCG  1044
+             D++ A+ Q+DRLI GRL +L  +V+Q L + ++++AS +LA  K++ECVL QS R  FCG
+Sbjct  1060  DQLTADAQVDRLINGRLAALNAFVSQTLTKYSQVQASRSLAKQKINECVLSQSPRYGFCG  1119
+
+Query  1045  K-GYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHF---PREGVFVSNGT  1100
+               G H+ +  Q+AP G++FLH    P    N T A  IC DG  +    P   +   +GT
+Sbjct  1120  DGGRHVFTVTQAAPQGILFLHTVLRPTGSVNVTAAAGICVDGAGYALNQPGLVLIYQDGT  1179
+
+Query  1101  HWFVTQRNFYEP-QIITTDNTFVSGNCDV-VIGIVNNTVYDPLQPELDSFK--EELDKYF  1156
+              + +T R  +EP Q   +D   + G CDV    +   ++ D     +D  K  E++    
+Sbjct  1180  -YLITPRVMFEPRQPQISDFVRIEG-CDVEYFNVTGESLPDIFPDFIDVNKTLEDILSQL  1237
+
+Query  1157  KNHTSPDVDLGDISGINASVVNIQKEI--------------DRLNEVAKNLNESLIDLQE  1202
+             +N+T P  D+ DI   NA+ +N+  EI              + L  +  N+N +L+DL+ 
+Sbjct  1238  QNNTGPKFDI-DI--FNATYLNLSSEIADLEMRSESLHNTTEELKRLIDNINSTLVDLEW  1294
+
+Query  1203  LGKYEQYIKWPWYIWLGFIAGLIAIVMV  1230
+             L + E YIKWPW++WL     LIAI ++
+Sbjct  1295  LNRVETYIKWPWWVWL-----LIAIALI  1317
+
+
+>WP_055039104.1 YhgE/Pip domain-containing protein [Roseburia inulinivorans]
+Length=583
+
+ Score = 45.4 bits (106),  Expect = 0.055, Method: Compositional matrix adjust.
+ Identities = 23/61 (38%), Positives = 36/61 (59%), Gaps = 0/61 (0%)
+
+Query  925  NQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRL  984
+            NQF++    ++ +++S  SA+G LQ+V      +L T+ K LS+ FG IS+ L  I   L
+Sbjct  234  NQFSAVYPDMKSAITSGQSAMGNLQNVTGTGLASLGTISKGLSATFGGISNALGSIAKAL  293
+
+Query  985  D  985
+            D
+Sbjct  294  D  294
+
+
+>XP_022792964.1 uncharacterized protein LOC111331983 [Stylophora pistillata]
+Length=483
+
+ Score = 44.7 bits (104),  Expect = 0.079, Method: Compositional matrix adjust.
+ Identities = 45/173 (26%), Positives = 73/173 (42%), Gaps = 34/173 (20%)
+
+Query  1057  PHGVV-----FLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYE  1111
+             PHG+      FL +      EKN T  P      K    R  +F     H FV ++    
+Sbjct  13    PHGIASQKMFFLRLFLAKLTEKNGTIFPWT----KERKSRREIF----KHDFVPKKRKVS  64
+
+Query  1112  PQIITT---DNTFVSGNCDVVIGIVNNTVY----DP-----LQPE--LDSFKEELDKYFK  1157
+               +++T   D+++   N ++V      +      DP     +QPE  L++F+EE  +Y  
+Sbjct  65    SVVVSTTDTDSSYSDNNANIVTQTTPTSTESLHEDPYYTREVQPEEILNNFREEQHQYLS  124
+
+Query  1158  NHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYI  1210
+              HT  D+DL       AS+  +  E+ +L E  K L +    L +  K+  +I
+Sbjct  125   KHTQTDIDL-------ASLEEVLNEVSKLKEENKKLRDKCDQLTKENKHLNFI  170
+
+
+>WP_114581236.1 hypothetical protein [Ferruginivarius sediminum]
+Length=265
+
+ Score = 40.8 bits (94),  Expect = 0.68, Method: Composition-based stats.
+ Identities = 58/193 (30%), Positives = 71/193 (37%), Gaps = 37/193 (19%)
+
+Query  866   TDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIAN  925
+             T E +A Y  AL    I   W     AA      M+ A    G  ++ N L E Q L  N
+Sbjct  32    TTEELAAYGEALAWDAI---WDVHDAAA------MEQALEDAGAVLSSNALAE-QVLSGN  81
+
+Query  926   QFNSAI----GKIQDSLSSTASALGKLQDVVNQNAQALNT-----LVKQLSSNFGAISSV  976
+             Q   A       I DS +     +G     VNQNA  LN       V    ++ GA+   
+Sbjct  82    QAADATPERRATISDSFNDNTGVIG-----VNQNAGLLNNQGNVVAVAFAGADVGALRIN  136
+
+Query  977   LNDILSRLDKVEAEVQIDRLITGRLQSLQTYV-------------TQQLIRAAEIRASAN  1023
+               D++ RLD       IDRL  G   S    V              Q  + A    A A 
+Sbjct  137   DADVVQRLDANSLTTSIDRLSVGINNSFNNIVGILGVNQVAGNLNNQANVVALTFGADAG  196
+
+Query  1024  LAATKMSECVLGQ  1036
+              AAT +SE VL Q
+Sbjct  197   PAATLLSEAVLAQ  209
+
+
+>XP_023459940.1 Paramyosin [Cercospora beticola]
+Length=1067
+
+ Score = 41.6 bits (96),  Expect = 0.86, Method: Compositional matrix adjust.
+ Identities = 26/86 (30%), Positives = 44/86 (51%), Gaps = 3/86 (3%)
+
+Query  1141  LQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDL  1200
+             LQ EL++  ++ D   +     D ++ D+   N  V N+++ +DRL E   +LNE + DL
+Sbjct  591   LQEELEAMTKQRD--AERDAREDAEM-DVRERNVEVENLEERVDRLEEQLGDLNEQINDL  647
+
+Query  1201  QELGKYEQYIKWPWYIWLGFIAGLIA  1226
+             +EL + E+  +      LG     IA
+Sbjct  648   RELNESERKDREAVEAELGTAQEEIA  673
+
+
+>XP_028590290.1 laminin subunit beta-3 [Podarcis muralis]
+Length=1190
+
+ Score = 40.0 bits (92),  Expect = 2.5, Method: Compositional matrix adjust.
+ Identities = 42/158 (27%), Positives = 66/158 (42%), Gaps = 32/158 (20%)
+
+Query  878   LAGTITSGWTFGAGAALQIPFAMQMAY-------RFNGIGVTQNVLYENQKLIANQFNSA  930
+             LA  +    TF +  A  +  A Q+         R N IG     + EN K    Q N+A
+Sbjct  955   LAAKLQCPETFISQTAGDVAKARQLQQQAEEARNRANAIGANVEDVVENLK----QANTA  1010
+
+Query  931   IGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAE  990
+             + + +D++S +  +L  +QD +N+    LN   K+           + DI  +LD     
+Sbjct  1011  LQEAEDTISGSGYSLRLIQDRLNEIQAVLNPAEKR-----------VQDITGQLDG----  1055
+
+Query  991   VQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATK  1028
+                    TGRL  LQ    Q L+ AA+ +  A  A+ +
+Sbjct  1056  ------FTGRLAQLQLNAKQNLLLAADAQQKAGEASEQ  1087
+
+
+>XP_016692879.1 PREDICTED: golgin subfamily B member 1-like isoform X2 [Gossypium 
+hirsutum]
+Length=2117
+
+ Score = 40.0 bits (92),  Expect = 2.6, Method: Compositional matrix adjust.
+ Identities = 46/201 (23%), Positives = 90/201 (45%), Gaps = 14/201 (7%)
+
+Query  802  FSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCL-GDIAARDLICAQKFNGLTV  860
+            F +I   P+  S+ +F+E  LF K  L    +++     L  ++   D++   + NGL+ 
+Sbjct  592  FRKIKDQPNASSETTFVEAQLFEK--LQSLFYVRDLELTLCEEVLEEDMLVRSQLNGLSN  649
+
+Query  861  LPPLLTDEMIA-QYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYEN  919
+               + ++E+ A +    +L   +       +    ++  A++      G G+ Q+   EN
+Sbjct  650  QLKVTSEELFALKEEKDVLQKALEQSEEKSSLLREKLSMAVK-----KGKGLVQD--REN  702
+
+Query  920  QKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLND  979
+             KL+  + NS I K++  L    S +   +D ++  +  L   +  L S+  A+    + 
+Sbjct  703  LKLLLEEKNSEIEKLRLELQHEESTVANCRDQISTLSTDLER-IPLLESDLAAMKEAFDH  761
+
+Query  980  ILSRLDKVEAEVQIDRLITGR  1000
+            ILS++D  E    +D  I GR
+Sbjct  762  ILSQIDVPEELQSMD--IVGR  780
+
+
+>XP_031900885.1 glycoside hydrolase [Aspergillus alliaceus]
+Length=580
+
+ Score = 39.7 bits (91),  Expect = 2.7, Method: Compositional matrix adjust.
+ Identities = 25/103 (24%), Positives = 48/103 (47%), Gaps = 3/103 (3%)
+
+Query  127  VIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGNF  186
+            V+KV + Q   D  L ++ H +   +   E R+  S  +  +EY+ + +L    G++  +
+Sbjct  260  VMKVIDDQQMQDGLLPIFVHPDTGHFTHPEIRL-GSRGDSYYEYLIKQYLQT-SGREPVY  317
+
+Query  187  KNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFS-ALEPLVD  228
+              + E     I  +    +KH+ +  + +LPQG    L P +D
+Sbjct  318  YEMWEEALAGIQKHLLTSTKHSNLQFIAELPQGIGRPLSPKMD  360
+
+
+>WP_023457566.1 EAL domain-containing protein [Asticcacaulis sp. AC466]
+Length=648
+
+ Score = 39.7 bits (91),  Expect = 3.2, Method: Compositional matrix adjust.
+ Identities = 25/73 (34%), Positives = 39/73 (53%), Gaps = 3/73 (4%)
+
+Query  548  GTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEILD--ITPCSFGGVSVITPGTNTS  605
+            GTG  + S+   LP  +   D +  TD VR+P +L+I+      C+  G+  I  G  T 
+Sbjct  549  GTGFSSLSHVHRLPLDKIKVDRSFITDLVRNPISLKIVKSLTALCTDMGLDCIVEGVETE  608
+
+Query  606  NQVAVLYQDVNCT  618
+             Q+A+L +D+ CT
+Sbjct  609  AQLAIL-RDLGCT  620
+
+
+>WP_121169456.1 flagellar basal body rod protein FlgB [Thermovibrio guaymasensis]
+Length=124
+
+ Score = 36.6 bits (83),  Expect = 4.8, Method: Composition-based stats.
+ Identities = 34/120 (28%), Positives = 56/120 (47%), Gaps = 20/120 (17%)
+
+Query  1109  FYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFK------NHTSP  1162
+             F++ + I     F     +V+   + N      +P+   F+ ELDK  K       H  P
+Sbjct  4     FHQLKPIEEGINFFYRRSEVIQSNIANVDTPFYKPKDLVFERELDKSLKLKRTDPRHIDP  63
+
+Query  1163  ---------DVDLGDISGINASVVNIQKEIDRLNE---VAKNLNESLIDLQELGKYEQYI  1210
+                      +V L +ISG + + VN+ KE+ +L E   +A+ LNE+L   +E+GK +  I
+Sbjct  64    YGGEKVTFKEVTLDEISGYDGNRVNLDKELGKLAETAIMARTLNETL--RKEIGKLKLVI  121
+
+
+>WP_115882455.1 alkaline phosphatase family protein [Lutibacter oceani]
+Length=345
+
+ Score = 38.5 bits (88),  Expect = 5.6, Method: Composition-based stats.
+ Identities = 24/84 (29%), Positives = 43/84 (51%), Gaps = 9/84 (11%)
+
+Query  351  YAWNRKRISNCVADYSVLYNSASFST----FKCYGVSP---TKLNDLCFTNVYADSFVIR  403
+            + W +K++ N  AD++++ +S  F +    F+C+G  P    KL +L  T    ++ ++ 
+Sbjct  202  WDWLKKQLENSTADFNIIVSSIQFLSAEHGFECWGNMPHEIDKLENLLKTTKAKNTIILS  261
+
+Query  404  GDEVRQIAPGQTGKIADYNYKLPD  427
+            GD  R I+     +I D  Y L D
+Sbjct  262  GD--RHISEISKKEIKDLKYPLID  283
+
+
+>XP_020394252.1 histone-lysine N-methyltransferase SUVR5 isoform X4 [Zea mays]
+Length=998
+
+ Score = 38.9 bits (89),  Expect = 5.7, Method: Compositional matrix adjust.
+ Identities = 31/106 (29%), Positives = 49/106 (46%), Gaps = 19/106 (18%)
+
+Query  94   STEKSNIIRGWIFGTTL------DSKTQSLLIVNNATNVV----IKVCEFQFCNDPFLGV  143
+            STE+  +   W F T        ++K  SL++    TN+      K+C  QF +D  LG+
+Sbjct  887  STEREKLANIWGFDTNRSKQIYSENKEGSLVLHKEGTNLSSGPKCKICAHQFSDDEALGL  946
+
+Query  144  YY---HKNNKSWMESEFRVYSSA---NNCTFEYVSQPFLMDLEGKQ  183
+            ++   HK    W+   FR YS A    + T + V +  + D+ G Q
+Sbjct  947  HWTTVHKKEARWL---FRGYSCAACMESFTNKKVLERHVQDVHGAQ  989
+
+
+>WP_013641734.1 DivIVA domain-containing protein [Lactobacillus amylovorus]
+Length=278
+
+ Score = 38.1 bits (87),  Expect = 6.5, Method: Composition-based stats.
+ Identities = 18/60 (30%), Positives = 37/60 (62%), Gaps = 1/60 (2%)
+
+Query  1144  ELDSFKEELDKYFKNHTSPDVDL-GDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQE  1202
+             E+DSF +E+   + +     VDL  ++  +N+ + ++Q ++D  N+  K++N+SLI  Q+
+Sbjct  30    EVDSFLDEIVDNYGDALDQIVDLKNEVVSLNSKIKDLQAQVDEYNDKKKSINKSLISAQQ  89
+
+
+>WP_089612565.1 C40 family peptidase [Dehalobacterium formicoaceticum]
+Length=672
+
+ Score = 38.5 bits (88),  Expect = 7.0, Method: Compositional matrix adjust.
+ Identities = 28/92 (30%), Positives = 49/92 (53%), Gaps = 13/92 (14%)
+
+Query  556  NKKFLPFQQFGRDIADTTDAVRDP---QTLEILDITPCSFGGVSVITPGTNTSNQVAVLY  612
+            N + L  ++F R I +++ AV +P   + +E++D TP +  G S  + G NT+N V  +Y
+Sbjct  266  NSRLLGARRFARGIIESSAAVNNPIVQRAMELID-TPYNPVGNSP-SEGFNTTNFVRYVY  323
+
+Query  613  QDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQ  644
+            +DV   ++PV           R+Y  G  +F+
+Sbjct  324  KDVLGIQLPVLAE--------RIYEMGGAIFK  347
+
+
+>WP_048308243.1 hypothetical protein [Halomonas sp. PR-M31]
+Length=370
+
+ Score = 38.1 bits (87),  Expect = 8.0, Method: Composition-based stats.
+ Identities = 29/105 (28%), Positives = 53/105 (50%), Gaps = 10/105 (10%)
+
+Query  919   NQKL--IANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSV  976
+             N++L  +  Q   +  K+ D+   TA+A   LQ V     ++L+ + K+  S    + S 
+Sbjct  187   NERLEGLIQQIKDSESKLADTQGQTATAKENLQQV----QKSLDDMQKRQQS----LKSK  238
+
+Query  977   LNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRAS  1021
+             ++   SR D +++++Q      G LQ L   V QQL R  ++++S
+Sbjct  239   IDSAQSRFDDLQSQIQSRNQRLGELQVLIVNVQQQLSRIEDMKSS  283
+
+
+>WP_104722575.1 class I SAM-dependent methyltransferase [Helicobacter mesocricetorum]
+Length=343
+
+ Score = 37.7 bits (86),  Expect = 8.1, Method: Compositional matrix adjust.
+ Identities = 27/88 (31%), Positives = 36/88 (41%), Gaps = 15/88 (17%)
+
+Query  314  QTSNFRVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNC--------VADY  365
+            Q+ N R++  + I       N CP  E  N   F  +Y +  K   NC        + D 
+Sbjct  26   QSENARIKAKKFIKEEKEALNACPMCESANVVEFTRIYEFIYKECQNCENLFLANPLKDL  85
+
+Query  366  SVLY-NSASFSTFKCYGVSPTKLNDLCF  392
+              LY N  S S+F+CY      LND  F
+Sbjct  86   QKLYTNDGSESSFECY------LNDEIF  107
+
+
+>WP_018131010.1 hypothetical protein [Effusibacillus pohliae]
+Length=125
+
+ Score = 35.8 bits (81),  Expect = 9.8, Method: Composition-based stats.
+ Identities = 24/107 (22%), Positives = 54/107 (50%), Gaps = 5/107 (5%)
+
+Query  936   DSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQ-ID  994
+             D + +   ++ +  D + Q    + + + ++ S    + S L+ + SR+DK+E+ +  I+
+Sbjct  2     DEMKALLGSINQRLDGIGQKLDMMESRLDKMESRLDKMESRLDKLESRMDKMESRLNDIE  61
+
+Query  995   RLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVD  1041
+               +  R  +L+T +   LI+ +    +  +A  + S+ +L   KRVD
+Sbjct  62    SHMKSRFDTLETELG--LIKKSLAEVNGRIAGIEKSQALL--EKRVD  104
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 2054365549875
+
+
+  Database: NCBI Protein Reference Sequences
+    Posted date:  Apr 23, 2020  5:38 AM
+  Number of letters in database: 2,992,121,155
+  Number of sequences in database:  7,878,503
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

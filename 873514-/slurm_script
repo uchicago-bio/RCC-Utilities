@@ -5,7 +5,7 @@
 #SBATCH --ntasks=1                    # Run on a single CPU
 #SBATCH --cpus-per-task=1             # Number of threads per task
 #SBATCH --mem=1gb                     # Job memory request
-#SBATCH --time=00:15:00               # Time limit hrs:min:sec
+#SBATCH --time=05:00:00               # Time limit hrs:min:sec
 #SBATCH --output=%j.serial_job.out
 #SBATCH --error=%j.serial_job.err
 

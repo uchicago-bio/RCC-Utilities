@@ -1,0 +1,3 @@
+cp: missing destination file operand after ‘872778-’
+Try 'cp --help' for more information.
+slurmstepd-midway2-0002: error: *** JOB 872778 ON midway2-0002 CANCELLED AT 2020-05-04T00:08:57 DUE TO TIME LIMIT ***

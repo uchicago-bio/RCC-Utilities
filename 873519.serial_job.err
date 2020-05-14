@@ -1,0 +1,8 @@
+cp: missing destination file operand after ‘873519-’
+Try 'cp --help' for more information.
+
+real	2m39.342s
+user	2m27.624s
+sys	0m6.851s
+mv: cannot stat ‘873519.out’: No such file or directory
+mv: cannot stat ‘873519.err’: No such file or directory

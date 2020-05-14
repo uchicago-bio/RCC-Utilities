@@ -1,0 +1,353 @@
+BLASTP 2.9.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: NCBI Protein Reference Sequences
+           7,880,038 sequences; 2,992,119,861 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+NP_058424.1 spike protein [Transmissible gastroenteritis virus]       337        2e-93
+WP_118124769.1 YhgE/Pip domain-containing protein [Roseburia inul...  45.1       0.056
+WP_130074937.1 hypothetical protein [Acinetobacter piscicola]         40.8       0.44 
+WP_111764708.1 helix-turn-helix transcriptional regulator [Salmon...  41.6       0.52 
+XP_011622055.1 keratin, type I cytoskeletal 10-like [Amborella tr...  40.0       1.5  
+WP_038633962.1 MULTISPECIES: helix-turn-helix transcriptional reg...  39.7       1.9  
+WP_079241414.1 TonB-dependent receptor plug domain-containing pro...  40.0       2.8  
+WP_030257975.1 HAMP domain-containing protein [Streptomyces violens]  39.7       3.6  
+WP_152580162.1 hypothetical protein [Bifidobacterium tibiigranuli]    38.5       3.8  
+WP_146334464.1 clindamycin resistance transfer factor BtgA [Parab...  38.1       3.9  
+WP_144982895.1 hypothetical protein [Halomonas sp. C22]               38.9       5.4  
+WP_095646404.1 flagellin Hag, partial [Bacillus licheniformis]        38.1       6.1  
+NP_001345340.1 SET domain protein SDG117 [Zea mays]                   38.9       6.7  
+WP_163436247.1 hypothetical protein [Escherichia coli]                38.1       7.8  
+WP_154742471.1 outer membrane porin, OprD family [Pseudomonas sp....  37.7       9.7  
+
+
+>NP_058424.1 spike protein [Transmissible gastroenteritis virus]
+Length=1447
+
+ Score = 337 bits (863),  Expect = 2e-93, Method: Compositional matrix adjust.
+ Identities = 253/791 (32%), Positives = 386/791 (49%), Gaps = 119/791 (15%)
+
+Query  517   LLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLP---FQQFGRDI---A  570
+             ++  P+   G    + L  + C ++N  G TG G++ ++N+  L    +     D+    
+Sbjct  663   IVGVPSDNSGVHDLSVLHLDSCTDYNIYGRTGVGIIRQTNRTLLSGLYYTSLSGDLLGFK  722
+
+Query  571   DTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLT  630
+             + +D V       I  +TPC     + +  GT      ++  + +  T           T
+Sbjct  723   NVSDGV-------IYSVTPCDVSAQAAVIDGTIVGAITSINSELLGLTHWTT-------T  768
+
+Query  631   PTWRVYSTGSNVFQTRAGCLIGAEHVNNSYECDIPI---GAGICASYQTQTNSPRRARSV  687
+             P +  YS  +       G  I +    N  +C+  I     G+C +              
+Sbjct  769   PNFYYYSIYNYTNDRTRGTAIDS----NDVDCEPVITYSNIGVCKN--------------  810
+
+Query  688   ASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDST  747
+              +   I  T S G    ++  N  + IPTNFTISV  E + V  T  S+DC+ Y+C  + 
+Sbjct  811   GAFVFINVTHSDGDVQPISTGN--VTIPTNFTISVQVEYIQVYTTPVSIDCSRYVCNGNP  868
+
+Query  748   ECSNLLLQYGSFCTQLNRALT-GIAVEQDKNTQEVFAQ-----------------VKQIY  789
+              C+ LL QY S C  + +AL  G  +E  +    +F                   +  IY
+Sbjct  869   RCNKLLTQYVSACQTIEQALAMGARLENMEVDSMLFVSENALKLASVEAFNSSETLDPIY  928
+
+Query  790   KTPPIKDFGGF---NFSQILPDP-SKPSKRSFIEDLLFNKVTLADAGFIKQ-YGDCLGDI  844
+             K  P  + GG        ILP   SK   RS IEDLLF+KV  +  G + + Y  C G  
+Sbjct  929   KEWP--NIGGSWLEGLKYILPSHNSKRKYRSAIEDLLFDKVVTSGLGTVDEDYKRCTGGY  986
+
+Query  845   AARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAY  904
+                DL+CAQ +NG+ VLP +   + +  YT++ LAG IT G     G A+ IPFA+ +  
+Sbjct  987   DIADLVCAQYYNGIMVLPGVANADKMTMYTAS-LAGGITLGAL--GGGAVAIPFAVAVQA  1043
+
+Query  905   RFNGIGVTQNVLYENQKLIANQFNSAIGKIQDS--------------LSSTASALGKLQD  950
+             R N + +  +VL +NQ+++A+ FN AIG I  S              L++ A AL K+QD
+Sbjct  1044  RLNYVALQTDVLNKNQQILASAFNQAIGNITQSFGKVNDAIHQTSRGLATVAKALAKVQD  1103
+
+Query  951   VVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQ  1010
+             VVN   QAL+ L  QL +NF AISS ++DI +RLD++ A+ Q+DRLITGRL +L  +V+Q
+Sbjct  1104  VVNIQGQALSHLTVQLQNNFQAISSSISDIYNRLDELSADAQVDRLITGRLTALNAFVSQ  1163
+
+Query  1011  QLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPA  1070
+              L R AE+RAS  LA  K++ECV  QS+R  FCG G HL S   +AP+G++F H   +P 
+Sbjct  1164  TLTRQAEVRASRQLAKDKVNECVRSQSQRFGFCGNGTHLFSLANAAPNGMIFFHTVLLPT  1223
+
+Query  1071  QEKNFTTAPAIC-HDGKAHFP------REGVFVSNGTHWFVTQRNFYEPQIITTDNTFVS  1123
+               +  T  P IC  DG   F       +  +F +    +++T R  Y+P++ T+ +    
+Sbjct  1224  AYETVTAWPGICASDGDRTFGLVVKDVQLTLFRNLDDKFYLTPRTMYQPRVATSSDFVQI  1283
+
+Query  1124  GNCDVVIGIVNNTVYD--PLQPEL----DSFKEELDKYFKNHTSPDVDLGDISGINASVV  1177
+               CDV+   VN TV D   + P+      + ++ L+ +  N T P++   DI   NA+ +
+Sbjct  1284  EGCDVL--FVNATVSDLPSIIPDYIDINQTVQDILENFRPNWTVPELTF-DI--FNATYL  1338
+
+Query  1178  NIQKEIDRLN-----------EVA---KNLNESLIDLQELGKYEQYIKWPWYIWLGFIAG  1223
+             N+  EID L            E+A    N+N +L++L+ L + E Y+KWPWY+WL  + G
+Sbjct  1339  NLTGEIDDLEFRSEKLHNTTVELAILIDNINNTLVNLEWLNRIETYVKWPWYVWL--LIG  1396
+
+Query  1224  LIAIVMVTIML  1234
+             L+ I  + ++L
+Sbjct  1397  LVVIFCIPLLL  1407
+
+
+>WP_118124769.1 YhgE/Pip domain-containing protein [Roseburia inulinivorans]
+Length=583
+
+ Score = 45.1 bits (105),  Expect = 0.056, Method: Compositional matrix adjust.
+ Identities = 23/61 (38%), Positives = 36/61 (59%), Gaps = 0/61 (0%)
+
+Query  925  NQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRL  984
+            NQF++    ++ +++S  SA+G LQ+V      +L T+ K LS+ FG IS+ L  I   L
+Sbjct  234  NQFSAVYPDMKSAITSGQSAMGNLQNVTGTGLASLGTISKGLSATFGGISNALGSIAKAL  293
+
+Query  985  D  985
+            D
+Sbjct  294  D  294
+
+
+>WP_130074937.1 hypothetical protein [Acinetobacter piscicola]
+Length=183
+
+ Score = 40.8 bits (94),  Expect = 0.44, Method: Composition-based stats.
+ Identities = 26/87 (30%), Positives = 41/87 (47%), Gaps = 4/87 (5%)
+
+Query  926   QFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLD  985
+             Q N  I + QD + S    L  LQ   NQ    LNT    L+  +G +     D+ +R  
+Sbjct  46    QKNGIITQKQDEIESLNEQLTALQKQFNQ----LNTDATSLAERYGRLEKSCTDLKTRFQ  101
+
+Query  986   KVEAEVQIDRLITGRLQSLQTYVTQQL  1012
+             ++ AE    RL+  +LQ+ Q +  Q++
+Sbjct  102   EILAERNELRLVKEKLQTEQRHSQQEI  128
+
+
+>WP_111764708.1 helix-turn-helix transcriptional regulator [Salmonella enterica]
+Length=317
+
+ Score = 41.6 bits (96),  Expect = 0.52, Method: Compositional matrix adjust.
+ Identities = 26/76 (34%), Positives = 34/76 (45%), Gaps = 2/76 (3%)
+
+Query  207  HTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYY  266
+            H   +L RD+    SAL+    + +G ++  F     L R+    G  S GWT   AAYY
+Sbjct  233  HCLCDLARDVGISVSALKSKFQMVMGQSVFAFLRDQRLTRA--RQGLESEGWTVKQAAYY  290
+
+Query  267  VGYLQPRTFLLKYNEN  282
+            VGY  P  F   Y   
+Sbjct  291  VGYQHPSNFSTAYRRK  306
+
+
+>XP_011622055.1 keratin, type I cytoskeletal 10-like [Amborella trichopoda]
+Length=316
+
+ Score = 40.0 bits (92),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 32/117 (27%), Positives = 56/117 (48%), Gaps = 8/117 (7%)
+
+Query  909   IGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTL------  962
+             IG+ +  L   ++L  N+   A+ K+++S  +TA  +G   +V++     LN L      
+Sbjct  40    IGMLREGLQSLRELPLNELREALAKLRESTVTTA--VGSAPEVLSNFNATLNKLESLRLE  97
+
+Query  963   VKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIR  1019
+             V  L      ++S+   IL   +K+ A ++ + +ITGR Q L+        R  EIR
+Sbjct  98    VLHLEEETSRLASLKELILHHHEKINACIEKEAMITGRQQDLKREAQGSFKRIIEIR  154
+
+
+>WP_038633962.1 MULTISPECIES: helix-turn-helix transcriptional regulator [Yersinia]
+Length=317
+
+ Score = 39.7 bits (91),  Expect = 1.9, Method: Compositional matrix adjust.
+ Identities = 26/76 (34%), Positives = 33/76 (43%), Gaps = 2/76 (3%)
+
+Query  207  HTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYY  266
+            H   +L RD+    SAL+      +G ++  F     L R+    G  S GWT   AAYY
+Sbjct  233  HCLCDLARDVGISVSALKSKFQAVMGQSVFAFLRDQRLTRA--RQGLESEGWTVKQAAYY  290
+
+Query  267  VGYLQPRTFLLKYNEN  282
+            VGY  P  F   Y   
+Sbjct  291  VGYQHPSNFSTAYRRK  306
+
+
+>WP_079241414.1 TonB-dependent receptor plug domain-containing protein [Chryseobacterium 
+indologenes]
+Length=931
+
+ Score = 40.0 bits (92),  Expect = 2.8, Method: Compositional matrix adjust.
+ Identities = 50/203 (25%), Positives = 77/203 (38%), Gaps = 44/203 (22%)
+
+Query  345  TRFASVYAWNRKRISNCVADY---SVLYNSASFSTFKCY-GVSPTKLNDLCFTNVYADSF  400
+            TRF    AW R +  N +  Y    +L N   +     Y G+ P+ +N++  TN+  D++
+Sbjct  743  TRFTLNGAWFRTKYGNSLPVYRGRDLLINGRPYPYLGLYEGMEPSSVNEVLNTNLMLDTY  802
+
+Query  401  VIRGDEV------------RQIAP---------GQTGKIADYNYKLPDDFTGCVIAWNSN  439
+              R D V            RQI P          Q G +  YN   PD   G +      
+Sbjct  803  FPRLDLVFSSSFQFSWYSTRQILPMSGIPSHYVDQNGSVLPYN---PDSVKGTI------  853
+
+Query  440  NLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGF-----NCYFPLQS  494
+             L+S +      LY   R+    P E +++ ++ ++       V  F     N Y P   
+Sbjct  854  -LESLIIAQNEDLYNTTRR----PMEMNLNMKVTKSFRNKAVVVSMFANRLFNYYTPYNI  908
+
+Query  495  YGFQPTNGVGYQPYRVVVLSFEL  517
+             GF       Y PY  + ++F L
+Sbjct  909  NGFTINRKGAYDPYFGMEINFNL  931
+
+
+>WP_030257975.1 HAMP domain-containing protein [Streptomyces violens]
+Length=1237
+
+ Score = 39.7 bits (91),  Expect = 3.6, Method: Compositional matrix adjust.
+ Identities = 21/46 (46%), Positives = 31/46 (67%), Gaps = 6/46 (13%)
+
+Query  1149  KEELD---KYFKNHTSPDVDL--GDISGINASVVNIQKEIDRLNEV  1189
+             +EE D   K FK HT  DVD   G ++G+ A++V+IQ+++  LNEV
+Sbjct  157   REETDRAIKSFKEHTD-DVDAARGSMAGVRATIVDIQRQLGTLNEV  201
+
+
+>WP_152580162.1 hypothetical protein [Bifidobacterium tibiigranuli]
+Length=247
+
+ Score = 38.5 bits (88),  Expect = 3.8, Method: Composition-based stats.
+ Identities = 29/100 (29%), Positives = 48/100 (48%), Gaps = 1/100 (1%)
+
+Query  909   IGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSS  968
+             IG     L E  K +A Q    +   Q+ L++    L   QD +++  + L T   QL +
+Sbjct  119   IGQITRKLDELTKQLAEQ-QKQLKAAQELLAAQQEQLKSQQDTLSEQQRQLKTAQDQLGT  177
+
+Query  969   NFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYV  1008
+               G +SS+++ +   +      VQ  + IT +LQS QTY+
+Sbjct  178   QQGQLSSIVSQLSGIVGNQGDTVQTLQGITRQLQSQQTYI  217
+
+
+>WP_146334464.1 clindamycin resistance transfer factor BtgA [Parabacteroides 
+distasonis]
+Length=194
+
+ Score = 38.1 bits (87),  Expect = 3.9, Method: Composition-based stats.
+ Identities = 23/66 (35%), Positives = 33/66 (50%), Gaps = 6/66 (9%)
+
+Query  899  AMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQA  958
+            A  +A RF+GIG T       + LI +Q  S+ GK    L   +   GK  DV+NQ  + 
+Sbjct  92   ANSIAVRFDGIGKTL------ETLILSQLESSQGKQTAVLQKVSEQFGKHADVINQQGKQ  145
+
+Query  959  LNTLVK  964
+            L+ L +
+Sbjct  146  LSALYQ  151
+
+
+>WP_144982895.1 hypothetical protein [Halomonas sp. C22]
+Length=1449
+
+ Score = 38.9 bits (89),  Expect = 5.4, Method: Compositional matrix adjust.
+ Identities = 38/168 (23%), Positives = 70/168 (42%), Gaps = 20/168 (12%)
+
+Query  867   DEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGV-----------TQNV  915
+             D+++A     + A   T+  TF     +++  +   A R +G+ V            QNV
+Sbjct  656   DDLLAAVQRVMSASRGTAAATFYGLEEVRLADSEATALRIDGVEVQLADALAAIEQEQNV  715
+
+Query  916   LYENQKLIANQFNSAIGKIQDSLSSTASALG----KLQDVVNQNAQALNTLVKQLSSNFG  971
+                  + +A Q  +A+ ++   +S+   AL     +L   V+  +QAL T+  QL  +  
+Sbjct  716   RASEYQALATQITTAVAELDGGISTVQQALSTEVTRLDGRVDAQSQALTTVQSQLLGDIA  775
+
+Query  972   AISSVLNDILSRLD-----KVEAEVQIDRLITGRLQSLQTYVTQQLIR  1014
+              +   LN  ++RLD       +A + +     G L  +Q     Q+ R
+Sbjct  776   TVQQSLNTNVNRLDGAVSANAQAIIDVQSATDGALAGVQQDFNTQVTR  823
+
+
+>WP_095646404.1 flagellin Hag, partial [Bacillus licheniformis]
+Length=262
+
+ Score = 38.1 bits (87),  Expect = 6.1, Method: Composition-based stats.
+ Identities = 32/110 (29%), Positives = 49/110 (45%), Gaps = 16/110 (15%)
+
+Query  877  LLAGTITSGWTFGAGAALQIPFAMQMAYR------FNGIGVTQNVLYENQKLIANQFNSA  930
+            LL G++T+G+TF  GA       +Q+          NGI V+           A  FN+ 
+Sbjct  136  LLNGSVTAGFTFQIGANANQSINVQIGSMDATTLGVNGIDVSD---------AAFDFNTE  186
+
+Query  931  IGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDI  980
+            I KI  ++++ +S   KL  V N+    +N L    S N  A  S + D+
+Sbjct  187  IAKIDTAITTVSSQRSKLGAVQNRLEHTINNLGAS-SENLTAAESRIRDV  235
+
+
+>NP_001345340.1 SET domain protein SDG117 [Zea mays]
+ XP_008677781.1 SET domain protein SDG117 isoform X1 [Zea mays]
+Length=1601
+
+ Score = 38.9 bits (89),  Expect = 6.7, Method: Compositional matrix adjust.
+ Identities = 31/106 (29%), Positives = 49/106 (46%), Gaps = 19/106 (18%)
+
+Query  94   STEKSNIIRGWIFGTTL------DSKTQSLLIVNNATNVV----IKVCEFQFCNDPFLGV  143
+            STE+  +   W FGT        ++K  S+ +    TN+      K+C  QF +D  LG+
+Sbjct  888  STEREKLANIWGFGTDRSKQIYSENKEGSVALQEEKTNLSSGPKCKICGHQFSDDQALGL  947
+
+Query  144  YY---HKNNKSWMESEFRVYSSA---NNCTFEYVSQPFLMDLEGKQ  183
+            ++   HK    W+   FR YS A    + T + V +  + D+ G Q
+Sbjct  948  HWTTVHKKEARWL---FRGYSCAACMESFTNKKVLERHVQDVHGAQ  990
+
+
+>WP_163436247.1 hypothetical protein [Escherichia coli]
+Length=399
+
+ Score = 38.1 bits (87),  Expect = 7.8, Method: Composition-based stats.
+ Identities = 23/68 (34%), Positives = 37/68 (54%), Gaps = 7/68 (10%)
+
+Query  928  NSAIGKIQDSLSSTASALGKLQDVVNQNAQA-------LNTLVKQLSSNFGAISSVLNDI  980
+            + A+GK  D++ S+  A     +VV QN Q        LN+LV QL  N   +++ LN +
+Sbjct  249  DEALGKRIDAVVSSLEAWNDQLNVVAQNYQKMALALANLNSLVLQLQKNINDLNTKLNQV  308
+
+Query  981  LSRLDKVE  988
+            + R+D +E
+Sbjct  309  IQRVDALE  316
+
+
+>WP_154742471.1 outer membrane porin, OprD family [Pseudomonas sp. CCM 7891]
+Length=426
+
+ Score = 37.7 bits (86),  Expect = 9.7, Method: Compositional matrix adjust.
+ Identities = 27/92 (29%), Positives = 42/92 (46%), Gaps = 21/92 (23%)
+
+Query  27   AYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPF  86
+            A+T  FT  +YY            T+D F  ++SN+ W HA+           D+  L F
+Sbjct  209  AFTPEFTGSLYYA----------KTEDYFRKYYSNLNWTHALS----------DDQALAF  248
+
+Query  87   NDGVYFASTEKSNIIRGWIFGTT-LDSKTQSL  117
+            +  +Y   +E   + R +  GTT LD++  SL
+Sbjct  249  DFNIYDTKSEGQGLQRAYNDGTTELDNRAFSL  280
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 2054108516625
+
+
+  Database: NCBI Protein Reference Sequences
+    Posted date:  Apr 23, 2020  5:38 AM
+  Number of letters in database: 2,992,119,861
+  Number of sequences in database:  7,880,038
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

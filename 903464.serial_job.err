@@ -1,0 +1,8 @@
+cp: missing destination file operand after ‘903464-’
+Try 'cp --help' for more information.
+
+real	238m53.094s
+user	134m41.853s
+sys	13m8.982s
+mv: cannot stat ‘903464.out’: No such file or directory
+mv: cannot stat ‘903464.err’: No such file or directory

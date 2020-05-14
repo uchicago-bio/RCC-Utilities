@@ -1,0 +1,298 @@
+BLASTP 2.9.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: NCBI Protein Reference Sequences
+           7,875,326 sequences; 2,992,124,498 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+WP_013511928.1 helix-turn-helix transcriptional regulator [Pantoe...  41.2       0.66 
+WP_006708144.1 helix-turn-helix transcriptional regulator [Serrat...  40.8       0.84 
+WP_147744324.1 OmpA family protein [Flagellimonas sp. 176CP5-101]     40.8       0.87 
+WP_050958911.1 toxic anion resistance protein [Staphylococcus aur...  40.8       0.96 
+WP_122348935.1 clindamycin resistance transfer factor BtgA [Bacte...  38.9       2.2  
+WP_104869325.1 viral A-type inclusion protein [Enterococcus faecium]  39.3       2.9  
+WP_002306703.1 MULTISPECIES: hypothetical protein [Enterococcus]      39.3       2.9  
+WP_124514769.1 flagellar hook-associated protein FlgK [Acidovorax...  39.7       3.3  
+WP_168207001.1 hypothetical protein [Planctomycetes bacterium I41]    38.9       3.6  
+WP_129517833.1 hypothetical protein [Burkholderia stabilis]           39.7       3.6  
+WP_023268216.1 DUF2959 domain-containing protein [Shewanella deco...  38.5       3.7  
+WP_013737577.1 DNA repair ATPase [Metallosphaera cuprina]             38.5       4.8  
+XP_020394256.1 histone-lysine N-methyltransferase SUVR5 isoform X...  39.3       4.9  
+WP_133926073.1 extracellular solute-binding protein [Streptomyces...  38.1       7.1  
+XP_012200045.1 hypothetical protein SPRG_05410 [Saprolegnia paras...  35.8       9.2  
+
+
+>WP_013511928.1 helix-turn-helix transcriptional regulator [Pantoea sp. At-9b]
+Length=317
+
+ Score = 41.2 bits (95),  Expect = 0.66, Method: Compositional matrix adjust.
+ Identities = 27/81 (33%), Positives = 36/81 (44%), Gaps = 2/81 (2%)
+
+Query  202  KIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAG  261
+            ++ S H   +L RD+    SAL+      +G ++  F     L R+    G  S GWT  
+Sbjct  228  ELDSNHCLCDLARDVGISVSALKSKFQAVMGQSVFAFLRDQRLTRA--RQGLESEGWTVK  285
+
+Query  262  AAAYYVGYLQPRTFLLKYNEN  282
+             AAYYVGY  P  F   Y   
+Sbjct  286  QAAYYVGYQHPSNFSTAYRRK  306
+
+
+>WP_006708144.1 helix-turn-helix transcriptional regulator [Serratia symbiotica]
+Length=287
+
+ Score = 40.8 bits (94),  Expect = 0.84, Method: Composition-based stats.
+ Identities = 27/75 (36%), Positives = 34/75 (45%), Gaps = 2/75 (3%)
+
+Query  205  SKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAA  264
+            S H   +L RD+    SAL+      +G ++  F     L R+    G  S GWT   AA
+Sbjct  201  SNHCLGDLARDVGISVSALKSKFQAVMGQSVFAFLRDQRLTRA--RQGLESEGWTVKQAA  258
+
+Query  265  YYVGYLQPRTFLLKY  279
+            YYVGY  P  F   Y
+Sbjct  259  YYVGYQHPSNFSTAY  273
+
+
+>WP_147744324.1 OmpA family protein [Flagellimonas sp. 176CP5-101]
+Length=290
+
+ Score = 40.8 bits (94),  Expect = 0.87, Method: Composition-based stats.
+ Identities = 43/151 (28%), Positives = 62/151 (41%), Gaps = 22/151 (15%)
+
+Query  916   LYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISS  975
+             L   QK   +  NSA  K+ D L   ASA  KLQ + +QNA  L    ++L +N G +++
+Sbjct  27    LEAQQKETQDLLNSATVKLNDCLEEKASATSKLQTLEDQNA-FLKANNQELINNMGNLTT  85
+
+Query  976   VLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLG  1035
+             +       L+K    +Q   L   +LQ            A   R S NLA  +  + VLG
+Sbjct  86    LTTKGAENLEKSLESLQEKDLTIRKLQD-----------AVTRRDSVNLALVQSLKGVLG  134
+
+Query  1036  QSKRVDFCGKGYHLMSFPQSAPHGVVFLHVT  1066
+                  D             S   GVVF+ ++
+Sbjct  135   NLDDED----------IEVSVEKGVVFVSIS  155
+
+
+>WP_050958911.1 toxic anion resistance protein [Staphylococcus aureus]
+Length=378
+
+ Score = 40.8 bits (94),  Expect = 0.96, Method: Composition-based stats.
+ Identities = 33/83 (40%), Positives = 45/83 (54%), Gaps = 10/83 (12%)
+
+Query  931   IGKIQDSLSSTASALGKLQDVVNQNAQALNT-LVKQLSSNFGAISSVLNDILSRLDKVEA  989
+             +G I D+LS   S   KL+ V   N   LNT     L  NF    S +N+I SR+  V A
+Sbjct  82    VGPIGDTLSDLMS---KLKSV---NPNELNTDKPSMLKRNFSRAKSSINEIFSRMQSVSA  135
+
+Query  990   EVQIDRLITGRLQSLQTYVTQQL  1012
+               Q+DR IT +LQ  QT++T+ +
+Sbjct  136   --QVDR-ITIQLQKHQTHLTRDI  155
+
+
+>WP_122348935.1 clindamycin resistance transfer factor BtgA [Bacteroides fragilis]
+Length=194
+
+ Score = 38.9 bits (89),  Expect = 2.2, Method: Composition-based stats.
+ Identities = 25/72 (35%), Positives = 34/72 (47%), Gaps = 6/72 (8%)
+
+Query  899  AMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQA  958
+            A  +A RFN IG T       + LI +Q  S  GK    L   +   GK  DV+NQ  + 
+Sbjct  92   ANSIAVRFNTIGKTL------ETLILSQLESNQGKQTAVLQKVSEQFGKHADVINQQGKQ  145
+
+Query  959  LNTLVKQLSSNF  970
+            LN L +   S++
+Sbjct  146  LNALYQIHQSDY  157
+
+
+>WP_104869325.1 viral A-type inclusion protein [Enterococcus faecium]
+Length=305
+
+ Score = 39.3 bits (90),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 31/95 (33%), Positives = 46/95 (48%), Gaps = 21/95 (22%)
+
+Query  1143  PELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDL--  1200
+             P++D   EE +KY +  T+ D D   I+ ++A V+  Q EI+RLNE  K +N  + DL  
+Sbjct  143   PKID---EEWEKYSQPETT-DYD-KKINELDAKVITAQTEIERLNEQIKEINRQMTDLDD  197
+
+Query  1201  --------------QELGKYEQYIKWPWYIWLGFI  1221
+                           QEL K +Q +      WL +I
+Sbjct  198   NKGFLNRKKIEEEIQELEKKKQVLSNEKLGWLPYI  232
+
+
+>WP_002306703.1 MULTISPECIES: hypothetical protein [Enterococcus]
+Length=305
+
+ Score = 39.3 bits (90),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 31/95 (33%), Positives = 46/95 (48%), Gaps = 21/95 (22%)
+
+Query  1143  PELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDL--  1200
+             P++D   EE +KY +  T+ D D   I+ ++A V+  Q EI+RLNE  K +N  + DL  
+Sbjct  143   PKID---EEWEKYSQPETT-DYD-KKINELDAKVITAQTEIERLNEQIKEINRQMTDLDD  197
+
+Query  1201  --------------QELGKYEQYIKWPWYIWLGFI  1221
+                           QEL K +Q +      WL +I
+Sbjct  198   NKGFLNRKKIEEEIQELEKKKQVLSNEKLGWLPYI  232
+
+
+>WP_124514769.1 flagellar hook-associated protein FlgK [Acidovorax sp. FJL06]
+Length=658
+
+ Score = 39.7 bits (91),  Expect = 3.3, Method: Compositional matrix adjust.
+ Identities = 31/111 (28%), Positives = 51/111 (46%), Gaps = 9/111 (8%)
+
+Query  908   GIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLS  967
+             G GV    +  NQ  +  + ++A G  Q + +  A  L +LQ+V +   + L   +  + 
+Sbjct  54    GQGVDVQTILRNQSELLTRQSAAAGSTQAADAVRAERLSQLQEVFSGGTEGLGAAINDMM  113
+
+Query  968   SNFGAISSVLNDI------LSRLDKVEAEVQIDRLITGRLQSLQTYVTQQL  1012
+             + F  + S   DI      L+RLD+  A +   R    RL  +Q  VT+QL
+Sbjct  114   NAFSDVVSAPTDITARTVVLTRLDETAARM---RTAADRLNEIQYTVTEQL  161
+
+
+>WP_168207001.1 hypothetical protein [Planctomycetes bacterium I41]
+Length=366
+
+ Score = 38.9 bits (89),  Expect = 3.6, Method: Composition-based stats.
+ Identities = 44/161 (27%), Positives = 69/161 (43%), Gaps = 10/161 (6%)
+
+Query  879   AGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSL  938
+             A TI+S  TF   A+L +  A + A     I  +   L    KL  +QF+  +G IQD L
+Sbjct  216   ANTISSIETF---ASLLVGAAQRHAESSEQIKASAASL----KLATSQFDQVVGAIQDEL  268
+
+Query  939   SSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLIT  998
+                  AL  ++D    +AQ+L  LV   +     +   +    + +D+  AE     L  
+Sbjct  269   KDLPGALAVIRDATAASAQSLLELVPTGTRAVANLDVSVAAFRTTIDQQFAEAAKIHLEA  328
+
+Query  999   GRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKR  1039
+              +  SL   V +Q+ R  E  AS N A  ++ +  +    R
+Sbjct  329   SK--SLDVAV-EQMRRLLEQSASPNGAVDELDQSWIADRPR  366
+
+
+>WP_129517833.1 hypothetical protein [Burkholderia stabilis]
+Length=1147
+
+ Score = 39.7 bits (91),  Expect = 3.6, Method: Compositional matrix adjust.
+ Identities = 27/92 (29%), Positives = 48/92 (52%), Gaps = 0/92 (0%)
+
+Query  937   SLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRL  996
+             S++  A  L +  + +      L  L+  LS   GA    +++IL   D++  EV  +  
+Sbjct  632   SIAERARQLQEQVEALKDRYDKLKMLLNNLSPFVGAEQDKVHEILEVFDQISKEVSEETD  691
+
+Query  997   ITGRLQSLQTYVTQQLIRAAEIRASANLAATK  1028
+             +T RL++L T   +QL++AAE  ++A +A  K
+Sbjct  692   LTRRLEALDTEEYRQLVQAAEEASTAVIALRK  723
+
+
+>WP_023268216.1 DUF2959 domain-containing protein [Shewanella decolorationis]
+Length=217
+
+ Score = 38.5 bits (88),  Expect = 3.7, Method: Composition-based stats.
+ Identities = 28/111 (25%), Positives = 52/111 (47%), Gaps = 6/111 (5%)
+
+Query  886  WTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASAL  945
+            +T G  AA  +    Q AY     G  + V Y  + ++ ++  +A    +D+    +SAL
+Sbjct  5    FTSGLMAATLLLTGCQSAY----YGAMEKVGYHKRDIMVDRVKAAKESQEDAQKEFSSAL  60
+
+Query  946  GKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVE--AEVQID  994
+             ++Q ++N N   L     +    + +  S  +D+ +R++KVE  AE   D
+Sbjct  61   EEMQALLNHNGGNLEKAYNKAKDEYESAQSAADDVSNRINKVEDVAEALFD  111
+
+
+>WP_013737577.1 DNA repair ATPase [Metallosphaera cuprina]
+Length=313
+
+ Score = 38.5 bits (88),  Expect = 4.8, Method: Composition-based stats.
+ Identities = 18/68 (26%), Positives = 37/68 (54%), Gaps = 0/68 (0%)
+
+Query  925  NQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRL  984
+            N+   AI K+Q+ ++    A+ +LQ+  N+N +A+  L K+    F  +   L++I S L
+Sbjct  132  NRNTEAIVKLQEQVAKHTEAIERLQEQTNRNTEAIERLEKKFDETFSGVKKELSEIKSYL  191
+
+Query  985  DKVEAEVQ  992
+              + + ++
+Sbjct  192  ATMSSNLE  199
+
+
+>XP_020394256.1 histone-lysine N-methyltransferase SUVR5 isoform X8 [Zea mays]
+Length=979
+
+ Score = 39.3 bits (90),  Expect = 4.9, Method: Compositional matrix adjust.
+ Identities = 31/110 (28%), Positives = 50/110 (45%), Gaps = 19/110 (17%)
+
+Query  90   VYFASTEKSNIIRGWIFGTTL------DSKTQSLLIVNNATNVV----IKVCEFQFCNDP  139
+            +   STE+  +   W F T        ++K  SL++    TN+      K+C  QF +D 
+Sbjct  864  LKLISTEREKLANIWGFDTNRSKQIYSENKEGSLVLHKEGTNLSSGPKCKICAHQFSDDE  923
+
+Query  140  FLGVYY---HKNNKSWMESEFRVYSSA---NNCTFEYVSQPFLMDLEGKQ  183
+             LG+++   HK    W+   FR YS A    + T + V +  + D+ G Q
+Sbjct  924  ALGLHWTTVHKKEARWL---FRGYSCAACMESFTNKKVLERHVQDVHGAQ  970
+
+
+>WP_133926073.1 extracellular solute-binding protein [Streptomyces sp. BK161]
+Length=439
+
+ Score = 38.1 bits (87),  Expect = 7.1, Method: Compositional matrix adjust.
+ Identities = 23/83 (28%), Positives = 39/83 (47%), Gaps = 15/83 (18%)
+
+Query  1138  YDPLQPELD---SFKEELDKYFK---NHTSPDVDLGDISGINASVVNIQKEIDRLNEVAK  1191
+             Y+ L P++D   +  E  + Y+    NH + +  L DI GI         E+  + EV +
+Sbjct  69    YEKLHPDIDIQQTVIERNENYYPPLVNHLTTNSGLQDIQGI---------EVGNIAEVVE  119
+
+Query  1192  NLNESLIDLQELGKYEQYIKWPW  1214
+               ++  +DL + GK   Y+ W W
+Sbjct  120   KYSDKFVDLSKYGKESDYLPWKW  142
+
+
+>XP_012200045.1 hypothetical protein SPRG_05410 [Saprolegnia parasitica CBS 223.65]
+Length=119
+
+ Score = 35.8 bits (81),  Expect = 9.2, Method: Composition-based stats.
+ Identities = 13/29 (45%), Positives = 18/29 (62%), Gaps = 0/29 (0%)
+
+Query  1226  AIVMVTIMLCCMTSCCSCLKGCCSCGSCC  1254
+             A+V + I+LC ++ CC CL  CC C   C
+Sbjct  28    AVVGLAIVLCFVSRCCVCLGDCCECLRRC  56
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 2054898281250
+
+
+  Database: NCBI Protein Reference Sequences
+    Posted date:  Apr 23, 2020  5:38 AM
+  Number of letters in database: 2,992,124,498
+  Number of sequences in database:  7,875,326
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

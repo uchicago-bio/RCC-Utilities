@@ -1,0 +1,9 @@
+cp: missing destination file operand after ‘873374-’
+Try 'cp --help' for more information.
+BLAST Database error: No alias or index file found for protein database [/project2/mpcs56420/db/refseq_protein.21] in search path [/home/bbao/RCC-Utilities::/project2/mpcs56420/db/mpi:]
+
+real	0m0.759s
+user	0m0.063s
+sys	0m0.042s
+mv: cannot stat ‘873374.out’: No such file or directory
+mv: cannot stat ‘873374.err’: No such file or directory

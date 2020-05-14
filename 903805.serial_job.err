@@ -1,0 +1,8 @@
+cp: missing destination file operand after ‘903805-’
+Try 'cp --help' for more information.
+
+real	16m45.643s
+user	7m41.091s
+sys	6m40.909s
+mv: cannot stat ‘903805.out’: No such file or directory
+mv: cannot stat ‘903805.err’: No such file or directory

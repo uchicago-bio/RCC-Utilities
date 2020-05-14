@@ -1,0 +1,2746 @@
+BLASTP 2.9.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: pdb.fasta
+           215,148 sequences; 51,623,389 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+3sci_E mol:protein length:228 Spike glycoprotein                      348        5e-111
+3sci_F mol:protein length:228 Spike glycoprotein                      348        5e-111
+2dd8_S mol:protein length:202 Spike glycoprotein                      317        1e-99 
+2ghw_A mol:protein length:203 Spike glycoprotein                      306        9e-96 
+2ghw_C mol:protein length:203 Spike glycoprotein                      306        9e-96 
+2ghv_C mol:protein length:203 Spike glycoprotein                      306        9e-96 
+2ghv_E mol:protein length:203 Spike glycoprotein                      306        9e-96 
+3bgf_S mol:protein length:193 Spike protein S1                        301        4e-94 
+3bgf_A mol:protein length:193 Spike protein S1                        301        4e-94 
+2ajf_E mol:protein length:180 SARS-coronavirus spike protein          278        7e-86 
+2ajf_F mol:protein length:180 SARS-coronavirus spike protein          278        7e-86 
+3scj_F mol:protein length:186 Spike glycoprotein                      277        2e-85 
+3scj_E mol:protein length:186 Spike glycoprotein                      277        2e-85 
+3d0h_F mol:protein length:179 Spike protein S1                        276        3e-85 
+3d0h_E mol:protein length:179 Spike protein S1                        276        3e-85 
+3d0i_E mol:protein length:179 Spike protein S1                        276        4e-85 
+3d0i_F mol:protein length:179 Spike protein S1                        276        4e-85 
+3d0g_F mol:protein length:179 Spike protein S1                        275        7e-85 
+3d0g_E mol:protein length:179 Spike protein S1                        275        7e-85 
+3scl_E mol:protein length:185 Spike glycoprotein                      275        9e-85 
+3scl_F mol:protein length:185 Spike glycoprotein                      275        9e-85 
+3sck_F mol:protein length:185 Spike glycoprotein                      274        2e-84 
+3sck_E mol:protein length:185 Spike glycoprotein                      274        2e-84 
+1wyy_B mol:protein length:149 E2 Glycoprotein                         176        3e-50 
+1wyy_A mol:protein length:149 E2 Glycoprotein                         176        3e-50 
+2bez_C mol:protein length:77 E2 GLYCOPROTEIN                          136        3e-37 
+2fxp_B mol:protein length:55 Spike glycoprotein                       112        4e-29 
+2fxp_C mol:protein length:55 Spike glycoprotein                       112        4e-29 
+2fxp_A mol:protein length:55 Spike glycoprotein                       112        4e-29 
+2beq_F mol:protein length:48 E2 GLYCOPROTEIN                          95.9       2e-23 
+2beq_E mol:protein length:48 E2 GLYCOPROTEIN                          95.9       2e-23 
+2beq_D mol:protein length:48 E2 GLYCOPROTEIN                          95.9       2e-23 
+1zv7_A mol:protein length:44 spike glycoprotein                       92.0       4e-22 
+1zv7_B mol:protein length:44 spike glycoprotein                       92.0       4e-22 
+2bez_F mol:protein length:42 E2 GLYCOPROTEIN                          86.3       4e-20 
+1zv8_C mol:protein length:50 E2 glycoprotein                          82.4       1e-18 
+1zv8_E mol:protein length:50 E2 glycoprotein                          82.4       1e-18 
+1zv8_G mol:protein length:50 E2 glycoprotein                          82.4       1e-18 
+1zv8_A mol:protein length:50 E2 glycoprotein                          82.4       1e-18 
+1zv8_I mol:protein length:50 E2 glycoprotein                          82.4       1e-18 
+1zv8_K mol:protein length:50 E2 glycoprotein                          82.4       1e-18 
+1wnc_D mol:protein length:112 E2 glycoprotein                         84.0       2e-18 
+1wnc_B mol:protein length:112 E2 glycoprotein                         84.0       2e-18 
+1wnc_A mol:protein length:112 E2 glycoprotein                         84.0       2e-18 
+1wnc_C mol:protein length:112 E2 glycoprotein                         84.0       2e-18 
+1wnc_F mol:protein length:112 E2 glycoprotein                         84.0       2e-18 
+1wnc_E mol:protein length:112 E2 glycoprotein                         84.0       2e-18 
+1zv8_L mol:protein length:36 E2 glycoprotein                          74.3       6e-16 
+1zv8_D mol:protein length:36 E2 glycoprotein                          74.3       6e-16 
+1zv8_B mol:protein length:36 E2 glycoprotein                          74.3       6e-16 
+1zv8_F mol:protein length:36 E2 glycoprotein                          74.3       6e-16 
+1zv8_H mol:protein length:36 E2 glycoprotein                          74.3       6e-16 
+1zv8_J mol:protein length:36 E2 glycoprotein                          74.3       6e-16 
+1zva_A mol:protein length:77 E2 glycoprotein                          74.3       2e-15 
+1zvb_B mol:protein length:34 E2 glycoprotein                          67.0       2e-13 
+1zvb_A mol:protein length:34 E2 glycoprotein                          67.0       2e-13 
+1zvb_C mol:protein length:34 E2 glycoprotein                          67.0       2e-13 
+2beq_A mol:protein length:38 E2 GLYCOPROTEIN                          60.5       4e-11 
+2beq_B mol:protein length:38 E2 GLYCOPROTEIN                          60.5       4e-11 
+2beq_C mol:protein length:38 E2 GLYCOPROTEIN                          60.5       4e-11 
+1wdf_B mol:protein length:95 E2 glycoprotein                          62.0       6e-11 
+1wdf_A mol:protein length:95 E2 glycoprotein                          62.0       6e-11 
+1wdg_B mol:protein length:94 E2 glycoprotein                          54.7       2e-08 
+1wdg_A mol:protein length:94 E2 glycoprotein                          54.7       2e-08 
+2ieq_A mol:protein length:109 Spike glycoprotein                      39.3       0.007 
+2ieq_B mol:protein length:109 Spike glycoprotein                      39.3       0.007 
+2ieq_C mol:protein length:109 Spike glycoprotein                      39.3       0.007 
+3r4d_B mol:protein length:288 Spike glycoprotein                      39.3       0.049 
+3r4d_D mol:protein length:288 Spike glycoprotein                      39.3       0.049 
+3boy_D mol:na length:22 5'-R(*UP*UP*UP*AP*GP*UP*UP*UP*UP*UP*AP*GP...  34.3       0.054 
+3izw_D mol:na length:24 mRNA                                          32.3       0.26  
+3izv_D mol:na length:24 mRNA                                          32.3       0.26  
+1na2_A mol:na length:30 telomerase RNA p2b hairpin                    32.0       0.45  
+2k5z_A mol:na length:29 Duck HBV apical loop                          32.0       0.51  
+3e1a_M mol:na length:20 mRNA model                                    31.2       0.78  
+3e1c_M mol:na length:20 mRNA model                                    31.2       0.78  
+2k96_A mol:na length:47 TELOMERASE RNA P2B-P3 PSEUDOKNOT              31.6       0.97  
+1ymo_A mol:na length:47 Telomerase RNA P2b-P3 pseudoknot              31.6       0.97  
+2k95_A mol:na length:48 Telomerase RNA P2b-P3 pseudoknot              31.6       1.00  
+2gic_R mol:na length:45 45-MER                                        31.2       1.3   
+3hhz_R mol:na length:45 RNA (45-MER)                                  31.2       1.3   
+3pu4_R mol:na length:45 RNA (45-MER)                                  31.2       1.3   
+2wyy_S mol:na length:45 POLY-URIDINE                                  31.2       1.3   
+2wyy_R mol:na length:45 POLY-URIDINE                                  31.2       1.3   
+3j0v_C mol:na length:47 mRNA                                          31.2       1.3   
+3j10_C mol:na length:47 mRNA                                          31.2       1.3   
+3j0u_C mol:na length:47 mRNA                                          31.2       1.3   
+3j0z_C mol:na length:47 mRNA                                          31.2       1.3   
+3j0x_C mol:na length:47 mRNA                                          31.2       1.3   
+3j13_B mol:na length:47 mRNA                                          31.2       1.3   
+2hgp_1 mol:na length:50 mRNA                                          31.2       1.4   
+3ovs_D mol:na length:34 RNA (34-MER)                                  30.4       1.5   
+3ov7_C mol:na length:34 RNA (34-MER)                                  30.4       1.5   
+3ov7_D mol:na length:34 RNA (34-MER)                                  30.4       1.5   
+3ovs_C mol:na length:34 RNA (34-MER)                                  30.4       1.5   
+3ova_C mol:na length:34 RNA (34-MER)                                  30.4       1.5   
+2ke6_A mol:na length:48 K10 TLS RNA                                   30.8       1.5   
+2kuv_A mol:na length:48 K10 TLS RNA                                   30.8       1.5   
+2xdd_F mol:na length:36 TOXI                                          29.3       4.6   
+2xd0_V mol:na length:36 TOXI                                          29.3       4.6   
+2xdd_G mol:na length:36 TOXI                                          29.3       4.6   
+2xd0_W mol:na length:36 TOXI                                          29.3       4.6   
+2xd0_I mol:na length:36 TOXI                                          29.3       4.6   
+2xd0_G mol:na length:36 TOXI                                          29.3       4.6   
+2xdd_H mol:na length:36 TOXI                                          29.3       4.6   
+2xd0_U mol:na length:36 TOXI                                          29.3       4.6   
+2xd0_H mol:na length:36 TOXI                                          29.3       4.6   
+2xdb_G mol:na length:40 TOXI                                          29.3       5.4   
+1ysv_A mol:na length:27 27-MER                                        28.5       7.7   
+
+
+>3sci_E mol:protein length:228  Spike glycoprotein
+Length=228
+
+ Score = 348 bits (894),  Expect = 5e-111, Method: Compositional matrix adjust.
+ Identities = 164/223 (74%), Positives = 184/223 (83%), Gaps = 1/223 (0%)
+
+Query  319  RVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFK  378
+            RV P+  +VRFPNITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFK
+Sbjct  1    RVVPSGDVVRFPNITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFK  60
+
+Query  379  CYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNS  438
+            CYGVS TKLNDLCF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+
+Sbjct  61   CYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNT  120
+
+Query  439  NNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQ  498
+             N+D+   GNYNY YR  R   L+PFERDIS   +     PC     FNCY+PL  YGF 
+Sbjct  121  RNIDATSTGNYNYKYRFLRHGKLRPFERDISNVPFSPDGKPCTP-PAFNCYWPLNDYGFY  179
+
+Query  499  PTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNF  541
+             T G+GYQPYRVVVLSFELL+APATVCGPK ST+L+KN+CVNF
+Sbjct  180  TTTGIGYQPYRVVVLSFELLNAPATVCGPKLSTDLIKNQCVNF  222
+
+
+>3sci_F mol:protein length:228  Spike glycoprotein
+Length=228
+
+ Score = 348 bits (894),  Expect = 5e-111, Method: Compositional matrix adjust.
+ Identities = 164/223 (74%), Positives = 184/223 (83%), Gaps = 1/223 (0%)
+
+Query  319  RVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFK  378
+            RV P+  +VRFPNITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFK
+Sbjct  1    RVVPSGDVVRFPNITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFK  60
+
+Query  379  CYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNS  438
+            CYGVS TKLNDLCF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+
+Sbjct  61   CYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNT  120
+
+Query  439  NNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQ  498
+             N+D+   GNYNY YR  R   L+PFERDIS   +     PC     FNCY+PL  YGF 
+Sbjct  121  RNIDATSTGNYNYKYRFLRHGKLRPFERDISNVPFSPDGKPCTP-PAFNCYWPLNDYGFY  179
+
+Query  499  PTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNF  541
+             T G+GYQPYRVVVLSFELL+APATVCGPK ST+L+KN+CVNF
+Sbjct  180  TTTGIGYQPYRVVVLSFELLNAPATVCGPKLSTDLIKNQCVNF  222
+
+
+>2dd8_S mol:protein length:202  Spike glycoprotein
+Length=202
+
+ Score = 317 bits (811),  Expect = 1e-99, Method: Compositional matrix adjust.
+ Identities = 150/203 (74%), Positives = 166/203 (82%), Gaps = 1/203 (0%)
+
+Query  330  PNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLND  389
+            PNITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLND
+Sbjct  1    PNITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLND  60
+
+Query  390  LCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNY  449
+            LCF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNY
+Sbjct  61   LCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNY  120
+
+Query  450  NYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYR  509
+            NY YR  R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYR
+Sbjct  121  NYKYRYLRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYR  179
+
+Query  510  VVVLSFELLHAPATVCGPKKSTN  532
+            VVVLSFELL+APATVCGPK ST+
+Sbjct  180  VVVLSFELLNAPATVCGPKLSTD  202
+
+
+>2ghw_A mol:protein length:203  Spike glycoprotein
+Length=203
+
+ Score = 306 bits (784),  Expect = 9e-96, Method: Compositional matrix adjust.
+ Identities = 145/197 (74%), Positives = 160/197 (81%), Gaps = 1/197 (1%)
+
+Query  330  PNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLND  389
+            PNITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLND
+Sbjct  4    PNITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLND  63
+
+Query  390  LCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNY  449
+            LCF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNY
+Sbjct  64   LCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNY  123
+
+Query  450  NYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYR  509
+            NY YR  R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYR
+Sbjct  124  NYKYRYLRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYR  182
+
+Query  510  VVVLSFELLHAPATVCG  526
+            VVVLSFELL+APATV G
+Sbjct  183  VVVLSFELLNAPATVSG  199
+
+
+>2ghw_C mol:protein length:203  Spike glycoprotein
+Length=203
+
+ Score = 306 bits (784),  Expect = 9e-96, Method: Compositional matrix adjust.
+ Identities = 145/197 (74%), Positives = 160/197 (81%), Gaps = 1/197 (1%)
+
+Query  330  PNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLND  389
+            PNITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLND
+Sbjct  4    PNITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLND  63
+
+Query  390  LCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNY  449
+            LCF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNY
+Sbjct  64   LCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNY  123
+
+Query  450  NYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYR  509
+            NY YR  R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYR
+Sbjct  124  NYKYRYLRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYR  182
+
+Query  510  VVVLSFELLHAPATVCG  526
+            VVVLSFELL+APATV G
+Sbjct  183  VVVLSFELLNAPATVSG  199
+
+
+>2ghv_C mol:protein length:203  Spike glycoprotein
+Length=203
+
+ Score = 306 bits (784),  Expect = 9e-96, Method: Compositional matrix adjust.
+ Identities = 145/197 (74%), Positives = 160/197 (81%), Gaps = 1/197 (1%)
+
+Query  330  PNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLND  389
+            PNITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLND
+Sbjct  4    PNITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLND  63
+
+Query  390  LCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNY  449
+            LCF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNY
+Sbjct  64   LCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNY  123
+
+Query  450  NYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYR  509
+            NY YR  R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYR
+Sbjct  124  NYKYRYLRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYR  182
+
+Query  510  VVVLSFELLHAPATVCG  526
+            VVVLSFELL+APATV G
+Sbjct  183  VVVLSFELLNAPATVSG  199
+
+
+>2ghv_E mol:protein length:203  Spike glycoprotein
+Length=203
+
+ Score = 306 bits (784),  Expect = 9e-96, Method: Compositional matrix adjust.
+ Identities = 145/197 (74%), Positives = 160/197 (81%), Gaps = 1/197 (1%)
+
+Query  330  PNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLND  389
+            PNITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLND
+Sbjct  4    PNITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLND  63
+
+Query  390  LCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNY  449
+            LCF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNY
+Sbjct  64   LCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNY  123
+
+Query  450  NYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYR  509
+            NY YR  R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYR
+Sbjct  124  NYKYRYLRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYR  182
+
+Query  510  VVVLSFELLHAPATVCG  526
+            VVVLSFELL+APATV G
+Sbjct  183  VVVLSFELLNAPATVSG  199
+
+
+>3bgf_S mol:protein length:193  Spike protein S1
+Length=193
+
+ Score = 301 bits (771),  Expect = 4e-94, Method: Compositional matrix adjust.
+ Identities = 143/194 (74%), Positives = 158/194 (81%), Gaps = 1/194 (1%)
+
+Query  331  NITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDL  390
+            NITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDL
+Sbjct  1    NITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDL  60
+
+Query  391  CFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYN  450
+            CF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYN
+Sbjct  61   CFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYN  120
+
+Query  451  YLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRV  510
+            Y YR  R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYRV
+Sbjct  121  YKYRYLRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYRV  179
+
+Query  511  VVLSFELLHAPATV  524
+            VVLSFELL+APATV
+Sbjct  180  VVLSFELLNAPATV  193
+
+
+>3bgf_A mol:protein length:193  Spike protein S1
+Length=193
+
+ Score = 301 bits (771),  Expect = 4e-94, Method: Compositional matrix adjust.
+ Identities = 143/194 (74%), Positives = 158/194 (81%), Gaps = 1/194 (1%)
+
+Query  331  NITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDL  390
+            NITNLCPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDL
+Sbjct  1    NITNLCPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDL  60
+
+Query  391  CFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYN  450
+            CF+NVYADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYN
+Sbjct  61   CFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYN  120
+
+Query  451  YLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRV  510
+            Y YR  R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYRV
+Sbjct  121  YKYRYLRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYRV  179
+
+Query  511  VVLSFELLHAPATV  524
+            VVLSFELL+APATV
+Sbjct  180  VVLSFELLNAPATV  193
+
+
+>2ajf_E mol:protein length:180  SARS-coronavirus spike protein
+Length=180
+
+ Score = 278 bits (711),  Expect = 7e-86, Method: Compositional matrix adjust.
+ Identities = 131/181 (72%), Positives = 145/181 (80%), Gaps = 1/181 (1%)
+
+Query  336  CPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNV  395
+            CPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NV
+Sbjct  1    CPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNV  60
+
+Query  396  YADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRL  455
+            YADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR 
+Sbjct  61   YADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRY  120
+
+Query  456  FRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSF  515
+             R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYRVVVLSF
+Sbjct  121  LRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYRVVVLSF  179
+
+Query  516  E  516
+            E
+Sbjct  180  E  180
+
+
+>2ajf_F mol:protein length:180  SARS-coronavirus spike protein
+Length=180
+
+ Score = 278 bits (711),  Expect = 7e-86, Method: Compositional matrix adjust.
+ Identities = 131/181 (72%), Positives = 145/181 (80%), Gaps = 1/181 (1%)
+
+Query  336  CPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNV  395
+            CPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NV
+Sbjct  1    CPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNV  60
+
+Query  396  YADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRL  455
+            YADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR 
+Sbjct  61   YADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRY  120
+
+Query  456  FRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSF  515
+             R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYRVVVLSF
+Sbjct  121  LRHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYRVVVLSF  179
+
+Query  516  E  516
+            E
+Sbjct  180  E  180
+
+
+>3scj_F mol:protein length:186  Spike glycoprotein
+Length=186
+
+ Score = 277 bits (708),  Expect = 2e-85, Method: Compositional matrix adjust.
+ Identities = 131/181 (72%), Positives = 146/181 (81%), Gaps = 1/181 (1%)
+
+Query  336  CPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNV  395
+            CPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NV
+Sbjct  1    CPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNV  60
+
+Query  396  YADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRL  455
+            YADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR 
+Sbjct  61   YADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRY  120
+
+Query  456  FRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSF  515
+             R   L+PFERDIS   +     PC      NCY+PL+ YGF  T G+GYQPYRVVVLSF
+Sbjct  121  LRHGKLRPFERDISNVPFSPDGKPCT-PPAPNCYWPLRGYGFYTTTGIGYQPYRVVVLSF  179
+
+Query  516  E  516
+            E
+Sbjct  180  E  180
+
+
+>3scj_E mol:protein length:186  Spike glycoprotein
+Length=186
+
+ Score = 277 bits (708),  Expect = 2e-85, Method: Compositional matrix adjust.
+ Identities = 131/181 (72%), Positives = 146/181 (81%), Gaps = 1/181 (1%)
+
+Query  336  CPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNV  395
+            CPFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NV
+Sbjct  1    CPFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNV  60
+
+Query  396  YADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRL  455
+            YADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR 
+Sbjct  61   YADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRY  120
+
+Query  456  FRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSF  515
+             R   L+PFERDIS   +     PC      NCY+PL+ YGF  T G+GYQPYRVVVLSF
+Sbjct  121  LRHGKLRPFERDISNVPFSPDGKPCT-PPAPNCYWPLRGYGFYTTTGIGYQPYRVVVLSF  179
+
+Query  516  E  516
+            E
+Sbjct  180  E  180
+
+
+>3d0h_F mol:protein length:179  Spike protein S1
+Length=179
+
+ Score = 276 bits (706),  Expect = 3e-85, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 146/180 (81%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL+ YGF  T+G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLKDYGFYTTSGIGYQPYRVVVLSFE  179
+
+
+>3d0h_E mol:protein length:179  Spike protein S1
+Length=179
+
+ Score = 276 bits (706),  Expect = 3e-85, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 146/180 (81%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL+ YGF  T+G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLKDYGFYTTSGIGYQPYRVVVLSFE  179
+
+
+>3d0i_E mol:protein length:179  Spike protein S1
+Length=179
+
+ Score = 276 bits (706),  Expect = 4e-85, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 146/180 (81%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL+ YGF  T+G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCT-PPALNCYWPLRGYGFYTTSGIGYQPYRVVVLSFE  179
+
+
+>3d0i_F mol:protein length:179  Spike protein S1
+Length=179
+
+ Score = 276 bits (706),  Expect = 4e-85, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 146/180 (81%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL+ YGF  T+G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCT-PPALNCYWPLRGYGFYTTSGIGYQPYRVVVLSFE  179
+
+
+>3d0g_F mol:protein length:179  Spike protein S1
+Length=179
+
+ Score = 275 bits (703),  Expect = 7e-85, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 144/180 (80%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYRVVVLSFE  179
+
+
+>3d0g_E mol:protein length:179  Spike protein S1
+Length=179
+
+ Score = 275 bits (703),  Expect = 7e-85, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 144/180 (80%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYRVVVLSFE  179
+
+
+>3scl_E mol:protein length:185  Spike glycoprotein
+Length=185
+
+ Score = 275 bits (703),  Expect = 9e-85, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 144/180 (80%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYRVVVLSFE  179
+
+
+>3scl_F mol:protein length:185  Spike glycoprotein
+Length=185
+
+ Score = 275 bits (703),  Expect = 9e-85, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 144/180 (80%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL  YGF  T G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCTP-PALNCYWPLNDYGFYTTTGIGYQPYRVVVLSFE  179
+
+
+>3sck_F mol:protein length:185  Spike glycoprotein
+Length=185
+
+ Score = 274 bits (701),  Expect = 2e-84, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 145/180 (81%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL+ YGF  T G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCT-PPAPNCYWPLRGYGFYTTTGIGYQPYRVVVLSFE  179
+
+
+>3sck_E mol:protein length:185  Spike glycoprotein
+Length=185
+
+ Score = 274 bits (701),  Expect = 2e-84, Method: Compositional matrix adjust.
+ Identities = 130/180 (72%), Positives = 145/180 (81%), Gaps = 1/180 (1%)
+
+Query  337  PFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVY  396
+            PFGEVFNAT+F SVYAW RK+ISNCVADYSVLYNS  FSTFKCYGVS TKLNDLCF+NVY
+Sbjct  1    PFGEVFNATKFPSVYAWERKKISNCVADYSVLYNSTFFSTFKCYGVSATKLNDLCFSNVY  60
+
+Query  397  ADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLF  456
+            ADSFV++GD+VRQIAPGQTG IADYNYKLPDDF GCV+AWN+ N+D+   GNYNY YR  
+Sbjct  61   ADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATSTGNYNYKYRYL  120
+
+Query  457  RKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFE  516
+            R   L+PFERDIS   +     PC      NCY+PL+ YGF  T G+GYQPYRVVVLSFE
+Sbjct  121  RHGKLRPFERDISNVPFSPDGKPCT-PPAPNCYWPLRGYGFYTTTGIGYQPYRVVVLSFE  179
+
+
+>1wyy_B mol:protein length:149  E2 Glycoprotein
+Length=149
+
+ Score = 176 bits (445),  Expect = 3e-50, Method: Composition-based stats.
+ Identities = 88/97 (91%), Positives = 94/97 (97%), Gaps = 0/97 (0%)
+
+Query  903  AYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTL  962
+            AYRFNGIGVTQNVLYENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTL
+Sbjct  3    AYRFNGIGVTQNVLYENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTL  62
+
+Query  963  VKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITG  999
+            VKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITG
+Sbjct  63   VKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITG  99
+
+
+ Score = 91.7 bits (226),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 45/45 (100%), Positives = 45/45 (100%), Gaps = 0/45 (0%)
+
+Query  1163  DVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYE  1207
+             DVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYE
+Sbjct  105   DVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYE  149
+
+
+>1wyy_A mol:protein length:149  E2 Glycoprotein
+Length=149
+
+ Score = 176 bits (445),  Expect = 3e-50, Method: Composition-based stats.
+ Identities = 88/97 (91%), Positives = 94/97 (97%), Gaps = 0/97 (0%)
+
+Query  903  AYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTL  962
+            AYRFNGIGVTQNVLYENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTL
+Sbjct  3    AYRFNGIGVTQNVLYENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTL  62
+
+Query  963  VKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITG  999
+            VKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITG
+Sbjct  63   VKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITG  99
+
+
+ Score = 91.7 bits (226),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 45/45 (100%), Positives = 45/45 (100%), Gaps = 0/45 (0%)
+
+Query  1163  DVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYE  1207
+             DVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYE
+Sbjct  105   DVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYE  149
+
+
+>2bez_C mol:protein length:77  E2 GLYCOPROTEIN
+Length=77
+
+ Score = 136 bits (342),  Expect = 3e-37, Method: Compositional matrix adjust.
+ Identities = 68/77 (88%), Positives = 74/77 (96%), Gaps = 0/77 (0%)
+
+Query  914  NVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAI  973
+            NVLYENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLSSNFGAI
+Sbjct  1    NVLYENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSSNFGAI  60
+
+Query  974  SSVLNDILSRLDKVEAE  990
+            SSVLNDILSRLDKVEAE
+Sbjct  61   SSVLNDILSRLDKVEAE  77
+
+
+>2fxp_B mol:protein length:55  Spike glycoprotein
+Length=55
+
+ Score = 112 bits (279),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 53/54 (98%), Positives = 54/54 (100%), Gaps = 0/54 (0%)
+
+Query  1158  NHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  1211
+             +HTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK
+Sbjct  2     SHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  55
+
+
+>2fxp_C mol:protein length:55  Spike glycoprotein
+Length=55
+
+ Score = 112 bits (279),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 53/54 (98%), Positives = 54/54 (100%), Gaps = 0/54 (0%)
+
+Query  1158  NHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  1211
+             +HTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK
+Sbjct  2     SHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  55
+
+
+>2fxp_A mol:protein length:55  Spike glycoprotein
+Length=55
+
+ Score = 112 bits (279),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 53/54 (98%), Positives = 54/54 (100%), Gaps = 0/54 (0%)
+
+Query  1158  NHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  1211
+             +HTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK
+Sbjct  2     SHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  55
+
+
+>2beq_F mol:protein length:48  E2 GLYCOPROTEIN
+Length=48
+
+ Score = 95.9 bits (237),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 46/46 (100%), Positives = 46/46 (100%), Gaps = 0/46 (0%)
+
+Query  1166  LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  1211
+             LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK
+Sbjct  2     LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  47
+
+
+>2beq_E mol:protein length:48  E2 GLYCOPROTEIN
+Length=48
+
+ Score = 95.9 bits (237),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 46/46 (100%), Positives = 46/46 (100%), Gaps = 0/46 (0%)
+
+Query  1166  LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  1211
+             LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK
+Sbjct  2     LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  47
+
+
+>2beq_D mol:protein length:48  E2 GLYCOPROTEIN
+Length=48
+
+ Score = 95.9 bits (237),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 46/46 (100%), Positives = 46/46 (100%), Gaps = 0/46 (0%)
+
+Query  1166  LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  1211
+             LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK
+Sbjct  2     LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  47
+
+
+>1zv7_A mol:protein length:44  spike glycoprotein
+Length=44
+
+ Score = 92.0 bits (227),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 44/44 (100%), Positives = 44/44 (100%), Gaps = 0/44 (0%)
+
+Query  1168  DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  1211
+             DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK
+Sbjct  1     DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  44
+
+
+>1zv7_B mol:protein length:44  spike glycoprotein
+Length=44
+
+ Score = 92.0 bits (227),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 44/44 (100%), Positives = 44/44 (100%), Gaps = 0/44 (0%)
+
+Query  1168  DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  1211
+             DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK
+Sbjct  1     DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIK  44
+
+
+>2bez_F mol:protein length:42  E2 GLYCOPROTEIN
+Length=42
+
+ Score = 86.3 bits (212),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 42/42 (100%), Positives = 42/42 (100%), Gaps = 0/42 (0%)
+
+Query  1160  TSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQ  1201
+             TSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQ
+Sbjct  1     TSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQ  42
+
+
+>1zv8_C mol:protein length:50  E2 glycoprotein
+Length=50
+
+ Score = 82.4 bits (202),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 41/50 (82%), Positives = 47/50 (94%), Gaps = 0/50 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSS  968
+            NQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLSS
+Sbjct  1    NQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSS  50
+
+
+>1zv8_E mol:protein length:50  E2 glycoprotein
+Length=50
+
+ Score = 82.4 bits (202),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 41/50 (82%), Positives = 47/50 (94%), Gaps = 0/50 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSS  968
+            NQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLSS
+Sbjct  1    NQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSS  50
+
+
+>1zv8_G mol:protein length:50  E2 glycoprotein
+Length=50
+
+ Score = 82.4 bits (202),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 41/50 (82%), Positives = 47/50 (94%), Gaps = 0/50 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSS  968
+            NQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLSS
+Sbjct  1    NQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSS  50
+
+
+>1zv8_A mol:protein length:50  E2 glycoprotein
+Length=50
+
+ Score = 82.4 bits (202),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 41/50 (82%), Positives = 47/50 (94%), Gaps = 0/50 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSS  968
+            NQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLSS
+Sbjct  1    NQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSS  50
+
+
+>1zv8_I mol:protein length:50  E2 glycoprotein
+Length=50
+
+ Score = 82.4 bits (202),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 41/50 (82%), Positives = 47/50 (94%), Gaps = 0/50 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSS  968
+            NQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLSS
+Sbjct  1    NQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSS  50
+
+
+>1zv8_K mol:protein length:50  E2 glycoprotein
+Length=50
+
+ Score = 82.4 bits (202),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 41/50 (82%), Positives = 47/50 (94%), Gaps = 0/50 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSS  968
+            NQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLSS
+Sbjct  1    NQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSS  50
+
+
+>1wnc_D mol:protein length:112  E2 glycoprotein
+Length=112
+
+ Score = 84.0 bits (206),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 41/42 (98%), Positives = 42/42 (100%), Gaps = 0/42 (0%)
+
+Query  1162  PDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             PDVDLGDISGINASVVNIQ+EIDRLNEVAKNLNESLIDLQEL
+Sbjct  71    PDVDLGDISGINASVVNIQEEIDRLNEVAKNLNESLIDLQEL  112
+
+
+ Score = 82.8 bits (203),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 40/49 (82%), Positives = 46/49 (94%), Gaps = 0/49 (0%)
+
+Query  918  ENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQL  966
+            ENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQL
+Sbjct  1    ENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQL  49
+
+
+>1wnc_B mol:protein length:112  E2 glycoprotein
+Length=112
+
+ Score = 84.0 bits (206),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 41/42 (98%), Positives = 42/42 (100%), Gaps = 0/42 (0%)
+
+Query  1162  PDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             PDVDLGDISGINASVVNIQ+EIDRLNEVAKNLNESLIDLQEL
+Sbjct  71    PDVDLGDISGINASVVNIQEEIDRLNEVAKNLNESLIDLQEL  112
+
+
+ Score = 82.8 bits (203),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 40/49 (82%), Positives = 46/49 (94%), Gaps = 0/49 (0%)
+
+Query  918  ENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQL  966
+            ENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQL
+Sbjct  1    ENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQL  49
+
+
+>1wnc_A mol:protein length:112  E2 glycoprotein
+Length=112
+
+ Score = 84.0 bits (206),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 41/42 (98%), Positives = 42/42 (100%), Gaps = 0/42 (0%)
+
+Query  1162  PDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             PDVDLGDISGINASVVNIQ+EIDRLNEVAKNLNESLIDLQEL
+Sbjct  71    PDVDLGDISGINASVVNIQEEIDRLNEVAKNLNESLIDLQEL  112
+
+
+ Score = 82.8 bits (203),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 40/49 (82%), Positives = 46/49 (94%), Gaps = 0/49 (0%)
+
+Query  918  ENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQL  966
+            ENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQL
+Sbjct  1    ENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQL  49
+
+
+>1wnc_C mol:protein length:112  E2 glycoprotein
+Length=112
+
+ Score = 84.0 bits (206),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 41/42 (98%), Positives = 42/42 (100%), Gaps = 0/42 (0%)
+
+Query  1162  PDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             PDVDLGDISGINASVVNIQ+EIDRLNEVAKNLNESLIDLQEL
+Sbjct  71    PDVDLGDISGINASVVNIQEEIDRLNEVAKNLNESLIDLQEL  112
+
+
+ Score = 82.8 bits (203),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 40/49 (82%), Positives = 46/49 (94%), Gaps = 0/49 (0%)
+
+Query  918  ENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQL  966
+            ENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQL
+Sbjct  1    ENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQL  49
+
+
+>1wnc_F mol:protein length:112  E2 glycoprotein
+Length=112
+
+ Score = 84.0 bits (206),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 41/42 (98%), Positives = 42/42 (100%), Gaps = 0/42 (0%)
+
+Query  1162  PDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             PDVDLGDISGINASVVNIQ+EIDRLNEVAKNLNESLIDLQEL
+Sbjct  71    PDVDLGDISGINASVVNIQEEIDRLNEVAKNLNESLIDLQEL  112
+
+
+ Score = 82.8 bits (203),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 40/49 (82%), Positives = 46/49 (94%), Gaps = 0/49 (0%)
+
+Query  918  ENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQL  966
+            ENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQL
+Sbjct  1    ENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQL  49
+
+
+>1wnc_E mol:protein length:112  E2 glycoprotein
+Length=112
+
+ Score = 84.0 bits (206),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 41/42 (98%), Positives = 42/42 (100%), Gaps = 0/42 (0%)
+
+Query  1162  PDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             PDVDLGDISGINASVVNIQ+EIDRLNEVAKNLNESLIDLQEL
+Sbjct  71    PDVDLGDISGINASVVNIQEEIDRLNEVAKNLNESLIDLQEL  112
+
+
+ Score = 82.8 bits (203),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 40/49 (82%), Positives = 46/49 (94%), Gaps = 0/49 (0%)
+
+Query  918  ENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQL  966
+            ENQK IANQFN AI +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQL
+Sbjct  1    ENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQL  49
+
+
+>1zv8_L mol:protein length:36  E2 glycoprotein
+Length=36
+
+ Score = 74.3 bits (181),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 36/36 (100%), Positives = 36/36 (100%), Gaps = 0/36 (0%)
+
+Query  1168  DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL
+Sbjct  1     DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  36
+
+
+>1zv8_D mol:protein length:36  E2 glycoprotein
+Length=36
+
+ Score = 74.3 bits (181),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 36/36 (100%), Positives = 36/36 (100%), Gaps = 0/36 (0%)
+
+Query  1168  DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL
+Sbjct  1     DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  36
+
+
+>1zv8_B mol:protein length:36  E2 glycoprotein
+Length=36
+
+ Score = 74.3 bits (181),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 36/36 (100%), Positives = 36/36 (100%), Gaps = 0/36 (0%)
+
+Query  1168  DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL
+Sbjct  1     DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  36
+
+
+>1zv8_F mol:protein length:36  E2 glycoprotein
+Length=36
+
+ Score = 74.3 bits (181),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 36/36 (100%), Positives = 36/36 (100%), Gaps = 0/36 (0%)
+
+Query  1168  DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL
+Sbjct  1     DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  36
+
+
+>1zv8_H mol:protein length:36  E2 glycoprotein
+Length=36
+
+ Score = 74.3 bits (181),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 36/36 (100%), Positives = 36/36 (100%), Gaps = 0/36 (0%)
+
+Query  1168  DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL
+Sbjct  1     DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  36
+
+
+>1zv8_J mol:protein length:36  E2 glycoprotein
+Length=36
+
+ Score = 74.3 bits (181),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 36/36 (100%), Positives = 36/36 (100%), Gaps = 0/36 (0%)
+
+Query  1168  DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  1203
+             DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL
+Sbjct  1     DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL  36
+
+
+>1zva_A mol:protein length:77  E2 glycoprotein
+Length=77
+
+ Score = 74.3 bits (181),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 37/37 (100%), Positives = 37/37 (100%), Gaps = 0/37 (0%)
+
+Query  944  ALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDI  980
+            ALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDI
+Sbjct  1    ALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDI  37
+
+
+ Score = 71.6 bits (174),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 35/35 (100%), Positives = 35/35 (100%), Gaps = 0/35 (0%)
+
+Query  1167  GDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQ  1201
+             GDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQ
+Sbjct  43    GDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQ  77
+
+
+>1zvb_B mol:protein length:34  E2 glycoprotein
+Length=34
+
+ Score = 67.0 bits (162),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 34/34 (100%), Positives = 34/34 (100%), Gaps = 0/34 (0%)
+
+Query  958  ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV  991
+            ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV
+Sbjct  1    ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV  34
+
+
+>1zvb_A mol:protein length:34  E2 glycoprotein
+Length=34
+
+ Score = 67.0 bits (162),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 34/34 (100%), Positives = 34/34 (100%), Gaps = 0/34 (0%)
+
+Query  958  ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV  991
+            ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV
+Sbjct  1    ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV  34
+
+
+>1zvb_C mol:protein length:34  E2 glycoprotein
+Length=34
+
+ Score = 67.0 bits (162),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 34/34 (100%), Positives = 34/34 (100%), Gaps = 0/34 (0%)
+
+Query  958  ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV  991
+            ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV
+Sbjct  1    ALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEV  34
+
+
+>2beq_A mol:protein length:38  E2 GLYCOPROTEIN
+Length=38
+
+ Score = 60.5 bits (145),  Expect = 4e-11, Method: Compositional matrix adjust.
+ Identities = 29/36 (81%), Positives = 35/36 (97%), Gaps = 0/36 (0%)
+
+Query  932  GKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLS  967
+             +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLS
+Sbjct  2    SQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLS  37
+
+
+>2beq_B mol:protein length:38  E2 GLYCOPROTEIN
+Length=38
+
+ Score = 60.5 bits (145),  Expect = 4e-11, Method: Compositional matrix adjust.
+ Identities = 29/36 (81%), Positives = 35/36 (97%), Gaps = 0/36 (0%)
+
+Query  932  GKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLS  967
+             +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLS
+Sbjct  2    SQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLS  37
+
+
+>2beq_C mol:protein length:38  E2 GLYCOPROTEIN
+Length=38
+
+ Score = 60.5 bits (145),  Expect = 4e-11, Method: Compositional matrix adjust.
+ Identities = 29/36 (81%), Positives = 35/36 (97%), Gaps = 0/36 (0%)
+
+Query  932  GKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLS  967
+             +IQ+SL++T++ALGKLQDVVNQNAQALNTLVKQLS
+Sbjct  2    SQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLS  37
+
+
+>1wdf_B mol:protein length:95  E2 glycoprotein
+Length=95
+
+ Score = 62.0 bits (149),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 36/58 (62%), Positives = 46/58 (79%), Gaps = 0/58 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSV  976
+            NQK+IA+ FN+A+G IQD   +T SALGK+Q VVN NA+ALN L+ QLS+ FGAIS +
+Sbjct  1    NQKMIASAFNNALGAIQDGFDATNSALGKIQSVVNANAEALNNLLNQLSNRFGAISDL  58
+
+
+>1wdf_A mol:protein length:95  E2 glycoprotein
+Length=95
+
+ Score = 62.0 bits (149),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 36/58 (62%), Positives = 46/58 (79%), Gaps = 0/58 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSV  976
+            NQK+IA+ FN+A+G IQD   +T SALGK+Q VVN NA+ALN L+ QLS+ FGAIS +
+Sbjct  1    NQKMIASAFNNALGAIQDGFDATNSALGKIQSVVNANAEALNNLLNQLSNRFGAISDL  58
+
+
+>1wdg_B mol:protein length:94  E2 glycoprotein
+Length=94
+
+ Score = 54.7 bits (130),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 25/40 (63%), Positives = 32/40 (80%), Gaps = 0/40 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQA  958
+            NQK+IA+ FN+A+G IQD   +T SALGK+Q VVN NA+A
+Sbjct  1    NQKMIASAFNNALGAIQDGFDATNSALGKIQSVVNANAEA  40
+
+
+>1wdg_A mol:protein length:94  E2 glycoprotein
+Length=94
+
+ Score = 54.7 bits (130),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 25/40 (63%), Positives = 32/40 (80%), Gaps = 0/40 (0%)
+
+Query  919  NQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQA  958
+            NQK+IA+ FN+A+G IQD   +T SALGK+Q VVN NA+A
+Sbjct  1    NQKMIASAFNNALGAIQDGFDATNSALGKIQSVVNANAEA  40
+
+
+>2ieq_A mol:protein length:109  Spike glycoprotein
+Length=109
+
+ Score = 39.3 bits (90),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 20/43 (47%), Positives = 26/43 (60%), Gaps = 0/43 (0%)
+
+Query  928  NSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNF  970
+            N AI +  +++ +   AL K+QDVVNQ   ALN L  QL  NF
+Sbjct  14   NDAITQTAEAIHTVTIALNKIQDVVNQQGSALNHLTSQLRHNF  56
+
+
+>2ieq_B mol:protein length:109  Spike glycoprotein
+Length=109
+
+ Score = 39.3 bits (90),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 20/43 (47%), Positives = 26/43 (60%), Gaps = 0/43 (0%)
+
+Query  928  NSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNF  970
+            N AI +  +++ +   AL K+QDVVNQ   ALN L  QL  NF
+Sbjct  14   NDAITQTAEAIHTVTIALNKIQDVVNQQGSALNHLTSQLRHNF  56
+
+
+>2ieq_C mol:protein length:109  Spike glycoprotein
+Length=109
+
+ Score = 39.3 bits (90),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 20/43 (47%), Positives = 26/43 (60%), Gaps = 0/43 (0%)
+
+Query  928  NSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNF  970
+            N AI +  +++ +   AL K+QDVVNQ   ALN L  QL  NF
+Sbjct  14   NDAITQTAEAIHTVTIALNKIQDVVNQQGSALNHLTSQLRHNF  56
+
+
+>3r4d_B mol:protein length:288  Spike glycoprotein
+Length=288
+
+ Score = 39.3 bits (90),  Expect = 0.049, Method: Compositional matrix adjust.
+ Identities = 22/46 (48%), Positives = 26/46 (57%), Gaps = 3/46 (7%)
+
+Query  259  TAG---AAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKC  301
+            TAG   A  Y+V  L  R +L  +N+ G IT AVDCA    SE KC
+Sbjct  235  TAGSTFAPRYWVTPLVKRQYLFNFNQKGVITSAVDCASSYTSEIKC  280
+
+
+>3r4d_D mol:protein length:288  Spike glycoprotein
+Length=288
+
+ Score = 39.3 bits (90),  Expect = 0.049, Method: Compositional matrix adjust.
+ Identities = 22/46 (48%), Positives = 26/46 (57%), Gaps = 3/46 (7%)
+
+Query  259  TAG---AAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKC  301
+            TAG   A  Y+V  L  R +L  +N+ G IT AVDCA    SE KC
+Sbjct  235  TAGSTFAPRYWVTPLVKRQYLFNFNQKGVITSAVDCASSYTSEIKC  280
+
+
+>3boy_D mol:na length:22  5'-R(*UP*UP*UP*AP*GP*UP*UP*UP*UP*UP*AP*GP*UP*
+Length=22
+
+ Score = 34.3 bits (77),  Expect = 0.054, Method: Composition-based stats.
+ Identities = 2/22 (9%), Positives = 12/22 (55%), Gaps = 2/22 (9%)
+
+Query  1235  CCMTSCCSCLKGCCSC--GSCC  1254
+             ++   ++ +  G++ +  G ++
+Sbjct  1     UUUAGUUUUUAGUUUUUAGUUU  22
+
+
+>3izw_D mol:na length:24  mRNA
+Length=24
+
+ Score = 32.3 bits (72),  Expect = 0.26, Method: Composition-based stats.
+ Identities = 1/20 (5%), Positives = 12/20 (60%), Gaps = 1/20 (5%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +G+++
+Sbjct  2     UUAUGUUUUU-UUUUUGAUU  20
+
+
+>3izv_D mol:na length:24  mRNA
+Length=24
+
+ Score = 32.3 bits (72),  Expect = 0.26, Method: Composition-based stats.
+ Identities = 1/20 (5%), Positives = 12/20 (60%), Gaps = 1/20 (5%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +G+++
+Sbjct  2     UUAUGUUUUU-UUUUUGAUU  20
+
+
+>1na2_A mol:na length:30  telomerase RNA p2b hairpin
+Length=30
+
+ Score = 32.0 bits (71),  Expect = 0.45, Method: Composition-based stats.
+ Identities = 6/22 (27%), Positives = 11/22 (50%), Gaps = 2/22 (9%)
+
+Query  1235  CCMTSCCSCLKGCCSC--GSCC  1254
+             ++   +C C   C+ +  G CC
+Sbjct  8     UUUUCUCGCUGACUUUCAGCCC  29
+
+
+ Score = 31.6 bits (70),  Expect = 0.71, Method: Composition-based stats.
+ Identities = 4/20 (20%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C+   ++ C  GC+    ++
+Sbjct  4     CUGUUUUUCUCGCUGACUUU  23
+
+
+>2k5z_A mol:na length:29  Duck HBV apical loop
+Length=29
+
+ Score = 32.0 bits (71),  Expect = 0.51, Method: Composition-based stats.
+ Identities = 5/26 (19%), Positives = 13/26 (50%), Gaps = 6/26 (23%)
+
+Query  1235  CCMTSCCSCLKGC------CSCGSCC  1254
+             C+  +++ C   +      + +G+CC
+Sbjct  4     CUACAUUGCUGUUGUCGUGUGUGACC  29
+
+
+>3e1a_M mol:na length:20  mRNA model
+Length=20
+
+ Score = 31.2 bits (69),  Expect = 0.78, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  1     UUUUUUUUUUUUUUUUUUUU  20
+
+
+>3e1c_M mol:na length:20  mRNA model
+Length=20
+
+ Score = 31.2 bits (69),  Expect = 0.78, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  1     UUUUUUUUUUUUUUUUUUUU  20
+
+
+>2k96_A mol:na length:47  TELOMERASE RNA P2B-P3 PSEUDOKNOT
+Length=47
+
+ Score = 31.6 bits (70),  Expect = 0.97, Method: Composition-based stats.
+ Identities = 4/20 (20%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C+   ++ C  GC+    ++
+Sbjct  4     CUGUUUUUCUCGCUGACUUU  23
+
+
+>1ymo_A mol:na length:47  Telomerase RNA P2b-P3 pseudoknot
+Length=47
+
+ Score = 31.6 bits (70),  Expect = 0.97, Method: Composition-based stats.
+ Identities = 4/20 (20%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C+   ++ C  GC+    ++
+Sbjct  4     CUGUUUUUCUCGCUGACUUU  23
+
+
+>2k95_A mol:na length:48  Telomerase RNA P2b-P3 pseudoknot
+Length=48
+
+ Score = 31.6 bits (70),  Expect = 1.00, Method: Composition-based stats.
+ Identities = 4/20 (20%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C+   ++ C  GC+    ++
+Sbjct  4     CUGUUUUUCUCGCUGACUUU  23
+
+
+>2gic_R mol:na length:45  45-MER
+Length=45
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  1     UUUUUUUUUUUUUUUUUUUU  20
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  2     UUUUUUUUUUUUUUUUUUUU  21
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  3     UUUUUUUUUUUUUUUUUUUU  22
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  4     UUUUUUUUUUUUUUUUUUUU  23
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  5     UUUUUUUUUUUUUUUUUUUU  24
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  6     UUUUUUUUUUUUUUUUUUUU  25
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  7     UUUUUUUUUUUUUUUUUUUU  26
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  8     UUUUUUUUUUUUUUUUUUUU  27
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  9     UUUUUUUUUUUUUUUUUUUU  28
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  10    UUUUUUUUUUUUUUUUUUUU  29
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  11    UUUUUUUUUUUUUUUUUUUU  30
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  12    UUUUUUUUUUUUUUUUUUUU  31
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  13    UUUUUUUUUUUUUUUUUUUU  32
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  14    UUUUUUUUUUUUUUUUUUUU  33
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  15    UUUUUUUUUUUUUUUUUUUU  34
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  16    UUUUUUUUUUUUUUUUUUUU  35
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  17    UUUUUUUUUUUUUUUUUUUU  36
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  18    UUUUUUUUUUUUUUUUUUUU  37
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  19    UUUUUUUUUUUUUUUUUUUU  38
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  20    UUUUUUUUUUUUUUUUUUUU  39
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  21    UUUUUUUUUUUUUUUUUUUU  40
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  22    UUUUUUUUUUUUUUUUUUUU  41
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  23    UUUUUUUUUUUUUUUUUUUU  42
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  24    UUUUUUUUUUUUUUUUUUUU  43
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  25    UUUUUUUUUUUUUUUUUUUU  44
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  26    UUUUUUUUUUUUUUUUUUUU  45
+
+
+>3hhz_R mol:na length:45  RNA (45-MER)
+Length=45
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  1     UUUUUUUUUUUUUUUUUUUU  20
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  2     UUUUUUUUUUUUUUUUUUUU  21
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  3     UUUUUUUUUUUUUUUUUUUU  22
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  4     UUUUUUUUUUUUUUUUUUUU  23
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  5     UUUUUUUUUUUUUUUUUUUU  24
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  6     UUUUUUUUUUUUUUUUUUUU  25
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  7     UUUUUUUUUUUUUUUUUUUU  26
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  8     UUUUUUUUUUUUUUUUUUUU  27
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  9     UUUUUUUUUUUUUUUUUUUU  28
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  10    UUUUUUUUUUUUUUUUUUUU  29
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  11    UUUUUUUUUUUUUUUUUUUU  30
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  12    UUUUUUUUUUUUUUUUUUUU  31
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  13    UUUUUUUUUUUUUUUUUUUU  32
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  14    UUUUUUUUUUUUUUUUUUUU  33
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  15    UUUUUUUUUUUUUUUUUUUU  34
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  16    UUUUUUUUUUUUUUUUUUUU  35
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  17    UUUUUUUUUUUUUUUUUUUU  36
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  18    UUUUUUUUUUUUUUUUUUUU  37
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  19    UUUUUUUUUUUUUUUUUUUU  38
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  20    UUUUUUUUUUUUUUUUUUUU  39
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  21    UUUUUUUUUUUUUUUUUUUU  40
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  22    UUUUUUUUUUUUUUUUUUUU  41
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  23    UUUUUUUUUUUUUUUUUUUU  42
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  24    UUUUUUUUUUUUUUUUUUUU  43
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  25    UUUUUUUUUUUUUUUUUUUU  44
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  26    UUUUUUUUUUUUUUUUUUUU  45
+
+
+>3pu4_R mol:na length:45  RNA (45-MER)
+Length=45
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  1     UUUUUUUUUUUUUUUUUUUU  20
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  2     UUUUUUUUUUUUUUUUUUUU  21
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  3     UUUUUUUUUUUUUUUUUUUU  22
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  4     UUUUUUUUUUUUUUUUUUUU  23
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  5     UUUUUUUUUUUUUUUUUUUU  24
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  6     UUUUUUUUUUUUUUUUUUUU  25
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  7     UUUUUUUUUUUUUUUUUUUU  26
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  8     UUUUUUUUUUUUUUUUUUUU  27
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  9     UUUUUUUUUUUUUUUUUUUU  28
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  10    UUUUUUUUUUUUUUUUUUUU  29
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  11    UUUUUUUUUUUUUUUUUUUU  30
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  12    UUUUUUUUUUUUUUUUUUUU  31
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  13    UUUUUUUUUUUUUUUUUUUU  32
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  14    UUUUUUUUUUUUUUUUUUUU  33
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  15    UUUUUUUUUUUUUUUUUUUU  34
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  16    UUUUUUUUUUUUUUUUUUUU  35
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  17    UUUUUUUUUUUUUUUUUUUU  36
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  18    UUUUUUUUUUUUUUUUUUUU  37
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  19    UUUUUUUUUUUUUUUUUUUU  38
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  20    UUUUUUUUUUUUUUUUUUUU  39
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  21    UUUUUUUUUUUUUUUUUUUU  40
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  22    UUUUUUUUUUUUUUUUUUUU  41
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  23    UUUUUUUUUUUUUUUUUUUU  42
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  24    UUUUUUUUUUUUUUUUUUUU  43
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  25    UUUUUUUUUUUUUUUUUUUU  44
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  26    UUUUUUUUUUUUUUUUUUUU  45
+
+
+>2wyy_S mol:na length:45  POLY-URIDINE
+Length=45
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  1     UUUUUUUUUUUUUUUUUUUU  20
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  2     UUUUUUUUUUUUUUUUUUUU  21
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  3     UUUUUUUUUUUUUUUUUUUU  22
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  4     UUUUUUUUUUUUUUUUUUUU  23
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  5     UUUUUUUUUUUUUUUUUUUU  24
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  6     UUUUUUUUUUUUUUUUUUUU  25
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  7     UUUUUUUUUUUUUUUUUUUU  26
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  8     UUUUUUUUUUUUUUUUUUUU  27
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  9     UUUUUUUUUUUUUUUUUUUU  28
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  10    UUUUUUUUUUUUUUUUUUUU  29
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  11    UUUUUUUUUUUUUUUUUUUU  30
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  12    UUUUUUUUUUUUUUUUUUUU  31
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  13    UUUUUUUUUUUUUUUUUUUU  32
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  14    UUUUUUUUUUUUUUUUUUUU  33
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  15    UUUUUUUUUUUUUUUUUUUU  34
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  16    UUUUUUUUUUUUUUUUUUUU  35
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  17    UUUUUUUUUUUUUUUUUUUU  36
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  18    UUUUUUUUUUUUUUUUUUUU  37
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  19    UUUUUUUUUUUUUUUUUUUU  38
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  20    UUUUUUUUUUUUUUUUUUUU  39
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  21    UUUUUUUUUUUUUUUUUUUU  40
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  22    UUUUUUUUUUUUUUUUUUUU  41
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  23    UUUUUUUUUUUUUUUUUUUU  42
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  24    UUUUUUUUUUUUUUUUUUUU  43
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  25    UUUUUUUUUUUUUUUUUUUU  44
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  26    UUUUUUUUUUUUUUUUUUUU  45
+
+
+>2wyy_R mol:na length:45  POLY-URIDINE
+Length=45
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  1     UUUUUUUUUUUUUUUUUUUU  20
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  2     UUUUUUUUUUUUUUUUUUUU  21
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  3     UUUUUUUUUUUUUUUUUUUU  22
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  4     UUUUUUUUUUUUUUUUUUUU  23
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  5     UUUUUUUUUUUUUUUUUUUU  24
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  6     UUUUUUUUUUUUUUUUUUUU  25
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  7     UUUUUUUUUUUUUUUUUUUU  26
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  8     UUUUUUUUUUUUUUUUUUUU  27
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  9     UUUUUUUUUUUUUUUUUUUU  28
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  10    UUUUUUUUUUUUUUUUUUUU  29
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  11    UUUUUUUUUUUUUUUUUUUU  30
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  12    UUUUUUUUUUUUUUUUUUUU  31
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  13    UUUUUUUUUUUUUUUUUUUU  32
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  14    UUUUUUUUUUUUUUUUUUUU  33
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  15    UUUUUUUUUUUUUUUUUUUU  34
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  16    UUUUUUUUUUUUUUUUUUUU  35
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  17    UUUUUUUUUUUUUUUUUUUU  36
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  18    UUUUUUUUUUUUUUUUUUUU  37
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  19    UUUUUUUUUUUUUUUUUUUU  38
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  20    UUUUUUUUUUUUUUUUUUUU  39
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  21    UUUUUUUUUUUUUUUUUUUU  40
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  22    UUUUUUUUUUUUUUUUUUUU  41
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  23    UUUUUUUUUUUUUUUUUUUU  42
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  24    UUUUUUUUUUUUUUUUUUUU  43
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  25    UUUUUUUUUUUUUUUUUUUU  44
+
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  26    UUUUUUUUUUUUUUUUUUUU  45
+
+
+>3j0v_C mol:na length:47  mRNA
+Length=47
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 2/20 (10%), Positives = 12/20 (60%), Gaps = 1/20 (5%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +  G+  +G+++
+Sbjct  13    UUAUGUU-UAUGUGGUGAUU  31
+
+
+ Score = 30.4 bits (67),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 5/20 (25%), Positives = 10/20 (50%), Gaps = 3/20 (15%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   CC +   C+ +  CC
+Sbjct  30    UUUGCCCUU---CUGUAGCC  46
+
+
+>3j10_C mol:na length:47  mRNA
+Length=47
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 2/20 (10%), Positives = 12/20 (60%), Gaps = 1/20 (5%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +  G+  +G+++
+Sbjct  13    UUAUGUU-UAUGUGGUGAUU  31
+
+
+ Score = 30.4 bits (67),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 5/20 (25%), Positives = 10/20 (50%), Gaps = 3/20 (15%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   CC +   C+ +  CC
+Sbjct  30    UUUGCCCUU---CUGUAGCC  46
+
+
+>3j0u_C mol:na length:47  mRNA
+Length=47
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 2/20 (10%), Positives = 12/20 (60%), Gaps = 1/20 (5%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +  G+  +G+++
+Sbjct  13    UUAUGUU-UAUGUGGUGAUU  31
+
+
+ Score = 30.4 bits (67),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 5/20 (25%), Positives = 10/20 (50%), Gaps = 3/20 (15%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   CC +   C+ +  CC
+Sbjct  30    UUUGCCCUU---CUGUAGCC  46
+
+
+>3j0z_C mol:na length:47  mRNA
+Length=47
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 2/20 (10%), Positives = 12/20 (60%), Gaps = 1/20 (5%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +  G+  +G+++
+Sbjct  13    UUAUGUU-UAUGUGGUGAUU  31
+
+
+ Score = 30.4 bits (67),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 5/20 (25%), Positives = 10/20 (50%), Gaps = 3/20 (15%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   CC +   C+ +  CC
+Sbjct  30    UUUGCCCUU---CUGUAGCC  46
+
+
+>3j0x_C mol:na length:47  mRNA
+Length=47
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 2/20 (10%), Positives = 12/20 (60%), Gaps = 1/20 (5%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +  G+  +G+++
+Sbjct  13    UUAUGUU-UAUGUGGUGAUU  31
+
+
+ Score = 30.4 bits (67),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 5/20 (25%), Positives = 10/20 (50%), Gaps = 3/20 (15%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   CC +   C+ +  CC
+Sbjct  30    UUUGCCCUU---CUGUAGCC  46
+
+
+>3j13_B mol:na length:47  mRNA
+Length=47
+
+ Score = 31.2 bits (69),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 2/20 (10%), Positives = 12/20 (60%), Gaps = 1/20 (5%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +  G+  +G+++
+Sbjct  13    UUAUGUU-UAUGUGGUGAUU  31
+
+
+ Score = 30.4 bits (67),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 5/20 (25%), Positives = 10/20 (50%), Gaps = 3/20 (15%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   CC +   C+ +  CC
+Sbjct  30    UUUGCCCUU---CUGUAGCC  46
+
+
+>2hgp_1 mol:na length:50  mRNA
+Length=50
+
+ Score = 31.2 bits (69),  Expect = 1.4, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  30    UUUUUUUUUUUUUUUUUUUU  49
+
+
+ Score = 31.2 bits (69),  Expect = 1.4, Method: Composition-based stats.
+ Identities = 0/20 (0%), Positives = 10/20 (50%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             ++   ++ +   ++ +  ++
+Sbjct  31    UUUUUUUUUUUUUUUUUUUU  50
+
+
+>3ovs_D mol:na length:34  RNA (34-MER)
+Length=34
+
+ Score = 30.4 bits (67),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 7/20 (35%), Positives = 11/20 (55%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C    CC++   C+ C +CC
+Sbjct  15    CAAGUCCAUUUACUUCCACC  34
+
+
+>3ov7_C mol:na length:34  RNA (34-MER)
+Length=34
+
+ Score = 30.4 bits (67),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 7/20 (35%), Positives = 11/20 (55%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C    CC++   C+ C +CC
+Sbjct  15    CAAGUCCAUUUACUUCCACC  34
+
+
+>3ov7_D mol:na length:34  RNA (34-MER)
+Length=34
+
+ Score = 30.4 bits (67),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 7/20 (35%), Positives = 11/20 (55%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C    CC++   C+ C +CC
+Sbjct  15    CAAGUCCAUUUACUUCCACC  34
+
+
+>3ovs_C mol:na length:34  RNA (34-MER)
+Length=34
+
+ Score = 30.4 bits (67),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 7/20 (35%), Positives = 11/20 (55%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C    CC++   C+ C +CC
+Sbjct  15    CAAGUCCAUUUACUUCCACC  34
+
+
+>3ova_C mol:na length:34  RNA (34-MER)
+Length=34
+
+ Score = 30.4 bits (67),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 7/20 (35%), Positives = 11/20 (55%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C    CC++   C+ C +CC
+Sbjct  15    CAAGUCCAUUUACUUCCACC  34
+
+
+>2ke6_A mol:na length:48  K10 TLS RNA
+Length=48
+
+ Score = 30.8 bits (68),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 1/20 (5%), Positives = 11/20 (55%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C+  +++ +   ++   +++
+Sbjct  3     CUUGAUUGUAUUUUUAAAUU  22
+
+
+>2kuv_A mol:na length:48  K10 TLS RNA
+Length=48
+
+ Score = 30.8 bits (68),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 1/20 (5%), Positives = 11/20 (55%), Gaps = 0/20 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSCC  1254
+             C+  +++ +   ++   +++
+Sbjct  3     CUCGAUUGUAUUUUUAAAUU  22
+
+
+>2xdd_F mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xd0_V mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xdd_G mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xd0_W mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xd0_I mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xd0_G mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xdd_H mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xd0_U mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xd0_H mol:na length:36  TOXI
+Length=36
+
+ Score = 29.3 bits (64),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>2xdb_G mol:na length:40  TOXI
+Length=40
+
+ Score = 29.3 bits (64),  Expect = 5.4, Method: Composition-based stats.
+ Identities = 4/19 (21%), Positives = 11/19 (58%), Gaps = 0/19 (0%)
+
+Query  1235  CCMTSCCSCLKGCCSCGSC  1253
+             +C   + ++  GC++C  +
+Sbjct  3     UCAGGUGAUUUGCUACCUU  21
+
+
+>1ysv_A mol:na length:27  27-MER
+Length=27
+
+ Score = 28.5 bits (62),  Expect = 7.7, Method: Composition-based stats.
+ Identities = 4/15 (27%), Positives = 10/15 (67%), Gaps = 0/15 (0%)
+
+Query  1240  CCSCLKGCCSCGSCC  1254
+             C++   G++ + +CC
+Sbjct  13    CUAAAUGUUGUUACC  27
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 30302493375
+
+
+  Database: pdb.fasta
+    Posted date:  Oct 27, 2015  2:51 PM
+  Number of letters in database: 51,623,389
+  Number of sequences in database:  215,148
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,8 @@
+cp: missing destination file operand after ‘903300-’
+Try 'cp --help' for more information.
+
+real	0m4.990s
+user	0m2.364s
+sys	0m0.225s
+mv: cannot stat ‘903300.out’: No such file or directory
+mv: cannot stat ‘903300.err’: No such file or directory
