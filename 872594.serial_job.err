@@ -1,8 +1,0 @@
-cp: missing destination file operand after ‘872594-’
-Try 'cp --help' for more information.
-
-real	0m19.924s
-user	0m20.394s
-sys	0m4.782s
-mv: cannot stat ‘872594.out’: No such file or directory
-mv: cannot stat ‘872594.err’: No such file or directory

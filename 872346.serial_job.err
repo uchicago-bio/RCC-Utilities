@@ -1,3 +1,0 @@
-cp: missing destination file operand after ‘872346-’
-Try 'cp --help' for more information.
-slurmstepd-midway2-0137: error: *** JOB 872346 ON midway2-0137 CANCELLED AT 2020-05-03T23:00:05 DUE TO TIME LIMIT ***

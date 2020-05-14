@@ -1,8 +1,0 @@
-cp: missing destination file operand after ‘903470-’
-Try 'cp --help' for more information.
-
-real	238m53.323s
-user	196m23.214s
-sys	60m24.255s
-mv: cannot stat ‘903470.out’: No such file or directory
-mv: cannot stat ‘903470.err’: No such file or directory

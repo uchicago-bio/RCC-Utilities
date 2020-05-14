@@ -1,8 +1,0 @@
-cp: missing destination file operand after ‘903800-’
-Try 'cp --help' for more information.
-
-real	17m53.007s
-user	7m3.832s
-sys	6m15.085s
-mv: cannot stat ‘903800.out’: No such file or directory
-mv: cannot stat ‘903800.err’: No such file or directory

@@ -1,8 +1,0 @@
-cp: missing destination file operand after ‘903793-’
-Try 'cp --help' for more information.
-
-real	11m21.497s
-user	6m5.427s
-sys	4m32.958s
-mv: cannot stat ‘903793.out’: No such file or directory
-mv: cannot stat ‘903793.err’: No such file or directory

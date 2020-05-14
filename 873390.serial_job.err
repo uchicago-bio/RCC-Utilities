@@ -1,8 +1,0 @@
-cp: missing destination file operand after ‘873390-’
-Try 'cp --help' for more information.
-
-real	2m44.650s
-user	2m30.438s
-sys	0m6.742s
-mv: cannot stat ‘873390.out’: No such file or directory
-mv: cannot stat ‘873390.err’: No such file or directory
