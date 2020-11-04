@@ -6,7 +6,7 @@
 #SBATCH --tasks=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1    # Number of threads per task
-#SBATCH --partition=sandyb   # 'sandby' has 16 cores/ 32G memory; look up what is appropriate for job
+#SBATCH --partition=broadwl-lc   # 'sandby' has 16 cores/ 32G memory; look up what is appropriate for job
 #SBATCH --mem-per-cpu=16000  # Default is 2000 (2G)
 #SBATCH --mail-type=ALL                                                                                
 #SBATCH --mail-user=abinkowski@uchicago.edu                                                            
