@@ -1,1 +1,0 @@
-This is a test using the passed number 04 on midway2-0026.rcc.local.

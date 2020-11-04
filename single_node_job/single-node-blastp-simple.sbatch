@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -A mpcs56420                 # Allocation
+#SBATCH --account=mpcs56420                 # Allocation
 #SBATCH --job-name=serial_job_test    # Job name
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
@@ -10,6 +10,8 @@
 #SBATCH --output=%j.serial_job.out
 #SBATCH --error=%j.serial_job.err
 
+DATABASE="/project2/mpcs56420/db/pdbaa"
+OUTFILE="out.txt"
 
 echo "> Slurm Id:       "$SLURM_JOBID
 echo "> Tasks per node: "$SLURM_TASKS_PER_NODE
@@ -22,9 +24,9 @@ echo "> Running script on a single CPU core"
 echo "> Staring blastp"
 
 blastp -query spike.fasta \
-    -db /project2/mpcs56420/db/refseq \
-    -out /scratch/midway2/abinkowski/out.txt \
+    -db $DATABASE \
+    -out $OUTFILE \
     -num_threads 1
 
-echo "> Done Running"
+echo "> Outfile: "$OUTFILE
 

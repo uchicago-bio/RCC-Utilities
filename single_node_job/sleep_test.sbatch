@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH --account=mpcs56420
 #SBATCH --job-name=serial_job_test    # Job name
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
@@ -11,6 +12,7 @@
 echo "> Running plot script on a single CPU core"
 pwd; hostname; date
 
+# Run any commands
 echo "> Sleep"
 sleep 5
 

@@ -1,13 +1,17 @@
-#!/usr/bin python
+#!~/.conda/envs/mpcs56420/bin/ python
+
 """SLURM variables"""
 #SBATCH --account=mpcs56420
 #SBATCH --job-name=multiprocess
 #SBATCH --output=multiprocess_%j.out
-## Sandy bridge has 16 cores per node, so we could run 16 processes
-#SBATCH --partition=sandyb
+#SBATCH --error=multiprocess_%j.err
+
+## 16 cores per node, so we could run 16 processes
+#SBATCH --partition=broadwl
 #SBATCH --nodes=2   
-#SBATCH -n 5 # 5 cores                  
+#SBATCH -n 5                       # 5 cores                  
 #SBATCH -exclusive
+
 
 import multiprocessing
 import sys
@@ -23,7 +27,7 @@ sys.path.append(os.getcwd())
 # For debugging and profiling, get number of cpus available; this should match
 # 16 for sandbridge
 ################################################################################                                                                                                                       
-nodes = int(os.environ["SLURM_NNODES"])
+nodes = int(os.environ["SLURM_NODES"])
 cpus = int(os.environ["SLURM_JOB_CPUS_PER_NODE"])
 
 SLURM_NPROCS= nodes * cpus
