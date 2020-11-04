@@ -1,12 +1,13 @@
 #!/bin/bash
+#SBATCH -A mpcs56420
 #SBATCH --job-name=array_job_test    # Job name
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
 #SBATCH --ntasks=1                    # Run on a single CPU
 #SBATCH --mem=1gb                     # Job memory request
 #SBATCH --time=00:15:00               # Time limit hrs:min:sec
-#SBATCH --output=%j.array_job.out
-#SBATCH --error=%j.array_job.err
+#SBATCH --output=%j.%a.array_job.out
+#SBATCH --error=%j.%a.array_job.err
 
 #SBATCH --array=0-10
 

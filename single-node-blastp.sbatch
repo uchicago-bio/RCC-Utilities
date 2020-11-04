@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH -A mpcs56420
 #SBATCH --job-name=serial_job_test    # Job name
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
@@ -6,14 +7,16 @@
 #SBATCH --cpus-per-task=1             # Number of threads per task
 #SBATCH --mem=1gb                     # Job memory request
 #SBATCH --time=00:15:00               # Time limit hrs:min:sec
-#SBATCH --output=%j.serial_job.out
-#SBATCH --error=%j.serial_job.err
+#SBATCH --output=%j.out
+#SBATCH --error=%j.err
 
 
 ###########################################################################################
-# Create an output directory; blastplus creates many different files
+# Create an output directory; BLAST creates many different files
 # that you will want to keep track of per job
+#
 # Example of writing to a different path:
+#
 #                         WORKDIR=/scratch/midway/$USER/$SLURM_JOBID
 #
 # For convienence, we have an extra argument that we can use to
@@ -21,17 +24,14 @@
 #
 # Note: In practice you should write data to /scratch and then move the data later
 ###########################################################################################
+if [ -z "$1" ]; then
+    echo -e "\nPlease call '$0 <argument>' to run this command!\n"
+    exit 1
+fi
+
 JOBNAME=$1
-WORKDIR=$SLURM_JOBID"-"$JOBNAME
-mkdir -p "/scratch/midway2/abinkowski/"$WORKDIR
-
-################################################################################
-# Copy all of the input files to the directory. This way you can recreate the
-# run again.
-################################################################################
-`cp $0 $WORKDIR`
-`cp $QUERY $WORKDIR`
-
+WORKDIR="/project2/mpcs56420/"$USER"/"$SLURM_JOBID"-"$JOBNAME
+mkdir -p $WORKDIR
 
 ################################################################################
 # We are interested in tracking how long these take to run.  We also
@@ -40,7 +40,7 @@ mkdir -p "/scratch/midway2/abinkowski/"$WORKDIR
 # error will be directed there.
 ################################################################################
 echo "Starting Job id: $SLURM_JOBID"
-date
+echo "Starting Job id: "; date
 pwd; hostname;
 
 ################################################################################
@@ -48,15 +48,17 @@ pwd; hostname;
 ################################################################################
 # Use `pdb` database.  Look in the directory and see how BLAST structures the
 # files.  They chuck them into groups.
-DB="/project2/mpcs56420/db/swissprot"
+DB="/project2/mpcs56420/db/pdbaa"
 QUERY="protein1.fasta"
+
 BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_TASK.txt"
 
 # Run blastp (use time in front to track runtime)
-time blastp -query protein1.fasta \
-     -db $DB \
-     -out $BLAST_RESULTS \
-     -num_threads $SLURM_CPUS_PER_TASK
+time blastp -query spike.fasta \
+    -db $DB \
+    -out $BLAST_RESULTS \
+    -outfmt 6 \
+    -num_threads 1
 
 ################################################################################
 # Dump the Finished time to stdout so we know we are done
@@ -69,8 +71,14 @@ date
 # All the files are written to current directory.  Copy all
 # the output files that were created to our job directory
 ################################################################################
-`mv $SLURM_JOBID.out $SLURM_JOBID.err $WORKDIR`
-`mv $BLAST_RESULTS $WORKDIR`
+###############################################################################
+# Copy all of the input files to the directory. This way you can recreate the
+# run again.
+################################################################################
+`mv $BLAST_RESULTS $WORKDIR/`
+`cp $0 $WORKDIR/`
+`cp $QUERY $WORKDIR/`
+`mv $SLURM_JOBID.out $SLURM_JOBID.err $WORKDIR/`
 
 echo "All files were moved..."
 echo "Script completed"

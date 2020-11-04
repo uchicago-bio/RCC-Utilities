@@ -1,7 +1,0 @@
-cp: missing destination file operand after ‘1165328-’
-Try 'cp --help' for more information.
-
-real	0m16.923s
-user	0m5.262s
-sys	0m0.456s
-mv: target ‘1165328-’ is not a directory
