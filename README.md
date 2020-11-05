@@ -17,3 +17,7 @@ Conduct a blast search on a single node using the `nr` database.
 
 
 
+# Create a BLAST database
+wget https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/pdbaa.gz
+gunzip pdbaa.gz
+makeblastdb -in pdbaa -input_type fasta -dbtype prot -out pdbaa
