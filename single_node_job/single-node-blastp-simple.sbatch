@@ -16,12 +16,12 @@ OUTFILE="out.txt"
 echo "> Slurm Id:       "$SLURM_JOBID
 echo "> Tasks per node: "$SLURM_TASKS_PER_NODE
 echo "> CPUS per task:  "$SLURM_CPUS_PER_TASK
-echo "> Date:           ";date
-echo "> Pwd:            ";pwd
-echo "> Hostname:       ";hostname
+echo -n "> Date:           ";date
+echo -n "> Pwd:            ";pwd
+echo -n "> Hostname:       ";hostname
 
 echo "> Running script on a single CPU core"
-echo "> Staring blastp"
+echo "> Staring BLASTp"
 
 blastp -query spike.fasta \
     -db $DATABASE \

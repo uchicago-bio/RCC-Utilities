@@ -19,19 +19,30 @@
 #
 #                         WORKDIR=/scratch/midway/$USER/$SLURM_JOBID
 #
+# Note: In practice you should write data to /scratch and then move the data later
+#
 # For convienence, we have an extra argument that we can use to
 # differentiate runs ($1 means the first argument after the executable name
+# Example: 
+#           single-node-blastp.sbatch unique_name
 #
-# Note: In practice you should write data to /scratch and then move the data later
 ###########################################################################################
+
 if [ -z "$1" ]; then
     echo -e "\nPlease call '$0 <argument>' to run this command!\n"
     exit 1
 fi
-
 JOBNAME=$1
 WORKDIR="/project2/mpcs56420/"$USER"/"$SLURM_JOBID"-"$JOBNAME
 mkdir -p $WORKDIR
+
+
+################################################################################
+# BLAST arguments
+################################################################################
+DB="/project2/mpcs56420/db/pdbaa"
+QUERY="spike.fasta"
+BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_TASK.txt"
 
 ################################################################################
 # We are interested in tracking how long these take to run.  We also
@@ -39,22 +50,15 @@ mkdir -p $WORKDIR
 # output and error file for each job.  All the standard output and
 # error will be directed there.
 ################################################################################
-echo "Starting Job id: $SLURM_JOBID"
-echo "Starting Job id: "; date
-pwd; hostname;
+echo "> Starting Job Id: $SLURM_JOBID"
+echo -n "> Date: "; date
+echo -n "> Present Working Directory: "; pwd
+echo -n "> Hostname: "; hostname
+echo "> Database: $DB"
+echo "> Query:    $QUERY"
 
-################################################################################
-# BLAST arguments
-################################################################################
-# Use `pdb` database.  Look in the directory and see how BLAST structures the
-# files.  They chuck them into groups.
-DB="/project2/mpcs56420/db/pdbaa"
-QUERY="protein1.fasta"
-
-BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_TASK.txt"
-
-# Run blastp (use time in front to track runtime)
-time blastp -query spike.fasta \
+# Run blastp (use time in front to track the actual runtime)
+time blastp -query $QUERY \
     -db $DB \
     -out $BLAST_RESULTS \
     -outfmt 6 \
@@ -63,9 +67,7 @@ time blastp -query spike.fasta \
 ################################################################################
 # Dump the Finished time to stdout so we know we are done
 ################################################################################
-echo "Done with processing..."
-date
-
+echo -n "> Done with processing: "; date
 
 ################################################################################
 # All the files are written to current directory.  Copy all
@@ -76,9 +78,10 @@ date
 # run again.
 ################################################################################
 `mv $BLAST_RESULTS $WORKDIR/`
-`cp $0 $WORKDIR/`
 `cp $QUERY $WORKDIR/`
 `mv $SLURM_JOBID.out $SLURM_JOBID.err $WORKDIR/`
+# Copy the script used for the run
+`cp $0 $WORKDIR/`
 
-echo "All files were moved..."
-echo "Script completed"
+echo -n "> All files were moved..."
+echo -n "> Script completed"
