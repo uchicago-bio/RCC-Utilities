@@ -160,3 +160,7 @@ sbatch multi.py
 Check out this repositories [wiki](https://github.com/uchicago-bio/RCC-Utilities/wiki) for instructions on running the scripts.
 
 
+
+# Git Tips and Tricks
+git config --global user.name "My Name @RCC"
+git config --global user.email cnetid@uchicago.edu
