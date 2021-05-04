@@ -15,18 +15,31 @@
 # -----------------------------------------------------------------------------
 # This will be run N number of times (array variable)
 # -----------------------------------------------------------------------------
-echo "Starting Job: $SLURM_ARRAY_TASK_ID -- $SLURM_TASK_ID with id: $SLURM_JOBID"
-date
+echo "> Slurm Id:           "$SLURM_JOBID
+echo "> Array Task - Task : $SLURM_ARRAY_TASK_ID -- $SLURM_TASK_ID with id: $SLURM_JOBID"
+echo "> Tasks per node:     "$SLURM_TASKS_PER_NODE
+echo "> CPUS per task:      "$SLURM_CPUS_PER_TASK
+echo -n "> Date:           ";date
+echo -n "> Pwd:            ";pwd
+echo -n "> Hostname:       ";hostname
+
 
 # Use the array task id to change what is being run each time
 DATABASE="/project2/mpcs56420/db/refseq/refseq.$SLURM_ARRAY_TASK_ID"
-OUTFILE=$SLURM_ARRAY_TASK_ID".out"
+OUTFILE=$SLURM_ARRAY_TASK_ID".blast_out"
 
-echo $DATABASE
-echo $OUTFILE
+# Use the array task id to change what is being run each time. SLURM uses one digit
+# numbers, but NCBI uses two digit when fragmenting (just be consistent)
+#DB="/project/mpcs56420/nr/nr.$PADDED_NUMBER"
+#PADDED_NUMBER=$(printf %02d $SLURM_ARRAY_TASK_ID)
+
 
 blastp -query spike.fasta \
     -db $DATABASE \
     -out $OUTFILE \
     -num_threads 1
+
+
+echo "> Working On: $SLURM_ARRAY_TASK_ID $SLURM_TASK_ID"
+echo "> Database: $DATABASE"
 
