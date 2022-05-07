@@ -1,0 +1,190 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.1
+           47,178 sequences; 19,035,956 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_005834152.1 hypothetical protein GUITHDRAFT_137762 [Guillard...  33.1    1.9  
+  XP_005705513.1 metal transporting P-type ATPase [Galdieria sulp...  33.1    2.2  
+  XP_005717681.1 unnamed protein product [Chondrus crispus]           32.7    2.6  
+  XP_005828773.1 vesicle transport through interaction with t-sna...  32.3    2.7  
+  XP_005821368.1 hypothetical protein GUITHDRAFT_160248 [Guillard...  31.6    6.1  
+  XP_005818780.1 hypothetical protein GUITHDRAFT_166821 [Guillard...  31.2    6.9  
+  XP_005719337.1 unnamed protein product [Chondrus crispus]           30.8    8.0  
+  XP_005710327.1 unnamed protein product [Chondrus crispus]           30.0    9.6  
+
+
+> XP_005834152.1 hypothetical protein GUITHDRAFT_137762 [Guillardia 
+theta CCMP2712]
+Length=1111
+
+ Score = 33.1 bits (74),  Expect = 1.9, Method: Compositional matrix adjust.
+ Identities = 34/143 (24%), Positives = 56/143 (39%), Gaps = 11/143 (8%)
+
+Query  657  NNSYECDIPIGAGICA---SYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIA  713
+            +N+    I  GAG  +   +Y T+ N P    ++ S    + T+  G   S  ++   +A
+Sbjct  410  DNAKRWIIDFGAGSLSGQPNYFTKVNDPYLQNALWSMFQASTTVGFGDITSTTHAGRIVA  469
+
+Query  714  IPTNFTISVTTEILPVSMTK-----TSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALT  768
+              T+    V   +L  S+          +  M +        NL     +F      A  
+Sbjct  470  AMTSVIGLVMVAMLTSSLMHRLQFSAEEESAMLMVAREKAWKNLSKHSATFLKAWLMARK  529
+
+Query  769  GIAVEQDKNTQEVFAQVKQIYKT  791
+            GIA    KN ++   Q+KQI+KT
+Sbjct  530  GIA---KKNKKDSLFQLKQIFKT  549
+
+
+> XP_005705513.1 metal transporting P-type ATPase [Galdieria sulphuraria]
+Length=854
+
+ Score = 33.1 bits (74),  Expect = 2.2, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 33/87 (38%), Gaps = 21/87 (24%)
+
+Query  491  PLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTG  550
+            PL  + F   +     P + + L   LLH   T+CG   + N                  
+Sbjct  92   PLHGFDFSSKSEEQRNPSQSLCLDESLLHCEGTLCGSSGNRN------------------  133
+
+Query  551  VLTESNKKFLPFQQFGRDIADTTDAVR  577
+               ES  KFL +Q F ++IAD  +  R
+Sbjct  134  ---ESFVKFLIYQLFPKNIADKLETFR  157
+
+
+> XP_005717681.1 unnamed protein product [Chondrus crispus]
+Length=604
+
+ Score = 32.7 bits (73),  Expect = 2.6, Method: Compositional matrix adjust.
+ Identities = 38/164 (23%), Positives = 64/164 (39%), Gaps = 17/164 (10%)
+
+Query  1    MFVFLVLLPLVSSQCV--NLTTRTQLPPAYTNSFTRGVYYPDKVFRSS--VLHSTQDLFL  56
+            +F+   LL ++   C   +L T T+  P+ T+    G YY D    +   +L     +  
+Sbjct  202  IFLDTSLLRILHDSCSESHLITATRKSPSQTDVLVLGRYYMDYALSTYGFMLLKLLGVMD  261
+
+Query  57   PFFSNVTWFHAIHVSGTNGTKRFD--NPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKT  114
+            P F+ +T          +GT+  D    +L         S      IR       +D + 
+Sbjct  262  PSFNFMT----------HGTRGVDVAQYMLRLRPDQILVSKLDGEGIRAPRHFVAVDERE  311
+
+Query  115  QSLLIVNNATNVVIKVCEFQFC-NDPFLGVYYHKNNKSWMESEF  157
+            +S+++    TN +  +     C N+PF G Y H   K   ES +
+Sbjct  312  KSIVVAIRGTNSISDIITDLLCDNEPFAGGYAHGGMKRAAESLY  355
+
+
+> XP_005828773.1 vesicle transport through interaction with t-snares 
+1 [Guillardia theta CCMP2712]
+Length=256
+
+ Score = 32.3 bits (72),  Expect = 2.7, Method: Composition-based stats.
+ Identities = 30/133 (23%), Positives = 60/133 (45%), Gaps = 8/133 (6%)
+
+Query  914   NVLYENQKLIANQFNSAIGKIQDSLSSTASALGKL----QDVVNQNAQALNTLVKQLSSN  969
+             N L E ++  A+++NS   K + ++      LGKL    +    +  +A    ++Q   +
+Sbjct  26    NKLGEQEQTNADEWNSIYQKAKHNVEDAEEVLGKLGMEVRSCKGETRKACENRLRQYKID  85
+
+Query  970   FGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKM  1029
+              G     L+  L +  KV +  + D L   R Q+     +  L  +AE RA +++   ++
+Sbjct  86    IGVCKDTLSCYLRKQRKVTSAAERDDLF--RNQNNGDKFSGNLTLSAEQRARSSVVTERL  143
+
+Query  1030  SECV--LGQSKRV  1040
+              +    + +S+RV
+Sbjct  144   EKSTQRIKESRRV  156
+
+
+> XP_005821368.1 hypothetical protein GUITHDRAFT_160248 [Guillardia 
+theta CCMP2712]
+Length=618
+
+ Score = 31.6 bits (70),  Expect = 6.1, Method: Compositional matrix adjust.
+ Identities = 16/68 (24%), Positives = 36/68 (53%), Gaps = 3/68 (4%)
+
+Query  935  QDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEA---EV  991
+            +++  S  +A+  + DVV +  + L  L + +  + G  + +L DI  R+D+++    EV
+Sbjct  142  EEAEPSERTAVEAVVDVVREKVEKLEKLAEMVLESHGPEAEILQDIYERIDRMDPSTFEV  201
+
+Query  992  QIDRLITG  999
+            +   ++ G
+Sbjct  202  RATEILIG  209
+
+
+> XP_005818780.1 hypothetical protein GUITHDRAFT_166821 [Guillardia 
+theta CCMP2712]
+Length=386
+
+ Score = 31.2 bits (69),  Expect = 6.9, Method: Composition-based stats.
+ Identities = 13/34 (38%), Positives = 22/34 (65%), Gaps = 3/34 (9%)
+
+Query  1197  LIDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMV  1230
+             L+++     +E Y KW   +W+G IAG++A V+V
+Sbjct  59    LLNMLHKTGFEMYKKW---VWIGAIAGIVAFVLV  89
+
+
+> XP_005719337.1 unnamed protein product [Chondrus crispus]
+Length=322
+
+ Score = 30.8 bits (68),  Expect = 8.0, Method: Compositional matrix adjust.
+ Identities = 15/37 (41%), Positives = 21/37 (57%), Gaps = 2/37 (5%)
+
+Query  1084  DGKAHFPREGVFVSNGTHWFVTQRNF--YEPQIITTD  1118
+             DGKA FP   +++S   H F TQ N    +P++I  D
+Sbjct  143   DGKAAFPNAKLYISKVDHEFWTQENVPNLKPEVIPND  179
+
+
+> XP_005710327.1 unnamed protein product [Chondrus crispus]
+Length=183
+
+ Score = 30.0 bits (66),  Expect = 9.6, Method: Composition-based stats.
+ Identities = 30/109 (28%), Positives = 43/109 (39%), Gaps = 11/109 (10%)
+
+Query  1016  AEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYV-----PA  1070
+             A  R+S+ L   +    V   + RV      +++  FPQ A  G +  ++          
+Sbjct  64    ASFRSSSPLVIQQNVAIVDMPAGRVLVDAGSFNIPEFPQFANAGRLLANMRAAGIAPESI  123
+
+Query  1071  QEKNFTTAPA------ICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQ  1113
+             Q   FT A A      I  DGK  FP   V++    H F TQ N   P+
+Sbjct  124   QAVVFTHAHADHVAGVITADGKRAFPNAHVYIDKVDHEFWTQSNVPNPK  172
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 15829232576
+
+
+  Database: refseq.1
+    Posted date:  Nov 5, 2020  7:34 PM
+  Number of letters in database: 19,035,956
+  Number of sequences in database:  47,178
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

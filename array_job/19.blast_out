@@ -1,0 +1,147 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.19
+           38,399 sequences; 22,119,663 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_008523059.1 PREDICTED: biogenesis of lysosome-related organe...  32.3    1.8  
+  XP_008523057.1 PREDICTED: biogenesis of lysosome-related organe...  32.3    1.9  
+  XP_008523855.1 PREDICTED: sodium/potassium/calcium exchanger 2 ...  33.1    2.2  
+  XP_008523854.1 PREDICTED: sodium/potassium/calcium exchanger 2 ...  33.1    2.4  
+  XP_008530015.1 PREDICTED: LOW QUALITY PROTEIN: protocadherin-15...  31.2    9.0  
+
+
+> XP_008523059.1 PREDICTED: biogenesis of lysosome-related organelles 
+complex 1 subunit 6 isoform X2 [Equus przewalskii]
+Length=172
+
+ Score = 32.3 bits (72),  Expect = 1.8, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 35/60 (58%), Gaps = 2/60 (3%)
+
+Query  1145  LDSFKEELDKYFKNHTSPDVD--LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQE  1202
+             LD+ ++E+ K+ + H+  D++    +    +A +VNI+KE+  L+E    L +  + LQ+
+Sbjct  82    LDTLEQEISKFKECHSMLDINALFTEAKHYHAKLVNIRKEMLMLHEKTSKLKKRALKLQQ  141
+
+
+> XP_008523057.1 PREDICTED: biogenesis of lysosome-related organelles 
+complex 1 subunit 6 isoform X1 [Equus przewalskii]
+Length=181
+
+ Score = 32.3 bits (72),  Expect = 1.9, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 35/60 (58%), Gaps = 2/60 (3%)
+
+Query  1145  LDSFKEELDKYFKNHTSPDVD--LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQE  1202
+             LD+ ++E+ K+ + H+  D++    +    +A +VNI+KE+  L+E    L +  + LQ+
+Sbjct  91    LDTLEQEISKFKECHSMLDINALFTEAKHYHAKLVNIRKEMLMLHEKTSKLKKRALKLQQ  150
+
+
+> XP_008523855.1 PREDICTED: sodium/potassium/calcium exchanger 
+2 isoform X2 [Equus przewalskii]
+Length=647
+
+ Score = 33.1 bits (74),  Expect = 2.2, Method: Compositional matrix adjust.
+ Identities = 31/126 (25%), Positives = 54/126 (43%), Gaps = 22/126 (17%)
+
+Query  806  LPDPSKPSKRSFIEDLLFNKVTLAD------AGFIKQYGDCLGDIAARDLICAQKFNGLT  859
+            LPD  KPS R F     F  +T           +  Q G+ +G         +++  GLT
+Sbjct  473  LPDVRKPSSRKFFPITFFGSITWIAVFSYLMVWWAHQVGETIG--------ISEEIMGLT  524
+
+Query  860  VL------PPLLTDEMIAQYTSALLAGTITSGW-TFGAGAALQIPFAM-QMAYRFNGIGV  911
+            +L      P L+T  ++A+     +A + + G   F     L +P+ +  + +RF  + V
+Sbjct  525  ILAAGTSIPDLITSVIVARKGLGDMAVSSSVGSNIFDITVGLPLPWLLYTIIHRFQPVAV  584
+
+Query  912  TQNVLY  917
+            + N L+
+Sbjct  585  SSNGLF  590
+
+
+> XP_008523854.1 PREDICTED: sodium/potassium/calcium exchanger 
+2 isoform X1 [Equus przewalskii]
+Length=664
+
+ Score = 33.1 bits (74),  Expect = 2.4, Method: Compositional matrix adjust.
+ Identities = 31/126 (25%), Positives = 54/126 (43%), Gaps = 22/126 (17%)
+
+Query  806  LPDPSKPSKRSFIEDLLFNKVTLAD------AGFIKQYGDCLGDIAARDLICAQKFNGLT  859
+            LPD  KPS R F     F  +T           +  Q G+ +G         +++  GLT
+Sbjct  490  LPDVRKPSSRKFFPITFFGSITWIAVFSYLMVWWAHQVGETIG--------ISEEIMGLT  541
+
+Query  860  VL------PPLLTDEMIAQYTSALLAGTITSGW-TFGAGAALQIPFAM-QMAYRFNGIGV  911
+            +L      P L+T  ++A+     +A + + G   F     L +P+ +  + +RF  + V
+Sbjct  542  ILAAGTSIPDLITSVIVARKGLGDMAVSSSVGSNIFDITVGLPLPWLLYTIIHRFQPVAV  601
+
+Query  912  TQNVLY  917
+            + N L+
+Sbjct  602  SSNGLF  607
+
+
+> XP_008530015.1 PREDICTED: LOW QUALITY PROTEIN: protocadherin-15-like, 
+partial [Equus przewalskii]
+Length=1642
+
+ Score = 31.2 bits (69),  Expect = 9.0, Method: Compositional matrix adjust.
+ Identities = 39/184 (21%), Positives = 76/184 (41%), Gaps = 46/184 (25%)
+
+Query  1106  QRNFYEPQIITTDN--TFVSGNCDVVIGIVN---------NTVYDPLQPELDSFKEELDK  1154
+             +R++++ Q+I TD+    +SG  DV++ +VN         N     ++ +++   E LD+
+Sbjct  922   RRSYFKFQVIATDDYGKGLSGKADVLVSVVNQLDMQVIVSNVPPTLVEKKIEELTEILDR  981
+
+Query  1155  YFKNHT---------------SPDVDLGDISGINASVVNIQKEIDRL---NEVAKNLNES  1196
+             Y +                       L D +  + +V  I  + +R    NE+ K L+  
+Sbjct  982   YVQEQIPGAKVVVESIGARRHGDAFSLEDYTKCDLTVYAIDPQTNRAIDRNELFKFLDGK  1041
+
+Query  1197  LIDLQ--------ELGKYEQYIKWPWYIW--------LGFIAGLIAIVMVTIMLCCMTSC  1240
+             L+D+         E G+  + I+ P  +         LG+  G +  +   I+LCC+ + 
+Sbjct  1042  LLDINKDFQPYYGEGGRILE-IRTPEAVTSIKKRGESLGYTEGALLALAFIIILCCIPAI  1100
+
+Query  1241  CSCL  1244
+                L
+Sbjct  1101  LVVL  1104
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 20438843503
+
+
+  Database: refseq.19
+    Posted date:  Nov 5, 2020  5:40 PM
+  Number of letters in database: 22,119,663
+  Number of sequences in database:  38,399
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

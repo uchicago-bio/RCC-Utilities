@@ -28,7 +28,7 @@ echo -n "> Hostname:       ";hostname
 #DB="/project/mpcs56420/nr/nr.$PADDED_NUMBER"
 PADDED_NUMBER=$(printf %02d $SLURM_ARRAY_TASK_ID)
 
-sleep 30
+sleep 15
 
 echo "> Working On: $SLURM_ARRAY_TASK_ID $SLURM_TASK_ID PRETTY_NUMBER: $PADDED_NUMBER"
 echo "> Done with processing"

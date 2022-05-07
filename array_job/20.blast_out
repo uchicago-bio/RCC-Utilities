@@ -1,0 +1,216 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.20
+           32,091 sequences; 16,689,599 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_008587562.1 PREDICTED: nucleolar protein 8 [Galeopterus vari...  44.7    5e-04
+  XP_008592250.1 PREDICTED: uncharacterized protein LOC103609741 ...  33.5    1.2  
+  XP_008583325.1 PREDICTED: biogenesis of lysosome-related organe...  32.3    1.4  
+  XP_008567377.1 PREDICTED: syntaxin-19 [Galeopterus variegatus]      32.7    1.6  
+  XP_008566630.1 PREDICTED: myomesin-2 [Galeopterus variegatus]       32.0    4.7  
+  XP_008567435.1 PREDICTED: uncharacterized protein C11orf63 homo...  30.8    7.9  
+  XP_008580425.1 PREDICTED: putative pre-mRNA-splicing factor ATP...  30.8    8.2  
+  XP_008582515.1 PREDICTED: protocadherin-15-like, partial [Galeo...  30.8    8.5  
+  XP_008567436.1 PREDICTED: uncharacterized protein C11orf63 homo...  30.8    8.9  
+
+
+> XP_008587562.1 PREDICTED: nucleolar protein 8 [Galeopterus variegatus]
+Length=1099
+
+ Score = 44.7 bits (104),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 65/257 (25%), Positives = 99/257 (39%), Gaps = 45/257 (18%)
+
+Query  488  CYFPLQSYGFQPTNGV-----GYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFN  542
+            C F   S G QP  G+     G  P  +V     LL      CG +K     K   +   
+Sbjct  444  CGFDRASKGPQPPGGLRSCWQGICPEEIVA---SLLEEKENTCGKQKQ----KENNIKPK  496
+
+Query  543  FNGLTGTGVL--TESNKKFLPFQQFGRDIADTTDAVR--DPQTLEILDITPCSFGGVSVI  598
+            F    G G L   ES KK L       +I    ++++  DP ++ I D + C+ G  S +
+Sbjct  497  FQAFKGVGCLYGKESVKKSLKKSVASNNINGNQNSLKNEDPSSISIEDKSVCAKGSSSEL  556
+
+Query  599  TP-----GTNTSNQVAVL-----YQDVNCTEV-PVAIHADQLTPTWRVYSTGSNVFQTRA  647
+            TP       N+ N +  L     +   +C  V P +    +  P   +            
+Sbjct  557  TPCQRARKMNSPNHIQALKGQSTFDSQDCKVVSPSSSEKGRRNPVSSLLP----------  606
+
+Query  648  GCLIGAEHVNNSYECD-IPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVA  706
+              L G + +N S + D I  G   C S  T+T     A S   +S  +  MSLG    V+
+Sbjct  607  --LKGKKSLNLSTKTDKIGFGKDHCHST-TKTE----AASEEERSDSSNLMSLGKSPKVS  659
+
+Query  707  YSNNSIAIPTNFTISVT  723
+               ++    T+F++SV+
+Sbjct  660  SRKDTQESKTDFSLSVS  676
+
+
+> XP_008592250.1 PREDICTED: uncharacterized protein LOC103609741 
+[Galeopterus variegatus]
+Length=349
+
+ Score = 33.5 bits (75),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 14/28 (50%), Positives = 15/28 (54%), Gaps = 7/28 (25%)
+
+Query  1235  CCMTSCC-------SCLKGCCSCGSCCK  1255
+             C  +SCC       SC K CCS  SCCK
+Sbjct  82    CSQSSCCVPVCSQSSCCKPCCSQSSCCK  109
+
+
+> XP_008583325.1 PREDICTED: biogenesis of lysosome-related organelles 
+complex 1 subunit 6 [Galeopterus variegatus]
+Length=172
+
+ Score = 32.3 bits (72),  Expect = 1.4, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 35/60 (58%), Gaps = 2/60 (3%)
+
+Query  1145  LDSFKEELDKYFKNHTSPDVD--LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQE  1202
+             LD+ ++E+ K+ + H+  D++    +    +A +VNI+KE+  L+E    L +  + LQ+
+Sbjct  82    LDTLEQEISKFKECHSMLDINALFTEAKHYHAKLVNIRKEMLMLHEKTSKLKKRALKLQQ  141
+
+
+> XP_008567377.1 PREDICTED: syntaxin-19 [Galeopterus variegatus]
+Length=294
+
+ Score = 32.7 bits (73),  Expect = 1.6, Method: Composition-based stats.
+ Identities = 32/147 (22%), Positives = 71/147 (48%), Gaps = 12/147 (8%)
+
+Query  908   GIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTA---SALGKLQDVVNQNAQALNTL--  962
+             G+ + Q V+YE ++L+A ++   I K+QDS+++ A      G+ Q  +  + +  + L  
+Sbjct  32    GVFLQQAVIYE-RELVAERYLHEIQKLQDSINNLADDVQKFGQQQKSLMASMRRFSLLKR  90
+
+Query  963   ----VKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEI  1018
+                  K++      I+  L+D++  + K EAE     ++T  L+S    + +   +   +
+Sbjct  91    ESSTTKEIKIQAEHINRGLDDLVKEVKKSEAENGPSSVVTRILKSQHAAMFRHFQQTMFL  150
+
+Query  1019  RASANLAATKMSECVLGQSKRVDFCGK  1045
+                 ++ A+K  +C     ++++  GK
+Sbjct  151   --YNDMIASKQEKCKTFIVRQLEVAGK  175
+
+
+> XP_008566630.1 PREDICTED: myomesin-2 [Galeopterus variegatus]
+Length=1385
+
+ Score = 32.0 bits (71),  Expect = 4.7, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 11/72 (15%)
+
+Query  1155  YFKNHTSPD-VDLG-------DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKY  1206
+             YFKN   PD VDLG       D  G+++S V  ++E++RL  ++  +    I L+    Y
+Sbjct  888   YFKN---PDKVDLGTYSVSVSDTDGVSSSFVLDEEELERLKALSNEIKNPTIPLKSELAY  944
+
+Query  1207  EQYIKWPWYIWL  1218
+             E + K     WL
+Sbjct  945   EIFDKGQVRFWL  956
+
+
+> XP_008567435.1 PREDICTED: uncharacterized protein C11orf63 homolog 
+isoform X1 [Galeopterus variegatus]
+Length=740
+
+ Score = 30.8 bits (68),  Expect = 7.9, Method: Compositional matrix adjust.
+ Identities = 31/101 (31%), Positives = 54/101 (53%), Gaps = 12/101 (12%)
+
+Query  936   DSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSV-LNDILSRLDKVEAEVQID  994
+             DS    AS   +L  ++ Q+ QAL  L  ++  + GA+SSV L  ILSR   VE+E Q+ 
+Sbjct  514   DSQPIRASPDSRLTQIMEQHQQALVQLT-EVQPSEGALSSVTLPPILSR---VESESQLS  569
+
+Query  995   RLITGRLQ------SLQTYVTQQLIRAAEIRASANLAATKM  1029
+                + R Q      + ++Y++ QL +  + R  + + ++K+
+Sbjct  570   SDRSQRSQMKISRSNSESYLS-QLEKGKKHRKRSGIKSSKL  609
+
+
+> XP_008580425.1 PREDICTED: putative pre-mRNA-splicing factor ATP-dependent 
+RNA helicase DHX15 [Galeopterus variegatus]
+Length=795
+
+ Score = 30.8 bits (68),  Expect = 8.2, Method: Compositional matrix adjust.
+ Identities = 15/55 (27%), Positives = 29/55 (53%), Gaps = 0/55 (0%)
+
+Query  217  PQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQ  271
+            P+ +  L+  + LP+     RF  +L  H+S++  G++ SG T     + V Y++
+Sbjct  125  PRYYDILKKRLQLPVWEYKDRFTDILVRHQSFVLVGETGSGKTTQIPQWCVEYMR  179
+
+
+> XP_008582515.1 PREDICTED: protocadherin-15-like, partial [Galeopterus 
+variegatus]
+Length=828
+
+ Score = 30.8 bits (68),  Expect = 8.5, Method: Compositional matrix adjust.
+ Identities = 41/185 (22%), Positives = 77/185 (42%), Gaps = 48/185 (26%)
+
+Query  1106  QRNFYEPQIITTDN--TFVSGNCDVVIGIVN---------NTVYDPLQPELDSFKEELDK  1154
+             +R++++ Q+I TD+    +SG  DV++ +VN         N     ++ +++   E LD+
+Sbjct  258   RRSYFKFQVIATDDYGKGLSGKADVLVSVVNQLDMQVIVSNVPPTLVEKKIEDLTEILDR  317
+
+Query  1155  YFKNHT---------------SPDVDLGDISGINASVVNIQ----KEIDRLNEVAKNLNE  1195
+             Y +                       L D +  + +V  I     + IDR NE+ K L+ 
+Sbjct  318   YVQEQIPGAKVVVESIGARRHGDAFSLEDYTKCDLTVYAIDPQTNRAIDR-NELFKFLDG  376
+
+Query  1196  SLIDLQ--------ELGKYEQYIKWPWYIW--------LGFIAGLIAIVMVTIMLCCMTS  1239
+              L+D+         E G+  + I+ P  +         LG+  G +  +   I+LCC+ +
+Sbjct  377   KLLDINKDFQPFYGEGGRILE-IRTPEAVTSIKKRGESLGYTEGALLALAFIIILCCIPA  435
+
+Query  1240  CCSCL  1244
+                 L
+Sbjct  436   ILVVL  440
+
+
+> XP_008567436.1 PREDICTED: uncharacterized protein C11orf63 homolog 
+isoform X2 [Galeopterus variegatus]
+Length=778
+
+ Score = 30.8 bits (68),  Expect = 8.9, Method: Compositional matrix adjust.
+ Identities = 31/101 (31%), Positives = 54/101 (53%), Gaps = 12/101 (12%)
+
+Query  936   DSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSV-LNDILSRLDKVEAEVQID  994
+             DS    AS   +L  ++ Q+ QAL  L  ++  + GA+SSV L  ILSR   VE+E Q+ 
+Sbjct  552   DSQPIRASPDSRLTQIMEQHQQALVQLT-EVQPSEGALSSVTLPPILSR---VESESQLS  607
+
+Query  995   RLITGRLQ------SLQTYVTQQLIRAAEIRASANLAATKM  1029
+                + R Q      + ++Y++ QL +  + R  + + ++K+
+Sbjct  608   SDRSQRSQMKISRSNSESYLS-QLEKGKKHRKRSGIKSSKL  647
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 15103189775
+
+
+  Database: refseq.20
+    Posted date:  Nov 5, 2020  5:41 PM
+  Number of letters in database: 16,689,599
+  Number of sequences in database:  32,091
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

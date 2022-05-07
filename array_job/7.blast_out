@@ -1,0 +1,151 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.7
+           29,169 sequences; 12,482,183 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_007373598.1 hypothetical protein SPAPADRAFT_59426 [Spathaspo...  33.9    0.56 
+  XP_007379304.1 hypothetical protein PUNSTDRAFT_80708 [Punctular...  32.7    1.9  
+  XP_007374891.1 hypothetical protein SPAPADRAFT_60728 [Spathaspo...  31.6    3.5  
+  XP_007329046.1 hypothetical protein AGABI1DRAFT_73502 [Agaricus...  31.2    4.5  
+  XP_007373091.1 hypothetical protein SPAPADRAFT_48648 [Spathaspo...  30.4    8.9  
+
+
+> XP_007373598.1 hypothetical protein SPAPADRAFT_59426 [Spathaspora 
+passalidarum NRRL Y-27907]
+Length=303
+
+ Score = 33.9 bits (76),  Expect = 0.56, Method: Compositional matrix adjust.
+ Identities = 25/71 (35%), Positives = 35/71 (49%), Gaps = 3/71 (4%)
+
+Query  833  FIKQYGDCLGDIAARDLICAQKFNGLTVLPPL--LTDEMIAQYTSALLAGTITSGWTFGA  890
+            F KQ+ DCL +  A D   AQ + G T    L  +     AQ +S +  GTI SG+  G 
+Sbjct  72   FFKQFSDCLENCNANDDANAQ-YGGKTDAASLKNMFCNAAAQISSLIADGTIPSGYRGGD  130
+
+Query  891  GAALQIPFAMQ  901
+            G AL +   ++
+Sbjct  131  GPALGVDLPLE  141
+
+
+> XP_007379304.1 hypothetical protein PUNSTDRAFT_80708 [Punctularia 
+strigosozonata HHB-11173 SS5]
+Length=804
+
+ Score = 32.7 bits (73),  Expect = 1.9, Method: Compositional matrix adjust.
+ Identities = 31/97 (32%), Positives = 52/97 (54%), Gaps = 12/97 (12%)
+
+Query  931   IGKIQDSLSST------ASA-LGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSR  983
+             + KI DSLS+       ASA L +L+ ++    Q    L+++  S    +   ++D+ +R
+Sbjct  15    LQKIVDSLSAENAELQGASARLAQLEPML----QKAGNLLREEQSRSAGLRQQVSDLETR  70
+
+Query  984   LDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRA  1020
+             L  +  ++Q    +    QSL+T +TQQL+ AAE RA
+Sbjct  71    LQDIPKQLQTIAALEAEKQSLETGLTQQLL-AAEARA  106
+
+
+> XP_007374891.1 hypothetical protein SPAPADRAFT_60728 [Spathaspora 
+passalidarum NRRL Y-27907]
+Length=339
+
+ Score = 31.6 bits (70),  Expect = 3.5, Method: Composition-based stats.
+ Identities = 22/103 (21%), Positives = 52/103 (50%), Gaps = 4/103 (4%)
+
+Query  913   QNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGA  972
+             +N + E+ +L+  +   A  KI   L     +L +    V+ + + L+T   +++S    
+Sbjct  141   RNKIIEDLRLVILENQQATEKITSDLKQEIESLKEKVSKVDHDNETLST---EINSKKQE  197
+
+Query  973   ISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRA  1015
+             I + LN+ L  +D+++ ++   +L+ G+L+     + + L +A
+Sbjct  198   IDN-LNNQLKEIDELKTDINTKQLLIGKLRHEAIILNEHLTKA  239
+
+
+> XP_007329046.1 hypothetical protein AGABI1DRAFT_73502 [Agaricus 
+bisporus var. burnettii JB137-S8]
+Length=457
+
+ Score = 31.2 bits (69),  Expect = 4.5, Method: Compositional matrix adjust.
+ Identities = 35/136 (26%), Positives = 61/136 (45%), Gaps = 4/136 (3%)
+
+Query  181  GKQGNFKNLREFVFKNIDGYFKIYSKHTPIN-LVRDLPQGF-SALEPLVDLPIGINITRF  238
+            G   +F+ L     K+   Y+KIY+++ P   L +D+      A +     P G+++   
+Sbjct  284  GMGPDFRVLVTRARKSAQAYWKIYNEYPPTRVLTQDIANVMQQATQSGGVRPFGVSLLVA  343
+
+Query  239  QTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLK-YNENGTITDAVDCALDPLS  297
+               +    S      S S W   A+A     +  +TFL K YN++ ++ DA+  AL  L 
+Sbjct  344  GWDINRGPSLYQVDPSGSFWAWKASAIGKNMINAKTFLEKRYNDDISLEDAIHTALLTLK  403
+
+Query  298  ET-KCTLKSFTVEKGI  312
+            E  +  +   T+E G+
+Sbjct  404  EGFEGQMTEKTIEIGV  419
+
+
+> XP_007373091.1 hypothetical protein SPAPADRAFT_48648 [Spathaspora 
+passalidarum NRRL Y-27907]
+Length=1760
+
+ Score = 30.4 bits (67),  Expect = 8.9, Method: Compositional matrix adjust.
+ Identities = 53/186 (28%), Positives = 81/186 (44%), Gaps = 35/186 (19%)
+
+Query  916   LYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQL------SSN  969
+             L+E ++ +A   +  I +IQ+ L ++  A  KL+D +N+  + L +L KQ       S  
+Sbjct  825   LHEARRKLATS-DETIRQIQEKLDTSEQARKKLEDGINKMTRDLFSLQKQRDEADSKSKQ  883
+
+Query  970   FGAISSVLNDILSRLDKVEAEVQIDRLIT------GRLQSLQTYVTQQLIRAAEIRASAN  1023
+             +      LND L++  K  ++ QI++L T       RL  L   V+  L R  E      
+Sbjct  884   YERDIKKLNDTLTK-SKSTSDSQIEKLQTENKEYQSRLDRLNAQVS-SLSRGQE------  935
+
+Query  1024  LAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICH  1083
+               AT+  E  L +S+         HLM   +SA   V F  +    AQE    TA A C 
+Sbjct  936   -GATRELEEKLYESE-----ATNAHLMDKLRSA--SVAFSDLK--QAQE----TAQAECE  981
+
+Query  1084  DGKAHF  1089
+               K+  
+Sbjct  982   LVKSEL  987
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10742020688
+
+
+  Database: refseq.7
+    Posted date:  Nov 5, 2020  6:02 PM
+  Number of letters in database: 12,482,183
+  Number of sequences in database:  29,169
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

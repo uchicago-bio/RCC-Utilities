@@ -19,6 +19,6 @@ echo -n "> Running on Node: "; hostname
 
 # Run any commands
 echo "> Sleep Command"
-sleep 5
+time sleep 5
 
 echo "> Done Running"

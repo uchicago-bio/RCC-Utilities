@@ -1,0 +1,97 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.14
+           32,930 sequences; 19,688,217 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_007946624.1 PREDICTED: ras GTPase-activating-like protein IQ...  32.0    5.5  
+  XP_007933410.1 PREDICTED: biogenesis of lysosome-related organe...  30.8    5.7  
+  XP_007950751.1 PREDICTED: putative pre-mRNA-splicing factor ATP...  30.8    9.6  
+
+
+> XP_007946624.1 PREDICTED: ras GTPase-activating-like protein 
+IQGAP3 [Orycteropus afer afer]
+Length=1630
+
+ Score = 32.0 bits (71),  Expect = 5.5, Method: Compositional matrix adjust.
+ Identities = 32/104 (31%), Positives = 51/104 (49%), Gaps = 3/104 (3%)
+
+Query  923   IANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISS--VLNDI  980
+             IA   N+ + K++ SL+ T    G   D+ + NAQ+L    KQ+ ++     S   L +I
+Sbjct  1329  IAADGNTDLSKLEVSLTLTNKFEGLETDIDDTNAQSLLLSTKQMLADIIQFHSGDSLKEI  1388
+
+Query  981   LSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANL  1024
+             LS     E EV  +RL+ GR Q+ +    + L R   + A + L
+Sbjct  1389  LSVSASREQEVAHERLM-GRRQACEAQTPEPLWRHRSLTAHSLL  1431
+
+
+> XP_007933410.1 PREDICTED: biogenesis of lysosome-related organelles 
+complex 1 subunit 6 [Orycteropus afer afer]
+Length=172
+
+ Score = 30.8 bits (68),  Expect = 5.7, Method: Composition-based stats.
+ Identities = 16/60 (27%), Positives = 34/60 (57%), Gaps = 2/60 (3%)
+
+Query  1145  LDSFKEELDKYFKNHTSPDVD--LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQE  1202
+             LD+ ++E+ K+ + H+  D++    +    +  +VNI+KE+  L+E    L +  + LQ+
+Sbjct  82    LDTLEQEISKFKECHSMLDINALFTEAKHYHTKLVNIRKEMLMLHEKTSKLKKRALKLQQ  141
+
+
+> XP_007950751.1 PREDICTED: putative pre-mRNA-splicing factor ATP-dependent 
+RNA helicase DHX15 [Orycteropus afer afer]
+Length=795
+
+ Score = 30.8 bits (68),  Expect = 9.6, Method: Compositional matrix adjust.
+ Identities = 15/55 (27%), Positives = 29/55 (53%), Gaps = 0/55 (0%)
+
+Query  217  PQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQ  271
+            P+ +  L+  + LP+     RF  +L  H+S++  G++ SG T     + V Y++
+Sbjct  125  PRYYDILKKRLQLPVWEYKDRFTDILVRHQSFVLVGETGSGKTTQIPQWCVEYMR  179
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 18413667186
+
+
+  Database: refseq.14
+    Posted date:  Nov 5, 2020  5:39 PM
+  Number of letters in database: 19,688,217
+  Number of sequences in database:  32,930
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

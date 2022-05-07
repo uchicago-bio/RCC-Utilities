@@ -1,0 +1,241 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.8
+           27,763 sequences; 15,687,818 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_007458373.1 PREDICTED: kinesin-like protein KIF6 [Lipotes ve...  35.8    0.27 
+  XP_007467087.1 PREDICTED: biogenesis of lysosome-related organe...  32.3    1.3  
+  XP_007458201.1 PREDICTED: LOW QUALITY PROTEIN: dimethylaniline ...  32.0    3.5  
+  XP_007469726.1 PREDICTED: sodium/potassium/calcium exchanger 2 ...  32.0    3.9  
+  XP_007469727.1 PREDICTED: sodium/potassium/calcium exchanger 2 ...  32.0    3.9  
+  XP_007470785.1 PREDICTED: LOW QUALITY PROTEIN: interleukin-20 [...  30.4    6.3  
+  XP_007448867.1 PREDICTED: sodium-dependent phosphate transport ...  31.2    6.3  
+  XP_007448859.1 PREDICTED: putative pre-mRNA-splicing factor ATP...  30.8    7.7  
+  XP_007470377.1 PREDICTED: protocadherin-15, partial [Lipotes ve...  30.8    8.3  
+  XP_007458722.1 PREDICTED: 26S protease regulatory subunit 6B is...  30.4    9.4  
+  XP_007458721.1 PREDICTED: 26S protease regulatory subunit 6B is...  30.4    9.6  
+
+
+> XP_007458373.1 PREDICTED: kinesin-like protein KIF6 [Lipotes 
+vexillifer]
+Length=890
+
+ Score = 35.8 bits (81),  Expect = 0.27, Method: Compositional matrix adjust.
+ Identities = 24/94 (26%), Positives = 40/94 (43%), Gaps = 8/94 (9%)
+
+Query  862  PPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQK  921
+            PP   D   +QY S+LL G          G   ++ F  Q A+         +V  E+ K
+Sbjct  527  PPQAPDSSTSQYRSSLLHGK--------TGMKEEMSFGRQEAFEIFKRDHADSVTIEDNK  578
+
+Query  922  LIANQFNSAIGKIQDSLSSTASALGKLQDVVNQN  955
+             I  Q  S    + +S++   S +G+L++ + Q 
+Sbjct  579  QILKQRFSEAKALGESINEARSKIGRLKEEITQR  612
+
+
+> XP_007467087.1 PREDICTED: biogenesis of lysosome-related organelles 
+complex 1 subunit 6 [Lipotes vexillifer]
+Length=172
+
+ Score = 32.3 bits (72),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 35/60 (58%), Gaps = 2/60 (3%)
+
+Query  1145  LDSFKEELDKYFKNHTSPDVD--LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQE  1202
+             LD+ ++E+ K+ + H+  D++    +    +A +VNI+KE+  L+E    L +  + LQ+
+Sbjct  82    LDTLEQEISKFKECHSMLDINALFTEAKHYHAKLVNIRKEMLMLHEKTSKLKKRALKLQQ  141
+
+
+> XP_007458201.1 PREDICTED: LOW QUALITY PROTEIN: dimethylaniline 
+monooxygenase [N-oxide-forming] 4 [Lipotes vexillifer]
+Length=558
+
+ Score = 32.0 bits (71),  Expect = 3.5, Method: Compositional matrix adjust.
+ Identities = 25/83 (30%), Positives = 41/83 (49%), Gaps = 9/83 (11%)
+
+Query  799  GFNFS-QILPDPSKP--SKRSFIEDLLF----NKVTLADAGFIKQYGDCLGDIAARDLIC  851
+            G+ FS   L +P K   +K++F+  L+F     + TLA  GFI   G  L     +    
+Sbjct  329  GYTFSFPFLEEPLKSLCTKKTFLYKLVFPSNLERTTLAMIGFISLTGSILAGTELQARWA  388
+
+Query  852  AQKFNGLTVLPPLLTDEMIAQYT  874
+             + F GL  +PP  + +++A+ T
+Sbjct  389  TRVFKGLCKIPP--SQKLMAEAT  409
+
+
+> XP_007469726.1 PREDICTED: sodium/potassium/calcium exchanger 
+2 isoform X1 [Lipotes vexillifer]
+Length=662
+
+ Score = 32.0 bits (71),  Expect = 3.9, Method: Compositional matrix adjust.
+ Identities = 31/126 (25%), Positives = 53/126 (42%), Gaps = 22/126 (17%)
+
+Query  806  LPDPSKPSKRSFIEDLLFNKVTLAD------AGFIKQYGDCLGDIAARDLICAQKFNGLT  859
+            LPD  KPS R F     F  +T           +  Q G+ +G         +++  GLT
+Sbjct  488  LPDVRKPSSRKFFPITFFGSITWIAVFSYLMVWWAHQVGETIG--------ISEEIMGLT  539
+
+Query  860  VL------PPLLTDEMIAQYTSALLAGTITSGW-TFGAGAALQIPFAM-QMAYRFNGIGV  911
+            +L      P L+T  ++A+     +A + + G   F     L +P+ +    +RF  + V
+Sbjct  540  ILAAGTSIPDLITSVIVARKGLGDMAVSSSVGSNIFDITVGLPLPWLLYTTIHRFQPVAV  599
+
+Query  912  TQNVLY  917
+            + N L+
+Sbjct  600  SSNGLF  605
+
+
+> XP_007469727.1 PREDICTED: sodium/potassium/calcium exchanger 
+2 isoform X2 [Lipotes vexillifer]
+Length=645
+
+ Score = 32.0 bits (71),  Expect = 3.9, Method: Compositional matrix adjust.
+ Identities = 31/126 (25%), Positives = 53/126 (42%), Gaps = 22/126 (17%)
+
+Query  806  LPDPSKPSKRSFIEDLLFNKVTLAD------AGFIKQYGDCLGDIAARDLICAQKFNGLT  859
+            LPD  KPS R F     F  +T           +  Q G+ +G         +++  GLT
+Sbjct  471  LPDVRKPSSRKFFPITFFGSITWIAVFSYLMVWWAHQVGETIG--------ISEEIMGLT  522
+
+Query  860  VL------PPLLTDEMIAQYTSALLAGTITSGW-TFGAGAALQIPFAM-QMAYRFNGIGV  911
+            +L      P L+T  ++A+     +A + + G   F     L +P+ +    +RF  + V
+Sbjct  523  ILAAGTSIPDLITSVIVARKGLGDMAVSSSVGSNIFDITVGLPLPWLLYTTIHRFQPVAV  582
+
+Query  912  TQNVLY  917
+            + N L+
+Sbjct  583  SSNGLF  588
+
+
+> XP_007470785.1 PREDICTED: LOW QUALITY PROTEIN: interleukin-20 
+[Lipotes vexillifer]
+Length=180
+
+ Score = 30.4 bits (67),  Expect = 6.3, Method: Composition-based stats.
+ Identities = 13/32 (41%), Positives = 21/32 (66%), Gaps = 0/32 (0%)
+
+Query  1152  LDKYFKNHTSPDVDLGDISGINASVVNIQKEI  1183
+             LD+ FKN  +PD  +  ISG+  S + I+K++
+Sbjct  91    LDRVFKNXQTPDHHILQISGLANSFLTIKKDL  122
+
+
+> XP_007448867.1 PREDICTED: sodium-dependent phosphate transport 
+protein 2B [Lipotes vexillifer]
+Length=685
+
+ Score = 31.2 bits (69),  Expect = 6.3, Method: Compositional matrix adjust.
+ Identities = 11/24 (46%), Positives = 12/24 (50%), Gaps = 2/24 (8%)
+
+Query  1234  LCCMTSC--CSCLKGCCSCGSCCK  1255
+             LCC   C  C C   CC C  CC+
+Sbjct  614   LCCRICCLTCGCPNKCCHCSKCCE  637
+
+
+> XP_007448859.1 PREDICTED: putative pre-mRNA-splicing factor ATP-dependent 
+RNA helicase DHX15 [Lipotes vexillifer]
+Length=795
+
+ Score = 30.8 bits (68),  Expect = 7.7, Method: Compositional matrix adjust.
+ Identities = 15/55 (27%), Positives = 29/55 (53%), Gaps = 0/55 (0%)
+
+Query  217  PQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQ  271
+            P+ +  L+  + LP+     RF  +L  H+S++  G++ SG T     + V Y++
+Sbjct  125  PRYYDILKKRLQLPVWEYKDRFTDILVRHQSFVLVGETGSGKTTQIPQWCVEYMR  179
+
+
+> XP_007470377.1 PREDICTED: protocadherin-15, partial [Lipotes 
+vexillifer]
+Length=1457
+
+ Score = 30.8 bits (68),  Expect = 8.3, Method: Compositional matrix adjust.
+ Identities = 41/185 (22%), Positives = 77/185 (42%), Gaps = 48/185 (26%)
+
+Query  1106  QRNFYEPQIITTDN--TFVSGNCDVVIGIVN---------NTVYDPLQPELDSFKEELDK  1154
+             +R++++ Q+I TD+    +SG  DV++ +VN         N     ++ +++   E LD+
+Sbjct  892   RRSYFKFQVIATDDYGKGLSGKADVLVSVVNQLDMQVIVSNVPPTLVERKIEDLTEILDR  951
+
+Query  1155  YFKNHT---------------SPDVDLGDISGINASVVNIQ----KEIDRLNEVAKNLNE  1195
+             Y +                       L D +  + +V  I     + IDR NE+ K L+ 
+Sbjct  952   YVQEQIPGAKVVVENVGARRHGDAFSLEDYTKCDLTVYAIDPQTNRAIDR-NELFKFLDG  1010
+
+Query  1196  SLIDLQ--------ELGKYEQYIKWPWYIW--------LGFIAGLIAIVMVTIMLCCMTS  1239
+              L+D+         E G+  + I+ P  +         LG+  G +  +   I+LCC+ +
+Sbjct  1011  KLLDINKDFQPYYGEGGRILE-IRTPEAVTSIKKRGESLGYTEGALLALAFIIILCCIPA  1069
+
+Query  1240  CCSCL  1244
+                 L
+Sbjct  1070  ILVVL  1074
+
+
+> XP_007458722.1 PREDICTED: 26S protease regulatory subunit 6B 
+isoform X2 [Lipotes vexillifer]
+Length=387
+
+ Score = 30.4 bits (67),  Expect = 9.4, Method: Composition-based stats.
+ Identities = 21/80 (26%), Positives = 35/80 (44%), Gaps = 4/80 (5%)
+
+Query  1105  TQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDV  1164
+             T  N+Y   + T D   +  N  V +   +N + D L PE DS    L     +   PDV
+Sbjct  76    TGSNYYVRILSTIDRELLKPNASVALHKHSNALVDVLPPEADSSIMML----TSDQKPDV  131
+
+Query  1165  DLGDISGINASVVNIQKEID  1184
+                DI G++     +++ ++
+Sbjct  132   MYADIGGMDIQKQEVREAVE  151
+
+
+> XP_007458721.1 PREDICTED: 26S protease regulatory subunit 6B 
+isoform X1 [Lipotes vexillifer]
+Length=418
+
+ Score = 30.4 bits (67),  Expect = 9.6, Method: Composition-based stats.
+ Identities = 21/80 (26%), Positives = 35/80 (44%), Gaps = 4/80 (5%)
+
+Query  1105  TQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDV  1164
+             T  N+Y   + T D   +  N  V +   +N + D L PE DS    L     +   PDV
+Sbjct  107   TGSNYYVRILSTIDRELLKPNASVALHKHSNALVDVLPPEADSSIMML----TSDQKPDV  162
+
+Query  1165  DLGDISGINASVVNIQKEID  1184
+                DI G++     +++ ++
+Sbjct  163   MYADIGGMDIQKQEVREAVE  182
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 14558694840
+
+
+  Database: refseq.8
+    Posted date:  Nov 5, 2020  6:05 PM
+  Number of letters in database: 15,687,818
+  Number of sequences in database:  27,763
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

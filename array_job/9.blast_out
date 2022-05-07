@@ -1,0 +1,67 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.9
+           20,657 sequences; 9,127,192 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_007686162.1 hypothetical protein COCMIDRAFT_35157 [Bipolaris...  30.8    0.67 
+
+
+> XP_007686162.1 hypothetical protein COCMIDRAFT_35157 [Bipolaris 
+oryzae ATCC 44560]
+Length=82
+
+ Score = 30.8 bits (68),  Expect = 0.67, Method: Composition-based stats.
+ Identities = 20/60 (33%), Positives = 32/60 (53%), Gaps = 4/60 (7%)
+
+Query  937  SLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVL----NDILSRLDKVEAEVQ  992
+            S S TAS      +   +    ++ L+ QL++ F +ISS L    +D+  RLD +EA +Q
+Sbjct  11   SQSDTASVSSNNPEASGELTAVVDDLLNQLNTKFNSISSELLSKMDDMSRRLDNLEATIQ  70
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8003173956
+
+
+  Database: refseq.9
+    Posted date:  Nov 5, 2020  6:08 PM
+  Number of letters in database: 9,127,192
+  Number of sequences in database:  20,657
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

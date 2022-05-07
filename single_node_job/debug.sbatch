@@ -10,7 +10,8 @@
 #SBATCH --output=%j.serial_job.out
 #SBATCH --error=%j.serial_job.err
 
-DATABASE="/project2/mpcs56420/db/pdbaa"
+#DATABASE="/project2/mpcs56420/db/pdbaa"
+DATABASE="/project2/mpcs56420/db/nr_unsplit/nr_unsplit"
 OUTFILE="out.txt"
 
 echo "> Slurm Id:       "$SLURM_JOBID

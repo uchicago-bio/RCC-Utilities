@@ -1,0 +1,127 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.16
+           24,491 sequences; 17,116,617 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_008014934.1 PREDICTED: biogenesis of lysosome-related organe...  33.1    0.80 
+  XP_008014933.1 PREDICTED: biogenesis of lysosome-related organe...  33.1    0.80 
+  XP_007982334.1 PREDICTED: cadherin EGF LAG seven-pass G-type re...  31.6    6.0  
+  XP_007982332.1 PREDICTED: cadherin EGF LAG seven-pass G-type re...  31.6    6.1  
+  XP_008015933.1 PREDICTED: putative pre-mRNA-splicing factor ATP...  30.8    8.4  
+
+
+> XP_008014934.1 PREDICTED: biogenesis of lysosome-related organelles 
+complex 1 subunit 6 [Chlorocebus sabaeus]
+Length=172
+
+ Score = 33.1 bits (74),  Expect = 0.80, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 35/60 (58%), Gaps = 2/60 (3%)
+
+Query  1145  LDSFKEELDKYFKNHTSPDVD--LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQE  1202
+             LD+ ++E+ K+ + H+  D++    +    +A +VNI+KE+  L+E    L +  + LQ+
+Sbjct  82    LDTLEQEISKFKECHSMLDINALFAEAKHYHAKLVNIRKEMLMLHEKTSKLKKRALKLQQ  141
+
+
+> XP_008014933.1 PREDICTED: biogenesis of lysosome-related organelles 
+complex 1 subunit 6 [Chlorocebus sabaeus]
+Length=172
+
+ Score = 33.1 bits (74),  Expect = 0.80, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 35/60 (58%), Gaps = 2/60 (3%)
+
+Query  1145  LDSFKEELDKYFKNHTSPDVD--LGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQE  1202
+             LD+ ++E+ K+ + H+  D++    +    +A +VNI+KE+  L+E    L +  + LQ+
+Sbjct  82    LDTLEQEISKFKECHSMLDINALFAEAKHYHAKLVNIRKEMLMLHEKTSKLKKRALKLQQ  141
+
+
+> XP_007982334.1 PREDICTED: cadherin EGF LAG seven-pass G-type 
+receptor 3 isoform X2 [Chlorocebus sabaeus]
+Length=3312
+
+ Score = 31.6 bits (70),  Expect = 6.0, Method: Compositional matrix adjust.
+ Identities = 25/96 (26%), Positives = 36/96 (38%), Gaps = 11/96 (11%)
+
+Query  825   KVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITS  884
+             K+   D+G  K  G CL         C   F G         D  +         G  T 
+Sbjct  1722  KLHFCDSGPCKNSGFCLERWGGFSCDCPVGFGG--------KDCRLTMAHPHHFRGNGTL  1773
+
+Query  885   GWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQ  920
+              W FG+  A+ +P+ + +A+R      TQ VL + Q
+Sbjct  1774  SWNFGSDMAVSVPWYLGLAFRTR---ATQGVLMQVQ  1806
+
+
+> XP_007982332.1 PREDICTED: cadherin EGF LAG seven-pass G-type 
+receptor 3 isoform X1 [Chlorocebus sabaeus]
+Length=3317
+
+ Score = 31.6 bits (70),  Expect = 6.1, Method: Compositional matrix adjust.
+ Identities = 25/96 (26%), Positives = 36/96 (38%), Gaps = 11/96 (11%)
+
+Query  825   KVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITS  884
+             K+   D+G  K  G CL         C   F G         D  +         G  T 
+Sbjct  1722  KLHFCDSGPCKNSGFCLERWGGFSCDCPVGFGG--------KDCRLTMAHPHHFRGNGTL  1773
+
+Query  885   GWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQ  920
+              W FG+  A+ +P+ + +A+R      TQ VL + Q
+Sbjct  1774  SWNFGSDMAVSVPWYLGLAFRTR---ATQGVLMQVQ  1806
+
+
+> XP_008015933.1 PREDICTED: putative pre-mRNA-splicing factor ATP-dependent 
+RNA helicase DHX15 [Chlorocebus sabaeus]
+Length=795
+
+ Score = 30.8 bits (68),  Expect = 8.4, Method: Compositional matrix adjust.
+ Identities = 15/55 (27%), Positives = 29/55 (53%), Gaps = 0/55 (0%)
+
+Query  217  PQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQ  271
+            P+ +  L+  + LP+     RF  +L  H+S++  G++ SG T     + V Y++
+Sbjct  125  PRYYDILKKRLQLPVWEYKDRFTDILVRHQSFVLVGETGSGKTTQIPQWCVEYMR  179
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 16602261237
+
+
+  Database: refseq.16
+    Posted date:  Nov 5, 2020  5:39 PM
+  Number of letters in database: 17,116,617
+  Number of sequences in database:  24,491
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,111 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.18
+           34,752 sequences; 22,075,752 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_008290826.1 PREDICTED: ephrin-B2a-like [Stegastes partitus]      32.3    3.5  
+  XP_008280315.1 PREDICTED: protein shisa-5-like [Stegastes parti...  31.2    5.2  
+  XP_008276876.1 PREDICTED: nesprin-1-like [Stegastes partitus]       31.6    7.6  
+  XP_008282088.1 PREDICTED: pre-B-cell leukemia transcription fac...  31.2    9.6  
+
+
+> XP_008290826.1 PREDICTED: ephrin-B2a-like [Stegastes partitus]
+Length=320
+
+ Score = 32.3 bits (72),  Expect = 3.5, Method: Compositional matrix adjust.
+ Identities = 17/70 (24%), Positives = 36/70 (51%), Gaps = 6/70 (9%)
+
+Query  301  CTLKSFTVEKGIYQTSNFRVQPTESIVRFPNITN----LCPFGEVFNATR--FASVYAWN  354
+            C+ ++ T+E   + +SN +  P   +V +P I +    +CP  +  +  +  F  VY  +
+Sbjct  18   CSCRAATLESVHWSSSNAKFAPGRGLVLYPQIGDKMDIVCPRADASSGGKEEFYRVYLVS  77
+
+Query  355  RKRISNCVAD  364
+            R ++++C  D
+Sbjct  78   RSQMASCTID  87
+
+
+> XP_008280315.1 PREDICTED: protein shisa-5-like [Stegastes partitus]
+Length=214
+
+ Score = 31.2 bits (69),  Expect = 5.2, Method: Composition-based stats.
+ Identities = 15/39 (38%), Positives = 22/39 (56%), Gaps = 2/39 (5%)
+
+Query  1216  IWLGFIAGLI--AIVMVTIMLCCMTSCCSCLKGCCSCGS  1252
+             + LG I G +   I+ V +++CC+  CC C K C   GS
+Sbjct  84    VLLGSILGSVFPIILCVGLIICCVAPCCLCYKKCRKGGS  122
+
+
+> XP_008276876.1 PREDICTED: nesprin-1-like [Stegastes partitus]
+Length=8844
+
+ Score = 31.6 bits (70),  Expect = 7.6, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 44/83 (53%), Gaps = 9/83 (11%)
+
+Query  934   IQDSLSSTASALGKLQDVVNQ--NAQALNT----LVKQLSSNFGAISSVLNDILSRLDKV  987
+             + D ++S    LG+L++  ++    QA        V QLS+ + A+S++  D  SR++++
+Sbjct  3234  VLDEMASREVELGRLRERAHRLWEGQAAGKGFVHRVSQLSAQYLALSNLTKDKASRIERI  3293
+
+Query  988   EAEVQIDRLITGRLQSLQTYVTQ  1010
+               E    RL +  L+ LQ +V +
+Sbjct  3294  VGE---HRLFSQGLKELQDWVCE  3313
+
+
+> XP_008282088.1 PREDICTED: pre-B-cell leukemia transcription factor-interacting 
+protein 1-like isoform X2 [Stegastes partitus]
+Length=810
+
+ Score = 31.2 bits (69),  Expect = 9.6, Method: Compositional matrix adjust.
+ Identities = 15/40 (38%), Positives = 24/40 (60%), Gaps = 0/40 (0%)
+
+Query  713  AIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNL  752
+            AIP    ++++TE L  S T++ V+  +    DSTE S+L
+Sbjct  190  AIPAEAEVNISTETLTASETQSFVEADVSSGPDSTESSSL  229
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 20877509640
+
+
+  Database: refseq.18
+    Posted date:  Nov 5, 2020  5:40 PM
+  Number of letters in database: 22,075,752
+  Number of sequences in database:  34,752
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

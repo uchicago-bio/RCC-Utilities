@@ -8,7 +8,7 @@
 #SBATCH --time=00:15:00               # Time limit hrs:min:sec
 #SBATCH --output=%j.%a.array_job.out
 #SBATCH --error=%j.%a.array_job.err
-#SBATCH --array=1-10
+#SBATCH --array=1-20
 
 
 

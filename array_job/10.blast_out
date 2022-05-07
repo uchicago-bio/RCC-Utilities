@@ -1,0 +1,144 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: refseq.10
+           29,315 sequences; 12,359,053 total letters
+
+
+
+Query= YP_009724390.1 surface glycoprotein [Severe acute respiratory
+syndrome coronavirus 2]
+
+Length=1273
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  XP_007713550.1 hypothetical protein COCCADRAFT_6109 [Bipolaris ...  30.8    0.91 
+  XP_007706793.1 hypothetical protein COCCADRAFT_81767 [Bipolaris...  32.3    2.3  
+  XP_007714136.1 hypothetical protein COCCADRAFT_100919 [Bipolari...  29.3    2.7  
+  XP_007714251.1 hypothetical protein COCCADRAFT_101200, partial ...  28.9    8.6  
+  XP_007710020.1 hypothetical protein COCCADRAFT_90125 [Bipolaris...  30.4    9.0  
+  XP_007706438.1 hypothetical protein COCCADRAFT_80714 [Bipolaris...  29.6    9.1  
+
+
+> XP_007713550.1 hypothetical protein COCCADRAFT_6109 [Bipolaris 
+zeicola 26-R-13]
+Length=82
+
+ Score = 30.8 bits (68),  Expect = 0.91, Method: Composition-based stats.
+ Identities = 20/60 (33%), Positives = 32/60 (53%), Gaps = 4/60 (7%)
+
+Query  937  SLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVL----NDILSRLDKVEAEVQ  992
+            S S TAS      +   +    ++ L+ QL++ F +ISS L    +D+  RLD +EA +Q
+Sbjct  11   SQSDTASVSSNNPEASGELTAVVDDLLNQLNTKFNSISSELLSKMDDMSRRLDNLEATIQ  70
+
+
+> XP_007706793.1 hypothetical protein COCCADRAFT_81767 [Bipolaris 
+zeicola 26-R-13]
+Length=873
+
+ Score = 32.3 bits (72),  Expect = 2.3, Method: Compositional matrix adjust.
+ Identities = 37/117 (32%), Positives = 46/117 (39%), Gaps = 15/117 (13%)
+
+Query  1051  SFPQSAPHGVVFL--HVTYVPAQEKNFTTAPAICHDGKAH-FPR---EGVFVSNGTHWFV  1104
+             S PQ AP GVV +     YVPA  +  T   A+   G  + FP     GV V NG    +
+Sbjct  677   SLPQGAPGGVVVINGQTAYVPAPGQTLTPGGALTISGTTYSFPEGAPAGVVVINGVTSTM  736
+
+Query  1105  TQRNFYEPQIITTDN------TFVSGNCDVVIGIVNNTVYDPLQP-ELDSFKEELDK  1154
+             T      P    T N      T   G  + V+G  + T   P    E+D     LDK
+Sbjct  737   TPDAVLTPAPALTINDVTYTQTVRDGTTEYVLG--DGTTLAPGSTVEMDGTTYSLDK  791
+
+
+> XP_007714136.1 hypothetical protein COCCADRAFT_100919 [Bipolaris 
+zeicola 26-R-13]
+Length=67
+
+ Score = 29.3 bits (64),  Expect = 2.7, Method: Composition-based stats.
+ Identities = 18/45 (40%), Positives = 30/45 (67%), Gaps = 5/45 (11%)
+
+Query  710  NSIAIPTNFTISVTTEI-LP---VSMTKTSVDCTMYICGDSTECS  750
+            N +AI  +FT ++TTEI LP   +S+ K++ +C + +  D+T CS
+Sbjct  2    NGVAIALSFTSAITTEIGLPPECLSLLKSTKECLLALKTDTT-CS  45
+
+
+> XP_007714251.1 hypothetical protein COCCADRAFT_101200, partial 
+[Bipolaris zeicola 26-R-13]
+Length=125
+
+ Score = 28.9 bits (63),  Expect = 8.6, Method: Composition-based stats.
+ Identities = 12/27 (44%), Positives = 15/27 (56%), Gaps = 2/27 (7%)
+
+Query  1237  MTSCCSCLKGCCSCGSC--CKFDEDDS  1261
+             MT+ CS  + CCSC     C  D DD+
+Sbjct  92    MTATCSSARMCCSCALAQRCGCDSDDA  118
+
+
+> XP_007710020.1 hypothetical protein COCCADRAFT_90125 [Bipolaris 
+zeicola 26-R-13]
+Length=517
+
+ Score = 30.4 bits (67),  Expect = 9.0, Method: Compositional matrix adjust.
+ Identities = 26/105 (25%), Positives = 51/105 (49%), Gaps = 7/105 (7%)
+
+Query  893  ALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVV  952
+            AL +P A+Q A R  GI    + +   Q  +         K+Q+   S  SA+G  + + 
+Sbjct  385  ALDLPVALQDALRHAGISFNHDKIESLQDSLMQAQMERGKKLQEHYES--SAMGTHEKLA  442
+
+Query  953  NQNAQA---LNTLVKQLSSN--FGAISSVLNDILSRLDKVEAEVQ  992
+             Q+++A   ++ ++  L  +  FG I      + +++ K+EAE++
+Sbjct  443  EQSSKADSDMDVIMAALYKHAPFGTIRLTNGKVDAQVKKMEAELE  487
+
+
+> XP_007706438.1 hypothetical protein COCCADRAFT_80714 [Bipolaris 
+zeicola 26-R-13]
+Length=202
+
+ Score = 29.6 bits (65),  Expect = 9.1, Method: Compositional matrix adjust.
+ Identities = 23/81 (28%), Positives = 33/81 (41%), Gaps = 4/81 (5%)
+
+Query  515  FELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTD  574
+             EL H PA +  P  S N      V F   G T   V  E+ K+    Q+FG ++    D
+Sbjct  91   LELYHIPADISTPYVSGNDYSAPGVGFGHIGFTVPNV-DEATKR---VQEFGFEVIKPLD  146
+
+Query  575  AVRDPQTLEILDITPCSFGGV  595
+              R+ Q     ++    +G V
+Sbjct  147  QAREDQMAVPDEVVQGKWGEV  167
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10580112256
+
+
+  Database: refseq.10
+    Posted date:  Nov 5, 2020  5:33 PM
+  Number of letters in database: 12,359,053
+  Number of sequences in database:  29,315
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
