@@ -12,7 +12,7 @@ import subprocess
 # Setup variables to change run behavior
 # -----------------------------------------------------------------------------
 NODES = 10
-DATABASE = 'sample.db'
+DIRECTORY = 'sample.db'
 DATABASE_PREFIX = 'tempdb'
 GENERATED_SBATCH = "generated.sbatch"
 

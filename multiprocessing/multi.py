@@ -2,18 +2,18 @@
 
 ## SLURM variables
 
+#SBATCH --account=mpcs56430
 #SBATCH --job-name=multiprocess
 #SBATCH --output=%j_multiprocess.out
 #SBATCH --partition=broadwl
 
-#SBATCH --cpus-per-task=4   # cores
-#SBATCH --nodes=4           # number of nodes to run on       
-#SBATCH --ntasks-per-node=4 # 
+#SBATCH --cpus-per-task=4    # cores
+#SBATCH --nodes=4            # number of nodes to run on       
+#SBATCH --ntasks-per-node=4  # 
 #SBATCH --ntasks=16          # total tasks to be launcedd
 
 #SBATCH--exclusive
-#SBATCH --time=00:05:00
-#SBATCH --account=mpcs56420
+#SBATCH --time=00:15:00
 
 import multiprocessing
 import sys
@@ -67,8 +67,9 @@ if __name__ == "__main__":
     start = time.time()
     print("Start time: %s" % start)
 
-    # Set the number of processes to the number available to us; this isn't necessarily the best performing option.  You should test your application to determine this
-
+    # Set the number of processes to the number available to us; 
+    # this isn't necessarily the best performing option.  You should 
+    # test your application to determine this
     pool = multiprocessing.Pool(processes=SLURM_NPROCS)
 
     # The array of parameters that will be passed to your process worker.  

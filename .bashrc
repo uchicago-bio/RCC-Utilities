@@ -12,3 +12,7 @@ alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
 alias m="more"
+alias q="squeue --user=abinkowski"
+alias clean_slurm="rm *.[err|out]"
+
+. /software/Anaconda3-5.1.0-el6-x86_64/etc/profile.d/conda.sh
