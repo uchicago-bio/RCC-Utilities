@@ -1,8 +1,8 @@
 # BLAST
 
-## -------------------------------------------------------------
+################################################################
 ## Environment
-## -------------------------------------------------------------
+################################################################
 
 Create an environment using: `mpcs56420.yml`
 
@@ -14,10 +14,9 @@ Create an environment using: `mpcs56420.yml`
   `conda activate mpcs56430`
   `conda env update --file mpcs56430.yml --prune`
 
-
-## -------------------------------------------------------------
+################################################################
 ## Data
-## -------------------------------------------------------------
+################################################################
 * Fasta files for examples
   - `data/`
 
@@ -32,7 +31,9 @@ Sequence Databases (for reference)
 - /project2/mpcs56430/bioinformatics/nr 
 
 
+################################################################
 ## Setup BLAST
+################################################################
 > This is installed as part of the enviroment
 
 * Install BLAST (if needed)
@@ -40,95 +41,114 @@ Sequence Databases (for reference)
 conda install -c bioconda blast 
 ```
 
+################################################################
 ## Create PDBaa BLAST database (small database)
+################################################################
+Download the PDB fasta data and generate a database that can be
+used with blast.
+
 ```
 # Download the database
 wget https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/pdbaa.gz
 gunzip pdbaa.gz
+
 # Make the database
 makeblastdb -in pdbaa -input_type fasta -dbtype prot -out pdbaa
 ```
 
+################################################################
 ## Run BLAST job on the Login Node
-Use `protein1.fasta` as the query on the login node. Only do this for testing. Your account will be suspended if you do too much work on the login node.
+################################################################
+Use `protein1.fasta` as the query on the login node. Only do this for testing.
+Your account will be suspended if you do too much work on the login node.
+
 ```
-blastp -query data/protein1.fasta \
-       -db /project2/mpcs56430/bioinformatics/pdbaa/pdbaa \
+QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
+DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
+
+blastp -query $QUERY \
+       -db $DATABASE \
        -out test.out
 ```
-## ------------------------------------------------------------------
-##
+
+################################################################
 ## Run BLAST job on Node as Interactive Job
-##
-## ------------------------------------------------------------------
+################################################################
 Start an interactive session.
 ```
 sinteractive -A mpcs56430
 ```
-Run the BLAST job.
+
+While you are on a worker node, test that you can read/write 
+to `/scratch` and `/project2/mpcs56430`. Work you do on nodes
+should be using these directories.
+
 ```
-blastp -query protein1.fasta -db pdbaa -out test.out
-```
-While you are on a worker node, test that you can read/write to `/scratch` and `/project2/mpcs56420`. Work you do on nodes should be using these directories.
-```
+# Test if you can read/write
 touch  /scratch/midway2/<cnetid>/test.txt
 touch /project2/mpcs56430/test.txt
 ```
 
-## ------------------------------------------------------------------
-##
+Run a BLAST job:
+```
+QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
+DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
+blastp -query $QUERY -db $DATABASE -out test.out
+```
+
+################################################################
 ## Creating NR and Refseq BLAST db (large database)
-##
-## ------------------------------------------------------------------
-Download from NCBI.
+################################################################
+Download a huge (125G) database from NCBI.
 
 ```
 # NR database
 wget https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
 gunzip *gz
-ls -v | cat -n | while read n f; do mv -n "$f" "refseq.$n"; done 
-ls refseq.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}' | sh
+
+# Number sequentially and create a blast db
+ls -v | cat -n | while read n f; do mv -n "$f" "nr.$n"; done 
+ls nr.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}' | sh
 
 
 # Refseq Database (https://www.biostars.org/p/130274/)
-wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/complete/complete.*.protein.faa.gz
-wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/complete/complete.nonredundant_protein.*.protein.faa.gz
+# wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/complete/complete.*.protein.faa.gz
+# wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/complete/complete.nonredundant_protein.*.protein.faa.gz
 ```
 
-Unzip and renumber sequentially
 ```
+# Number sequentially and create a blast db
 gunzip *gz
 ls -v | cat -n | while read n f; do mv -n "$f" "refseq.$n"; done 
 ls refseq.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}' | sh
 ```
 
-Create a blast compatible db
-```
-# makeblastdb -in pdbaa -input_type fasta -dbtype prot -out blast_pdb
-
-ls nr.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}' | sh
-```
-
 Run a blast job
 ```
-blastp -query protein1.fasta -db /project2/abinkowski/db/blast_pdb -out test3
+QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
+DATABASE=/project2/mpcs56430/bioinformatics/XXXXXnr|refseq
+
+blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
-## ------------------------------------------------------------------------
-##
+################################################################
 ## Split a FASTA database
-##
-## ------------------------------------------------------------------------
-
+################################################################
 Useful command to split up any FASTA format database into multiple files.
 
 ```
-/project2/mpcs56430/bioinformatics/pdbaa-chunk
+cd /project2/mpcs56430/bioinformatics/pdbaa-chunk
+# Split into 6 equal chunks
 pyfasta split -n 6 pdbaa-chunk 
+
+# Create a blast db for each chunk
 ls pdbaa-chunk.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}'  | sh
 
-blastp -query ~/gh/RCC-Utilities/blast/data/protein1.fasta -db pdbaa-chunk.4 -out test
+# Test a chunk
+QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
+DATABASE=/project2/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.4
 
+blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
 Run each chunk as a job.
@@ -137,14 +157,11 @@ cd /home/abinkowski/gh/RCC-Utilities/blast
 sbatch array_pdb.sbatch
 ```
 
+################################################################
+## Benchmark Threads
+################################################################
 
-
-## ------------------------------------------------------------------------
-##
-## Benchmark
-##
-## ------------------------------------------------------------------------
-# sinteractive
+Using an `sinteractive` job maually.
 ```
 sinteractive -A mpcs56420
 
@@ -161,25 +178,20 @@ DATABASE=/project2/mpcs56430/bioinformatics/pdbaa
 sbatch benchmark.sbatch 
 ```
 
-
-## ------------------------------------------------------------------------
-##
+################################################################
 ## Multiprocessing
-##
-## ------------------------------------------------------------------------
+################################################################
 
-# Single Node BLASTP 
-cd RCC-Utilities/single_node_job
-sbatch single-node-blastp-simple.sbatch 
-more out.txt
-
-# Single Node with 
-sbatch single-node-blastp.sbatch testjob
 
 # Multiprocessing
 sbatch multi.py 
 
 ```
 
+################################################################
 # MPI Blast (Deprecated)
-Check out this repositories [wiki](https://github.com/uchicago-bio/RCC-Utilities/wiki) for instructions on running the scripts.
+################################################################
+Check out this repositories [wiki](https://github.com/uchicago-bio/RCC-Utilities/wiki) for
+instructions on running the scripts. RCC no longer mainains their 
+version but you can install your own.
+
