@@ -182,8 +182,25 @@ sbatch benchmark.sbatch
 ## Multiprocessing
 ################################################################
 
+Find information about each node:
 
-# Multiprocessing
+```
+# Dump CPU info about a machine
+lscpu
+```
+
+Run a slurm job to see what you are running on:
+```
+cd RCC-Utilities/multiprocessing
+sbatch node-info.sbatch
+```
+
+A biolerplate for running multiprocesser jobs submitted via 
+SLURM. This can be the foundation for any job you want to run
+on mult-core machines. If you loop this with an sbatch array job
+you will have multi-node, multi-core jobs!
+
+```
 sbatch multi.py 
 
 ```
