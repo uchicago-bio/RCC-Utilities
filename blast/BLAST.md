@@ -1,9 +1,8 @@
 # BLAST
 
-################################################################
-## Environment
-################################################################
 
+## Environment
+================================================================
 Create an environment using: `mpcs56420.yml`
 
 * Conda .yml file to install all the modules necessary for the course (and then some)
@@ -14,9 +13,8 @@ Create an environment using: `mpcs56420.yml`
   `conda activate mpcs56430`
   `conda env update --file mpcs56430.yml --prune`
 
-################################################################
 ## Data
-################################################################
+================================================================
 * Fasta files for examples
   - `data/`
 
@@ -31,9 +29,8 @@ Sequence Databases (for reference)
 - /project2/mpcs56430/bioinformatics/nr 
 
 
-################################################################
 ## Setup BLAST
-################################################################
+================================================================
 > This is installed as part of the enviroment
 
 * Install BLAST (if needed)
@@ -41,9 +38,8 @@ Sequence Databases (for reference)
 conda install -c bioconda blast 
 ```
 
-################################################################
 ## Create PDBaa BLAST database (small database)
-################################################################
+================================================================
 Download the PDB fasta data and generate a database that can be
 used with blast.
 
@@ -56,9 +52,8 @@ gunzip pdbaa.gz
 makeblastdb -in pdbaa -input_type fasta -dbtype prot -out pdbaa
 ```
 
-################################################################
 ## Run BLAST job on the Login Node
-################################################################
+================================================================
 Use `protein1.fasta` as the query on the login node. Only do this for testing.
 Your account will be suspended if you do too much work on the login node.
 
@@ -71,9 +66,8 @@ blastp -query $QUERY \
        -out test.out
 ```
 
-################################################################
 ## Run BLAST job on Node as Interactive Job
-################################################################
+================================================================
 Start an interactive session.
 ```
 sinteractive -A mpcs56430
@@ -96,9 +90,8 @@ DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
 blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
-################################################################
 ## Creating NR and Refseq BLAST db (large database)
-################################################################
+================================================================
 Download a huge (125G) database from NCBI.
 
 ```
@@ -131,9 +124,8 @@ DATABASE=/project2/mpcs56430/bioinformatics/XXXXXnr|refseq
 blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
-################################################################
 ## Split a FASTA database
-################################################################
+================================================================
 Useful command to split up any FASTA format database into multiple files.
 
 ```
@@ -157,9 +149,8 @@ cd /home/abinkowski/gh/RCC-Utilities/blast
 sbatch array_pdb.sbatch
 ```
 
-################################################################
 ## Benchmark Threads
-################################################################
+================================================================
 
 Using an `sinteractive` job maually.
 ```
@@ -178,9 +169,8 @@ DATABASE=/project2/mpcs56430/bioinformatics/pdbaa
 sbatch benchmark.sbatch 
 ```
 
-################################################################
 ## Multiprocessing
-################################################################
+================================================================
 
 Find information about each node:
 
@@ -205,9 +195,9 @@ sbatch multi.py
 
 ```
 
-################################################################
+
 # MPI Blast (Deprecated)
-################################################################
+================================================================
 Check out this repositories [wiki](https://github.com/uchicago-bio/RCC-Utilities/wiki) for
 instructions on running the scripts. RCC no longer mainains their 
 version but you can install your own.
