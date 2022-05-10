@@ -1,4 +1,4 @@
-# BLAST
+# BLAST WORSKSHOP
 
 
 # Environment
@@ -22,13 +22,13 @@ Create an environment using: `mpcs56420.yml`
 
 * Locations
   - /home - You user home directory
--  /scratch/midway2/ - Large space for temporary storage
-* /project2/mpcs56430 - Class project directory that we all have permissions for
+  - /scratch/midway2/ - Large space for temporary storage
+  - /project2/mpcs56430 - Class project directory that we all have permissions for
 
-Sequence Databases (for reference)
-- /project2/mpcs56430/bioinformatics/pdbaa
-- /project2/mpcs56430/bioinformatics/swiss_prot 
-- /project2/mpcs56430/bioinformatics/nr 
+* Sequence Databases (for reference):
+  - /project2/mpcs56430/bioinformatics/pdbaa
+  - /project2/mpcs56430/bioinformatics/pdbaa-chunk
+  - /project2/mpcs56430/bioinformatics/nr 
 
 
 # Setup BLAST
@@ -148,7 +148,7 @@ ls pdbaa-chunk.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype p
 QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.4
 
-blastp -query $QUERY -db $DATABASE -out test.out
+blastp -query $QUERY -db $DATABASE -out test.out -num_threads 1
 ```
 
 Run each chunk as a job.
