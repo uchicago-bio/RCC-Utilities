@@ -2,7 +2,7 @@
 
 
 ## Environment
-================================================================
+----------------------------------------------------------------
 
 Create an environment using: `mpcs56420.yml`
 
@@ -15,7 +15,7 @@ Create an environment using: `mpcs56420.yml`
   `conda env update --file mpcs56430.yml --prune`
 
 ## Data
-================================================================
+----------------------------------------------------------------
 
 * Fasta files for examples
   - `data/`
@@ -32,7 +32,7 @@ Sequence Databases (for reference)
 
 
 ## Setup BLAST
-================================================================
+----------------------------------------------------------------
 
 > This is installed as part of the enviroment
 
@@ -42,7 +42,7 @@ conda install -c bioconda blast
 ```
 
 ## Create PDBaa BLAST database (small database)
-================================================================
+----------------------------------------------------------------
 
 Download the PDB fasta data and generate a database that can be
 used with blast.
@@ -57,7 +57,7 @@ makeblastdb -in pdbaa -input_type fasta -dbtype prot -out pdbaa
 ```
 
 ## Run BLAST job on the Login Node
-================================================================
+----------------------------------------------------------------
 
 Use `protein1.fasta` as the query on the login node. Only do this for testing.
 Your account will be suspended if you do too much work on the login node.
@@ -72,7 +72,7 @@ blastp -query $QUERY \
 ```
 
 ## Run BLAST job on Node as Interactive Job
-================================================================
+----------------------------------------------------------------
 
 Start an interactive session.
 ```
@@ -97,7 +97,7 @@ blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
 ## Creating NR and Refseq BLAST db (large database)
-================================================================
+----------------------------------------------------------------
 
 Download a huge (125G) database from NCBI.
 
@@ -132,7 +132,7 @@ blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
 ## Split a FASTA database
-================================================================
+----------------------------------------------------------------
 
 Useful command to split up any FASTA format database into multiple files.
 
@@ -158,7 +158,7 @@ sbatch array_pdb.sbatch
 ```
 
 ## Benchmark Threads
-================================================================
+----------------------------------------------------------------
 
 Using an `sinteractive` job maually.
 ```
@@ -178,7 +178,7 @@ sbatch benchmark.sbatch
 ```
 
 ## Multiprocessing
-================================================================
+----------------------------------------------------------------
 
 Find information about each node:
 
@@ -205,7 +205,7 @@ sbatch multi.py
 
 
 # MPI Blast (Deprecated)
-================================================================
+----------------------------------------------------------------
 
 Check out this repositories [wiki](https://github.com/uchicago-bio/RCC-Utilities/wiki) for
 instructions on running the scripts. RCC no longer mainains their 
