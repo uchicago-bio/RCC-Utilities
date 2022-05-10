@@ -1,7 +1,7 @@
 # BLAST
 
 
-## Environment
+# Environment
 ----------------------------------------------------------------
 
 Create an environment using: `mpcs56420.yml`
@@ -14,7 +14,7 @@ Create an environment using: `mpcs56420.yml`
   `conda activate mpcs56430`
   `conda env update --file mpcs56430.yml --prune`
 
-## Data
+# Data
 ----------------------------------------------------------------
 
 * Fasta files for examples
@@ -31,7 +31,7 @@ Sequence Databases (for reference)
 - /project2/mpcs56430/bioinformatics/nr 
 
 
-## Setup BLAST
+# Setup BLAST
 ----------------------------------------------------------------
 
 > This is installed as part of the enviroment
@@ -41,7 +41,7 @@ Sequence Databases (for reference)
 conda install -c bioconda blast 
 ```
 
-## Create PDBaa BLAST database (small database)
+# Create PDBaa BLAST database (small database)
 ----------------------------------------------------------------
 
 Download the PDB fasta data and generate a database that can be
@@ -56,7 +56,7 @@ gunzip pdbaa.gz
 makeblastdb -in pdbaa -input_type fasta -dbtype prot -out pdbaa
 ```
 
-## Run BLAST job on the Login Node
+# Run BLAST job on the Login Node
 ----------------------------------------------------------------
 
 Use `protein1.fasta` as the query on the login node. Only do this for testing.
@@ -71,7 +71,7 @@ blastp -query $QUERY \
        -out test.out
 ```
 
-## Run BLAST job on Node as Interactive Job
+# Run BLAST job on Node as Interactive Job
 ----------------------------------------------------------------
 
 Start an interactive session.
@@ -96,7 +96,7 @@ DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
 blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
-## Creating NR and Refseq BLAST db (large database)
+# Creating NR and Refseq BLAST db (large database)
 ----------------------------------------------------------------
 
 Download a huge (125G) database from NCBI.
@@ -131,7 +131,7 @@ DATABASE=/project2/mpcs56430/bioinformatics/XXXXXnr|refseq
 blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
-## Split a FASTA database
+# Split a FASTA database
 ----------------------------------------------------------------
 
 Useful command to split up any FASTA format database into multiple files.
@@ -157,7 +157,7 @@ cd /home/abinkowski/gh/RCC-Utilities/blast
 sbatch array_pdb.sbatch
 ```
 
-## Benchmark Threads
+# Benchmark Threads
 ----------------------------------------------------------------
 
 Using an `sinteractive` job maually.
@@ -177,7 +177,7 @@ DATABASE=/project2/mpcs56430/bioinformatics/pdbaa
 sbatch benchmark.sbatch 
 ```
 
-## Multiprocessing
+# Multiprocessing
 ----------------------------------------------------------------
 
 Find information about each node:
