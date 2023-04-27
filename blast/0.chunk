@@ -1,0 +1,298 @@
+BLASTP 2.6.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: pdbaa-chunk.0
+           22,504 sequences; 6,204,669 total letters
+
+
+
+Query= sequence1
+
+Length=513
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  3EHB_A Chain A, Cytochrome c oxidase subunit 1-beta [Paracoccus...  542     0.0   
+  6HWH_Q Structure of a functional obligate respiratory supercomp...  389     5e-130
+  6KOC_A X-ray Structure of the proton-pumping cytochrome aa3-600...  377     1e-124
+  4G7R_A Structure of Recombinant Cytochrome ba3 Oxidase mutant V...  87.4    2e-18 
+  6IBU_A Apo Crh5 transglycosylase [Aspergillus fumigatus Af293] ...  30.8    0.91  
+  3W4R_A Crystal structure of an insect chitinase from the Asian ...  30.0    2.1   
+  4U2X_D Chain D, Importin subunit alpha-6 [Homo sapiens] 4U2X_E ...  28.5    3.9   
+  2XZ4_A Crystal structure of the LFZ ectodomain of the peptidogl...  28.1    4.5   
+  2LZU_A Solution structure of LIMD2 [Homo sapiens]                   25.8    9.7   
+
+
+> 3EHB_A Chain A, Cytochrome c oxidase subunit 1-beta [Paracoccus 
+denitrificans]
+Length=558
+
+ Score = 542 bits (1397),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 278/530 (52%), Positives = 365/530 (69%), Gaps = 28/530 (5%)
+
+Query  2    FADRWLFSTNHKDIGTLYLLFGAWAGVLGTALSLLIRAELGQPG----------------  45
+            F  RW  STNHKDIG LYL      G++    ++ +R EL  PG                
+Sbjct  18   FFTRWFMSTNHKDIGILYLFTAGIVGLISVCFTVYMRMELQHPGVQYMCLEGARLIADAS  77
+
+Query  46   -NLLGNDHIYNVIVTAHAFVMIFFMVMPIMIGGFGNWLVPLMIGAPDMAFPRMNNMSFWL  104
+                 N H++NV++T H  +M+FF+V+P + GGFGN+ +PL IGAPDMAFPR++N+S+W+
+Sbjct  78   AECTPNGHLWNVMITYHGVLMMFFVVIPALFGGFGNYFMPLHIGAPDMAFPRLDNLSYWM  137
+
+Query  105  LPPSLLLLLASAMV-----EAGAGTGWTVYPPLAGNYSHPGASVDLTIFSLHLAGVSSIL  159
+                + L +AS +      + G+G GW +YPPL+   +  G S+DL IF++H++G SSIL
+Sbjct  138  YVCGVALGVASLLAPGGNDQMGSGVGWVLYPPLST--TEAGYSMDLAIFAVHVSGASSIL  195
+
+Query  160  GAINFITTIINMKPPAMTQYQTPLFVWSVLITAVLLLLSLPVLAAGITMLLTDRNLNTTF  219
+            GAIN ITT +NM+ P MT ++ PLF WSV ITA L+LLSLPVLA  ITMLL DRN  T F
+Sbjct  196  GAINIITTFLNMRAPGMTLFKVPLFAWSVFITAWLILLSLPVLAGAITMLLMDRNFGTQF  255
+
+Query  220  FDPAGGGDPILYQHLFWFFGHPEVYILILPGFGMISHIVTYYSGKKEPFGYMGMVWAMMS  279
+            FDPAGGGDP+LYQH+ WFFGHPEVYI+ILPGFG+ISH+++ ++ KK  FGY+ MV AM +
+Sbjct  256  FDPAGGGDPVLYQHILWFFGHPEVYIIILPGFGIISHVISTFA-KKPIFGYLPMVLAMAA  314
+
+Query  280  IGFLGFIVWAHHMFTVGMDVDTRAYFTSATMIIAIPTGVKVFSWLATLHGSNMKWSAAVL  339
+            IG LGF+VWAHHM+T GM +  +AYF  ATM IA+PTG+KVFSW+AT+ G ++++   +L
+Sbjct  315  IGILGFVVWAHHMYTAGMSLTQQAYFMLATMTIAVPTGIKVFSWIATMWGGSIEFKTPML  374
+
+Query  340  WALGFIFLFTVGGLTGIVLANSSLDIVLHDTYYVVAHFHYVLSMGAVFAIMGGFIHWFPL  399
+            WA GF+FLFTVGG+TG+VL+ + LD V HDTYYVVAHFHYV+S+GAVF I  G  +W   
+Sbjct  375  WAFGFLFLFTVGGVTGVVLSQAPLDRVYHDTYYVVAHFHYVMSLGAVFGIFAGVYYWIGK  434
+
+Query  400  FSGYTLDQTYAKIHFTIMFIGVNLTFFPQHFLGLSGMPRRYSDYPDAYTTWNILSSVGSF  459
+             SG    +   ++HF +MFIG NL FFPQHFLG  GMPRRY DYP  +  WN +SS+G++
+Sbjct  435  MSGRQYPEWAGQLHFWMMFIGSNLIFFPQHFLGRQGMPRRYIDYPVEFAYWNNISSIGAY  494
+
+Query  460  ISLTAVMLMIFMI-WEAFASKRKVL--MVEEPSMNLEWLYGCPPPYHTFE  506
+            IS  + +  I ++ +  FA KR  +     E +  LEW    PPP HTFE
+Sbjct  495  ISFASFLFFIGIVFYTLFAGKRVNVPNYWNEHADTLEWTLPSPPPEHTFE  544
+
+
+> 6HWH_Q Structure of a functional obligate respiratory supercomplex 
+from Mycobacterium smegmatis [Mycolicibacterium smegmatis 
+MC2 155] 6HWH_V Structure of a functional obligate respiratory 
+supercomplex from Mycobacterium smegmatis [Mycolicibacterium 
+smegmatis MC2 155]
+Length=583
+
+ Score = 389 bits (999),  Expect = 5e-130, Method: Compositional matrix adjust.
+ Identities = 218/513 (42%), Positives = 317/513 (62%), Gaps = 16/513 (3%)
+
+Query  9    STNHKDIGTLYLLFGAWAGVLGTALSLLIRAELGQPGNLLGNDHIYNVIVTAHAFVMIFF  68
+            +T+HK IG +Y++       +G  ++LL+R EL  PG    ++  YN + T H  VM+ F
+Sbjct  34   TTDHKLIGMMYVVACFIFFFIGGLMALLLRTELAVPGLQFLSNEQYNQLFTMHGTVMLLF  93
+
+Query  69   MVMPIMIGGFGNWLVPLMIGAPDMAFPRMNNMSFWLLPPSLLLLLASAMVEAG-AGTGWT  127
+               PI+ G F N +VPL IGAPD+AFPR+N +SFWL      + L   +   G A  GWT
+Sbjct  94   YATPIVFG-FANLVVPLQIGAPDVAFPRLNALSFWLFLFGASIALGGFLAPGGPADFGWT  152
+
+Query  128  VYPPLAGNYSHPGASVDLTIFSLHLAGVSSILGAINFITTIINMKPPAMTQYQTPLFVWS  187
+             Y PL+     PGA  DL IF L + G+ +ILGA+N ITT++ M+ P M  ++ P+F W+
+Sbjct  153  AYTPLSNAMHSPGAGGDLWIFGLIVGGLGTILGAVNMITTVVCMRAPGMIMFRMPIFTWN  212
+
+Query  188  VLITAVLLLLSLPVLAAGITMLLTDRNLNTTFFDPAGGGDPILYQHLFWFFGHPEVYILI  247
+            +L+T+V++L++ P+L + +  L  DRNL    FDPA GG  +L++HLFWFFGHPEVYI+ 
+Sbjct  213  ILVTSVIVLVAFPLLTSALFGLAADRNLGAHVFDPANGGT-MLWEHLFWFFGHPEVYIIA  271
+
+Query  248  LPGFGMISHIVTYYSGKKEPFGYMGMVWAMMSIGFLGFIVWAHHMFTVGMDVDTRAYFTS  307
+            LP FG+++ I   +S +K  FGY  +V+A +SIG L   VWAHH++  G  +    +F+ 
+Sbjct  272  LPFFGIVTEIFPVFS-RKPVFGYTTLVYATISIGALSIAVWAHHLYATGAVL--LPFFSF  328
+
+Query  308  ATMIIAIPTGVKVFSWLATLHGSNMKWSAAVLWALGFIFLFTVGGLTGIVLANSSLDIVL  367
+             T +IA+PTG+K  +W+ T+    + +   +L+++GF+  F +GGLTG++LA+  LD  +
+Sbjct  329  MTFMIAVPTGIKFVNWIGTMWKGQLTFETPMLFSVGFLVTFLLGGLTGVILASPPLDFHV  388
+
+Query  368  HDTYYVVAHFHYVLSMGAVFAIMGGFIHWFPLFSGYTLDQTYAKIHFTIMFIGVNLTFFP  427
+             D+Y+VVAHFHYVL    VFA   G   WFP  +G  LD    K+HF +  IG + TF  
+Sbjct  389  TDSYFVVAHFHYVLFGTIVFATYAGVYFWFPKMTGRLLDDRLGKLHFWLTLIGFHTTFLV  448
+
+Query  428  QHFLGLSGMPRRYSDY--PDAYTTWNILSSVGSFISLTAVMLMIFMIWEAFASKR--KVL  483
+             H+LG  GMPRRY+DY   D +TT NI+S++GSFI   +   M+  +W  F S R  + +
+Sbjct  449  HHWLGAEGMPRRYADYLPTDGFTTLNIVSTIGSFILGVS---MLPFVWNVFKSWRYGEPV  505
+
+Query  484  MVEEP---SMNLEWLYGCPPPYHTFEEPVYMKS  513
+             V++P     +LEW   CPPP H F E   ++S
+Sbjct  506  TVDDPWGYGNSLEWATSCPPPRHNFTELPRIRS  538
+
+
+> 6KOC_A X-ray Structure of the proton-pumping cytochrome aa3-600 
+menaquinol oxidase from Bacillus subtilis complexed with 
+3-iodo-N-oxo-2-heptyl-4-hydroxyquinoline [Bacillus subtilis] 
+6KOC_E X-ray Structure of the proton-pumping cytochrome aa3-600 
+menaquinol oxidase from Bacillus subtilis complexed with 
+3-iodo-N-oxo-2-heptyl-4-hydroxyquinoline [Bacillus subtilis]
+Length=649
+
+ Score = 377 bits (969),  Expect = 1e-124, Method: Compositional matrix adjust.
+ Identities = 202/515 (39%), Positives = 306/515 (59%), Gaps = 7/515 (1%)
+
+Query  4    DRWLFSTNHKDIGTLYLLFGAWAGVLGTALSLLIRAELGQPGNLLGNDHIYNVIVTAHAF  63
+              W+ + +HK +G +Y++        G    L++RA+L  P N   + + YN I T H  
+Sbjct  45   SEWITTVDHKKLGIMYIISAVIMLFRGGVDGLMMRAQLALPNNSFLDSNHYNEIFTTHGT  104
+
+Query  64   VMIFFMVMPIMIGGFGNWLVPLMIGAPDMAFPRMNNMSFWLLPPSLLLLLASAMVEAGAG  123
+            +MI FM MP +IG   N +VPL IGA D+AFP +NN+SFW      +L   S ++     
+Sbjct  105  IMIIFMAMPFLIG-LINVVVPLQIGARDVAFPYLNNLSFWTFFVGAMLFNISFVIGGSPN  163
+
+Query  124  TGWTVYPPLAGNYSHPGASVDLTIFSLHLAGVSSILGAINFITTIINMKPPAMTQYQTPL  183
+             GWT Y PLA N   PG   +  +  L +AG+ +++  INF+ TI+ M+   MT  + P+
+Sbjct  164  AGWTSYMPLASNDMSPGPGENYYLLGLQIAGIGTLMTGINFMVTILKMRTKGMTLMRMPM  223
+
+Query  184  FVWSVLITAVLLLLSLPVLAAGITMLLTDRNLNTTFFDPAGGGDPILYQHLFWFFGHPEV  243
+            F W+ LIT V+++ + PVL   + +L  DR     FF    GG P+L+ +LFW +GHPEV
+Sbjct  224  FTWTTLITMVIIVFAFPVLTVALALLSFDRLFGAHFFTLEAGGMPMLWANLFWIWGHPEV  283
+
+Query  244  YILILPGFGMISHIVTYYSGKKEPFGYMGMVWAMMSIGFLGFIVWAHHMFTVGMDVDTRA  303
+            YI+ILP FG+ S I++ ++ +K+ FGY  MV ++++I  L F+VW HH FT+G      +
+Sbjct  284  YIVILPAFGIFSEIISSFA-RKQLFGYKAMVGSIIAISVLSFLVWTHHFFTMGNSASVNS  342
+
+Query  304  YFTSATMIIAIPTGVKVFSWLATLHGSNMKWSAAVLWALGFIFLFTVGGLTGIVLANSSL  363
+            +F+  TM I+IPTGVK+F+WL T++   + ++  +LWAL FI  F +GG+TG++LA ++ 
+Sbjct  343  FFSITTMAISIPTGVKIFNWLFTMYKGRISFTTPMLWALAFIPNFVIGGVTGVMLAMAAA  402
+
+Query  364  DIVLHDTYYVVAHFHYVLSMGAVFAIMGGFIHWFPLFSGYTLDQTYAKIHFTIMFIGVNL  423
+            D   H+TY++V+HFHYVL  G VFA   GFI W+P   G+ L++   K  F I  IG N+
+Sbjct  403  DYQYHNTYFLVSHFHYVLIAGTVFACFAGFIFWYPKMFGHKLNERIGKWFFWIFMIGFNI  462
+
+Query  424  TFFPQHFLGLSGMPRRYSDY--PDAYTTWNILSSVGSFISLTAVMLMIFMIWEAFASKRK  481
+             FFPQ+FLGL GMPRR   Y   D +TT N +S+VG+F+     +++ + I+ +F    +
+Sbjct  463  CFFPQYFLGLQGMPRRIYTYGPNDGWTTLNFISTVGAFMMGVGFLILCYNIYYSFRYSTR  522
+
+Query  482  VLMVEE--PSMNLEWLYGCP-PPYHTFEEPVYMKS  513
+             +  +       L+W      PP++ F     +KS
+Sbjct  523  EISGDSWGVGRTLDWATSSAIPPHYNFAVLPEVKS  557
+
+
+> 4G7R_A Structure of Recombinant Cytochrome ba3 Oxidase mutant 
+V236A from Thermus thermophilus [Thermus thermophilus HB8]
+Length=569
+
+ Score = 87.4 bits (215),  Expect = 2e-18, Method: Compositional matrix adjust.
+ Identities = 81/299 (27%), Positives = 137/299 (46%), Gaps = 46/299 (15%)
+
+Query  225  GGDPILYQHLFWFFGHPEVYILILPGFGMISHIVTYYSGKK---EPFGYMGMVWAMMSIG  281
+            G DP++ + LFW+ GHP  Y  +LP + +I  I+   +G K   +P   +  +  ++   
+Sbjct  225  GVDPLVARTLFWWTGHPIAYFWLLPAYAIIYTILPKQAGGKLVSDPMARLAFLLFLLLST  284
+
+Query  282  FLGFIVWAHHMFT-VGMDVDTRAYFTSATMIIAIPT-------------------GVKVF  321
+             +GF    HH F   G+D   +   +  T+ +A+P+                   G  +F
+Sbjct  285  PVGF----HHQFADPGIDPTWKMIHSVLTLFVAVPSLMTAFTVAASLEFAGRLRGGRGLF  340
+
+Query  322  SWLATLHGSNMKWSAAVLWALGFIFLFTVGGLTGIVLANSSLDIVLHDTYYVVAHFHYVL  381
+             W+  L   N  + A VL  LGFI     GG  GIV A+ +LD V+H+T +V  HFH  +
+Sbjct  341  GWIRALPWDNPAFVAPVLGLLGFI----PGGAGGIVNASFTLDYVVHNTAWVPGHFHLQV  396
+
+Query  382  SMGAVFAIMGGFIHWFPLFSGYTLDQTYAKIHFTIM---FIGVNLTFFPQHFLGLSGMPR  438
+            +       MG      P  +G  +     ++   ++   F+G+ +     H+ GL  +PR
+Sbjct  397  ASLVTLTAMGSLYWLLPNLTGKPISDAQRRLGLAVVWLWFLGMMIMAVGLHWAGLLNVPR  456
+
+Query  439  R--YSDYPDAYT------TWNILSSVGSFISLTAVMLMIFMIWEAFASK-RKVLMVEEP  488
+            R   +  PDAY        +N+L+ +   + L A++L I+ ++    S+ RK  + E P
+Sbjct  457  RAYIAQVPDAYPHAAVPMVFNVLAGI---VLLVALLLFIYGLFSVLLSRERKPELAEAP  512
+
+
+> 6IBU_A Apo Crh5 transglycosylase [Aspergillus fumigatus Af293] 
+6IBU_B Apo Crh5 transglycosylase [Aspergillus fumigatus Af293] 
+6IBW_A Crh5 transglycosylase in complex with NAG [Aspergillus 
+fumigatus Af293] 6IBW_B Crh5 transglycosylase in complex 
+with NAG [Aspergillus fumigatus Af293]
+Length=245
+
+ Score = 30.8 bits (68),  Expect = 0.91, Method: Compositional matrix adjust.
+ Identities = 13/34 (38%), Positives = 19/34 (56%), Gaps = 0/34 (0%)
+
+Query  225  GGDPILYQHLFWFFGHPEVYILILPGFGMISHIV  258
+            G  P +    ++FFG  EV +   PG G++S IV
+Sbjct  57   GDAPTIDTDFYFFFGKAEVVMKAAPGTGVVSSIV  90
+
+
+> 3W4R_A Crystal structure of an insect chitinase from the Asian 
+corn borer, Ostrinia furnacalis [Ostrinia furnacalis]
+Length=554
+
+ Score = 30.0 bits (66),  Expect = 2.1, Method: Compositional matrix adjust.
+ Identities = 26/114 (23%), Positives = 42/114 (37%), Gaps = 18/114 (16%)
+
+Query  195  LLLSLPVLAAGITMLLTDRNLN--TTFFDPAGGGDPILYQHLFWFFGHPEVYILILPGFG  252
+            L++ +P      T+   + N N  T     AGGGDP  Y +   F+ + E+   +     
+Sbjct  265  LVVGIPFYGRSFTLSSGNNNYNLGTYINKEAGGGDPAPYTNATGFWAYYEICTEVDTADS  324
+
+Query  253  MISHIVTYYSGKKEPFGYMGMVWA--------------MMSIGFLGFIVWAHHM  292
+              +     +   K P+ Y G  W               +   G+LG + WA  M
+Sbjct  325  KWTKKWDEHG--KCPYAYKGTQWVGYEDPRSVEIKMNWIKEKGYLGAMTWAIDM  376
+
+
+> 4U2X_D Chain D, Importin subunit alpha-6 [Homo sapiens] 4U2X_E 
+Chain E, Importin subunit alpha-6 [Homo sapiens] 4U2X_F Chain 
+F, Importin subunit alpha-6 [Homo sapiens]
+Length=175
+
+ Score = 28.5 bits (62),  Expect = 3.9, Method: Compositional matrix adjust.
+ Identities = 16/42 (38%), Positives = 19/42 (45%), Gaps = 0/42 (0%)
+
+Query  107  PSLLLLLASAMVEAGAGTGWTVYPPLAGNYSHPGASVDLTIF  148
+            P LL LL+S          WTV    AGN +   A +D  IF
+Sbjct  11   PCLLHLLSSPKESIRKEACWTVSNITAGNRAQIQAVIDANIF  52
+
+
+> 2XZ4_A Crystal structure of the LFZ ectodomain of the peptidoglycan 
+recognition protein LF [Drosophila melanogaster] 2XZ4_B 
+Crystal structure of the LFZ ectodomain of the peptidoglycan 
+recognition protein LF [Drosophila melanogaster]
+Length=180
+
+ Score = 28.1 bits (61),  Expect = 4.5, Method: Compositional matrix adjust.
+ Identities = 13/31 (42%), Positives = 18/31 (58%), Gaps = 0/31 (0%)
+
+Query  147  IFSLHLAGVSSILGAINFITTIINMKPPAMT  177
+            I   H+ G  +I  +I FI T +NM+PPA  
+Sbjct  91   IQGQHVNGYGAISVSIAFIGTFVNMEPPARQ  121
+
+
+> 2LZU_A Solution structure of LIMD2 [Homo sapiens]
+Length=72
+
+ Score = 25.8 bits (55),  Expect = 9.7, Method: Composition-based stats.
+ Identities = 14/54 (26%), Positives = 23/54 (43%), Gaps = 15/54 (28%)
+
+Query  365  IVLHDTYYVVAHFHYVLSMGAVFAIMGGFIHWFPLFSGYTLDQTYAKIHFTIMF  418
+            ++ H++ +   H H  LS+G+  A+ G F               Y K HF  +F
+Sbjct  26   LIFHNSCFCCKHCHTKLSLGSYAALHGEF---------------YCKPHFQQLF  64
+
+
+
+Lambda      K        H        a         alpha
+   0.329    0.143    0.466    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 1659699955
+
+
+  Database: pdbaa-chunk.0
+    Posted date:  May 10, 2022  2:34 PM
+  Number of letters in database: 6,204,669
+  Number of sequences in database:  22,504
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

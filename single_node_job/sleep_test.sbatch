@@ -12,6 +12,8 @@
 #    sbatch sleep_test.sbatch
 #
 
+#python myCpG_script.py
+
 echo "> Running Sleep script on a single CPU core"
 echo -n "> Date: "; date
 echo -n "> Present Working Directory: "; pwd

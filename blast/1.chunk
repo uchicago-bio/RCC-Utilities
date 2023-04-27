@@ -1,0 +1,321 @@
+BLASTP 2.6.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: pdbaa-chunk.1
+           22,825 sequences; 6,208,082 total letters
+
+
+
+Query= sequence1
+
+Length=513
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  6PW0_A Chain A, Cytochrome c oxidase subunit 1 [Cereibacter sph...  544     0.0   
+  1QLE_A Cryo-structure Of The Paracoccus Denitrificans Four-subu...  544     0.0   
+  3OM3_A Chain A, Cytochrome c oxidase, aa3 type, subunit I [Cere...  536     0.0   
+  1FFT_A The structure of ubiquinol oxidase from Escherichia coli...  361     4e-118
+  4GP5_A Structure of Recombinant Cytochrome ba3 Oxidase mutant Y...  91.7    8e-20 
+  3WKZ_A Crystal Structure of the Ostrinia furnacalis Group I Chi...  29.6    2.2   
+  7W1F_A Chain A, Probable deoxyguanosinetriphosphate triphosphoh...  29.6    2.3   
+
+
+> 6PW0_A Chain A, Cytochrome c oxidase subunit 1 [Cereibacter sphaeroides 
+2.4.1] 6PW0_C Chain C, Cytochrome c oxidase subunit 
+1 [Cereibacter sphaeroides 2.4.1]
+Length=560
+
+ Score = 544 bits (1402),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 278/541 (51%), Positives = 368/541 (68%), Gaps = 38/541 (7%)
+
+Query  2    FADRWLFSTNHKDIGTLYLLFGAWAGVLGTALSLLIRAELGQPG----------------  45
+            F  RW  STNHKDIG LYL  G   G++  A ++ +R EL  PG                
+Sbjct  16   FFTRWFMSTNHKDIGVLYLFTGGLVGLISVAFTVYMRMELMAPGVQFMCAEHLESGLVKG  75
+
+Query  46   -----------NLLGNDHIYNVIVTAHAFVMIFFMVMPIMIGGFGNWLVPLMIGAPDMAF  94
+                       N   N H++NV++T H  +M+FF+V+P + GGFGN+ +PL IGAPDMAF
+Sbjct  76   FFQSLWPSAVENCTPNGHLWNVMITGHGILMMFFVVIPALFGGFGNYFMPLHIGAPDMAF  135
+
+Query  95   PRMNNMSFWLLPPSLLLLLASAMV-----EAGAGTGWTVYPPLAGNYSHPGASVDLTIFS  149
+            PRMNN+S+WL      L +AS        + G+G GW +YPPL+   S  G S DL IF+
+Sbjct  136  PRMNNLSYWLYVAGTSLAVASLFAPGGNGQLGSGIGWVLYPPLS--TSESGYSTDLAIFA  193
+
+Query  150  LHLAGVSSILGAINFITTIINMKPPAMTQYQTPLFVWSVLITAVLLLLSLPVLAAGITML  209
+            +HL+G SSILGAIN ITT +NM+ P MT ++ PLF WS+ +TA L+LL+LPVLA  ITML
+Sbjct  194  VHLSGASSILGAINMITTFLNMRAPGMTMHKVPLFAWSIFVTAWLILLALPVLAGAITML  253
+
+Query  210  LTDRNLNTTFFDPAGGGDPILYQHLFWFFGHPEVYILILPGFGMISHIVTYYSGKKEPFG  269
+            LTDRN  TTFF P+GGGDP+LYQH+ WFFGHPEVYI++LP FG++SH++  ++ KK  FG
+Sbjct  254  LTDRNFGTTFFQPSGGGDPVLYQHILWFFGHPEVYIIVLPAFGIVSHVIATFA-KKPIFG  312
+
+Query  270  YMGMVWAMMSIGFLGFIVWAHHMFTVGMDVDTRAYFTSATMIIAIPTGVKVFSWLATLHG  329
+            Y+ MV+AM++IG LGF+VWAHHM+T G+ +  ++YF  ATM+IA+PTG+K+FSW+AT+ G
+Sbjct  313  YLPMVYAMVAIGVLGFVVWAHHMYTAGLSLTQQSYFMMATMVIAVPTGIKIFSWIATMWG  372
+
+Query  330  SNMKWSAAVLWALGFIFLFTVGGLTGIVLANSSLDIVLHDTYYVVAHFHYVLSMGAVFAI  389
+             +++    +LWALGF+FLFTVGG+TGIVL+ +S+D   HDTYYVVAHFHYV+S+GAVF I
+Sbjct  373  GSIELKTPMLWALGFLFLFTVGGVTGIVLSQASVDRYYHDTYYVVAHFHYVMSLGAVFGI  432
+
+Query  390  MGGFIHWFPLFSGYTLDQTYAKIHFTIMFIGVNLTFFPQHFLGLSGMPRRYSDYPDAYTT  449
+              G   W    SG    +   K+HF +MF+G NLTFFPQHFLG  GMPRRY DYP+A+ T
+Sbjct  433  FAGIYFWIGKMSGRQYPEWAGKLHFWMMFVGANLTFFPQHFLGRQGMPRRYIDYPEAFAT  492
+
+Query  450  WNILSSVGSFISLTAVMLMIFMIWEAFASKRKVLMV---EEPSMNLEWLYGCPPPYHTFE  506
+            WN +SS+G+F+S  + +  + +I+       +V       E +  LEW    PPP HTFE
+Sbjct  493  WNFVSSLGAFLSFASFLFFLGVIFYTLTRGARVTANNYWNEHADTLEWTLTSPPPEHTFE  552
+
+Query  507  E  507
+            +
+Sbjct  553  Q  553
+
+
+> 1QLE_A Cryo-structure Of The Paracoccus Denitrificans Four-subunit 
+Cytochrome C Oxidase In The Completely Oxidized State 
+Complexed With An Antibody Fv Fragment [Paracoccus denitrificans]
+Length=538
+
+ Score = 544 bits (1401),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 279/530 (53%), Positives = 365/530 (69%), Gaps = 28/530 (5%)
+
+Query  2    FADRWLFSTNHKDIGTLYLLFGAWAGVLGTALSLLIRAELGQPG----------------  45
+            F  RW  STNHKDIG LYL      G++    ++ +R EL  PG                
+Sbjct  2    FFTRWFMSTNHKDIGILYLFTAGIVGLISVCFTVYMRMELQHPGVQYMCLEGARLIADAS  61
+
+Query  46   -NLLGNDHIYNVIVTAHAFVMIFFMVMPIMIGGFGNWLVPLMIGAPDMAFPRMNNMSFWL  104
+                 N H++NV++T H  +M+FF+V+P + GGFGN+ +PL IGAPDMAFPR+NN+S+W+
+Sbjct  62   AECTPNGHLWNVMITYHGVLMMFFVVIPALFGGFGNYFMPLHIGAPDMAFPRLNNLSYWM  121
+
+Query  105  LPPSLLLLLASAMV-----EAGAGTGWTVYPPLAGNYSHPGASVDLTIFSLHLAGVSSIL  159
+                + L +AS +      + G+G GW +YPPL+   +  G S+DL IF++H++G SSIL
+Sbjct  122  YVCGVALGVASLLAPGGNDQMGSGVGWVLYPPLST--TEAGYSMDLAIFAVHVSGASSIL  179
+
+Query  160  GAINFITTIINMKPPAMTQYQTPLFVWSVLITAVLLLLSLPVLAAGITMLLTDRNLNTTF  219
+            GAIN ITT +NM+ P MT ++ PLF WSV ITA L+LLSLPVLA  ITMLL DRN  T F
+Sbjct  180  GAINIITTFLNMRAPGMTLFKVPLFAWSVFITAWLILLSLPVLAGAITMLLMDRNFGTQF  239
+
+Query  220  FDPAGGGDPILYQHLFWFFGHPEVYILILPGFGMISHIVTYYSGKKEPFGYMGMVWAMMS  279
+            FDPAGGGDP+LYQH+ WFFGHPEVYI+ILPGFG+ISH+++ ++ KK  FGY+ MV AM +
+Sbjct  240  FDPAGGGDPVLYQHILWFFGHPEVYIIILPGFGIISHVISTFA-KKPIFGYLPMVLAMAA  298
+
+Query  280  IGFLGFIVWAHHMFTVGMDVDTRAYFTSATMIIAIPTGVKVFSWLATLHGSNMKWSAAVL  339
+            IG LGF+VWAHHM+T GM +  +AYF  ATM IA+PTG+KVFSW+AT+ G ++++   +L
+Sbjct  299  IGILGFVVWAHHMYTAGMSLTQQAYFMLATMTIAVPTGIKVFSWIATMWGGSIEFKTPML  358
+
+Query  340  WALGFIFLFTVGGLTGIVLANSSLDIVLHDTYYVVAHFHYVLSMGAVFAIMGGFIHWFPL  399
+            WA GF+FLFTVGG+TG+VL+ + LD V HDTYYVVAHFHYV+S+GAVF I  G  +W   
+Sbjct  359  WAFGFLFLFTVGGVTGVVLSQAPLDRVYHDTYYVVAHFHYVMSLGAVFGIFAGVYYWIGK  418
+
+Query  400  FSGYTLDQTYAKIHFTIMFIGVNLTFFPQHFLGLSGMPRRYSDYPDAYTTWNILSSVGSF  459
+             SG    +   ++HF +MFIG NL FFPQHFLG  GMPRRY DYP  +  WN +SS+G++
+Sbjct  419  MSGRQYPEWAGQLHFWMMFIGSNLIFFPQHFLGRQGMPRRYIDYPVEFAYWNNISSIGAY  478
+
+Query  460  ISLTAVMLMIFMI-WEAFASKRKVL--MVEEPSMNLEWLYGCPPPYHTFE  506
+            IS  + +  I ++ +  FA KR  +     E +  LEW    PPP HTFE
+Sbjct  479  ISFASFLFFIGIVFYTLFAGKRVNVPNYWNEHADTLEWTLPSPPPEHTFE  528
+
+
+> 3OM3_A Chain A, Cytochrome c oxidase, aa3 type, subunit I [Cereibacter 
+sphaeroides 2.4.1] 3OM3_C Chain C, Cytochrome c oxidase, 
+aa3 type, subunit I [Cereibacter sphaeroides 2.4.1] 3OMA_A 
+Chain A, Cytochrome c oxidase, aa3 type, subunit I [Cereibacter 
+sphaeroides 2.4.1] 3OMA_C Chain C, Cytochrome c oxidase, 
+aa3 type, subunit I [Cereibacter sphaeroides 2.4.1]
+Length=535
+
+ Score = 536 bits (1381),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 275/536 (51%), Positives = 364/536 (68%), Gaps = 38/536 (7%)
+
+Query  5    RWLFSTNHKDIGTLYLLFGAWAGVLGTALSLLIRAELGQPG-------------------  45
+            RW  STNHKDIG LYL  G   G++  A ++ +R EL  PG                   
+Sbjct  3    RWFMSTNHKDIGVLYLFTGGLVGLISVAFTVYMRMELMAPGVQFMCAEHLESGLVKGFFQ  62
+
+Query  46   --------NLLGNDHIYNVIVTAHAFVMIFFMVMPIMIGGFGNWLVPLMIGAPDMAFPRM  97
+                    N   N H++NV++T H  +M+FF+V+P + GGFGN+ +PL IGAPDMAFPRM
+Sbjct  63   SLWPSAVENCTPNGHLWNVMITGHGILMMFFVVIPALFGGFGNYFMPLHIGAPDMAFPRM  122
+
+Query  98   NNMSFWLLPPSLLLLLASAMV-----EAGAGTGWTVYPPLAGNYSHPGASVDLTIFSLHL  152
+            NN+S+WL      L +AS        + G+G GW +YPPL+   S  G S DL IF++HL
+Sbjct  123  NNLSYWLYVAGTSLAVASLFAPGGNGQLGSGIGWVLYPPLST--SESGYSTDLAIFAVHL  180
+
+Query  153  AGVSSILGAINFITTIINMKPPAMTQYQTPLFVWSVLITAVLLLLSLPVLAAGITMLLTD  212
+            +G SSILGAIN ITT +NM+ P MT ++ PLF WS+ +TA L+LL+LPVLA  ITMLLTD
+Sbjct  181  SGASSILGAINMITTFLNMRAPGMTMHKVPLFAWSIFVTAWLILLALPVLAGAITMLLTD  240
+
+Query  213  RNLNTTFFDPAGGGDPILYQHLFWFFGHPEVYILILPGFGMISHIVTYYSGKKEPFGYMG  272
+            RN  TTFF P+GGGDP+LYQH+ WFFGHPEVYI++LP FG++SH++  ++ KK  FGY+ 
+Sbjct  241  RNFGTTFFQPSGGGDPVLYQHILWFFGHPEVYIIVLPAFGIVSHVIATFA-KKPIFGYLP  299
+
+Query  273  MVWAMMSIGFLGFIVWAHHMFTVGMDVDTRAYFTSATMIIAIPTGVKVFSWLATLHGSNM  332
+            MV+AM++IG LGF+VWAHHM+T G+ +  ++YF  ATM+IA+PTG+ +FSW+AT+ G ++
+Sbjct  300  MVYAMVAIGVLGFVVWAHHMYTAGLSLTQQSYFMMATMVIAVPTGIMIFSWIATMWGGSI  359
+
+Query  333  KWSAAVLWALGFIFLFTVGGLTGIVLANSSLDIVLHDTYYVVAHFHYVLSMGAVFAIMGG  392
+            +    +LWALGF+FLFTVGG+TGIVL+ +S+D   HDTYYVVAHFHYV+S+GAVF I  G
+Sbjct  360  ELKTPMLWALGFLFLFTVGGVTGIVLSQASVDRYYHDTYYVVAHFHYVMSLGAVFGIFAG  419
+
+Query  393  FIHWFPLFSGYTLDQTYAKIHFTIMFIGVNLTFFPQHFLGLSGMPRRYSDYPDAYTTWNI  452
+               W    SG    +   K+HF +MF+G NLTFFPQHFLG  GMPRRY DYP+A+ TWN 
+Sbjct  420  IYFWIGKMSGRQYPEWAGKLHFWMMFVGANLTFFPQHFLGRQGMPRRYIDYPEAFATWNF  479
+
+Query  453  LSSVGSFISLTAVMLMIFMIWEAFASKRKVLMV---EEPSMNLEWLYGCPPPYHTF  505
+            +SS+G+F+S  + +  + +I+       +V       E +  LEW    PPP HTF
+Sbjct  480  VSSLGAFLSFASFLFFLGVIFYTLTRGARVTANNYWNEHADTLEWTLTSPPPEHTF  535
+
+
+> 1FFT_A The structure of ubiquinol oxidase from Escherichia coli 
+[Escherichia coli] 1FFT_F The structure of ubiquinol oxidase 
+from Escherichia coli [Escherichia coli] 6WTI_A Chain A, 
+Cytochrome o ubiquinol oxidase, subunit I [Escherichia coli] 
+7CUB_A Chain A, Cytochrome bo(3) ubiquinol oxidase subunit 
+1 [Escherichia coli] 7CUQ_A Chain A, Cytochrome bo(3) ubiquinol 
+oxidase subunit 1 [Escherichia coli] 7CUW_A Chain A, Cytochrome 
+bo(3) ubiquinol oxidase subunit 1 [Escherichia coli] 
+7N9Z_F Chain F, Cytochrome o ubiquinol oxidase, subunit I 
+[Escherichia coli]
+Length=663
+
+ Score = 361 bits (927),  Expect = 4e-118, Method: Compositional matrix adjust.
+ Identities = 209/511 (41%), Positives = 297/511 (58%), Gaps = 13/511 (3%)
+
+Query  4    DRWLFSTNHKDIGTLYLLFGAWAGVLGTALSLLIR-----AELGQPGNLLGNDHIYNVIV  58
+              WL S +HK +G +Y++      + G A ++++R     A  G+ G L    H Y+ I 
+Sbjct  46   KEWLTSVDHKRLGIMYIIVAIVMLLRGFADAIMMRSQQALASAGEAGFL--PPHHYDQIF  103
+
+Query  59   TAHAFVMIFFMVMPIMIGGFGNWLVPLMIGAPDMAFPRMNNMSFWLLPPSLLLLLASAMV  118
+            TAH  +MIFF+ MP +IG   N +VPL IGA D+AFP +NN+SFW     ++L+  S  V
+Sbjct  104  TAHGVIMIFFVAMPFVIG-LMNLVVPLQIGARDVAFPFLNNLSFWFTVVGVILVNVSLGV  162
+
+Query  119  EAGAGTGWTVYPPLAGNYSHPGASVDLTIFSLHLAGVSSILGAINFITTIINMKPPAMTQ  178
+               A TGW  YPPL+G    PG  VD  I+SL L+G+ + L  INF  TI+ M+ P MT 
+Sbjct  163  GEFAQTGWLAYPPLSGIEYSPGVGVDYWIWSLQLSGIGTTLTGINFFVTILKMRAPGMTM  222
+
+Query  179  YQTPLFVWSVLITAVLLLLSLPVLAAGITMLLTDRNLNTTFFDPAGGGDPILYQHLFWFF  238
+            ++ P+F W+ L   VL++ S P+L   + +L  DR L T FF    GG+ ++Y +L W +
+Sbjct  223  FKMPVFTWASLCANVLIIASFPILTVTVALLTLDRYLGTHFFTNDMGGNMMMYINLIWAW  282
+
+Query  239  GHPEVYILILPGFGMISHIVTYYSGKKEPFGYMGMVWAMMSIGFLGFIVWAHHMFTVGMD  298
+            GHPEVYILILP FG+ S I   +S +K  FGY  +VWA + I  L FIVW HH FT+G  
+Sbjct  283  GHPEVYILILPVFGVFSEIAATFS-RKRLFGYTSLVWATVCITVLSFIVWLHHFFTMGAG  341
+
+Query  299  VDTRAYFTSATMIIAIPTGVKVFSWLATLHGSNMKWSAAVLWALGFIFLFTVGGLTGIVL  358
+             +  A+F   TMIIAIPTGVK+F+WL T++   + + +A+LW +GFI  F+VGG+TG++L
+Sbjct  342  ANVNAFFGITTMIIAIPTGVKIFNWLFTMYQGRIVFHSAMLWTIGFIVTFSVGGMTGVLL  401
+
+Query  359  ANSSLDIVLHDTYYVVAHFHYVLSMGAVFAIMGGFIHWFPLFSGYTLDQTYAKIHFTIMF  418
+            A    D VLH++ +++AHFH V+  G VF    G  +W+P   G+ L++T+ K  F    
+Sbjct  402  AVPGADFVLHNSLFLIAHFHNVIIGGVVFGCFAGMTYWWPKAFGFKLNETWGKRAFWFWI  461
+
+Query  419  IGVNLTFFPQHFLGLSGMPRRYSDY--PDAYTTWNILSSVGSFISLTAVMLMIFMIWEAF  476
+            IG  + F P + LG  GM RR S    P  +T   I +S    I+L  + L+I M     
+Sbjct  462  IGFFVAFMPLYALGFMGMTRRLSQQIDPQFHTMLMIAASGAVLIALGILCLVIQMYVSIR  521
+
+Query  477  ASKRKVLMVEEP--SMNLEWLYGCPPPYHTF  505
+               +   +  +P     LEW    PPP++ F
+Sbjct  522  DRDQNRDLTGDPWGGRTLEWATSSPPPFYNF  552
+
+
+> 4GP5_A Structure of Recombinant Cytochrome ba3 Oxidase mutant 
+Y133W from Thermus thermophilus [Thermus thermophilus HB8]
+Length=568
+
+ Score = 91.7 bits (226),  Expect = 8e-20, Method: Compositional matrix adjust.
+ Identities = 110/416 (26%), Positives = 184/416 (44%), Gaps = 64/416 (15%)
+
+Query  110  LLLLASAMVEAGAGTGWTVYPPLAGNYS-HPGASVDLTIFSLHLAGVSSILGAINFITTI  168
+            L++ A  ++   A   WT YPPL G+++ + GASV           V S   +I  +  +
+Sbjct  123  LVVAALPLLANEATVLWTFYPPLKGHWAFYLGASVF----------VLSTWVSIYIVLDL  172
+
+Query  169  INMKPPAMTQYQTPLFVW-SVLITAVLLLLSLPVLAAGITMLLTDRNLNTTFFDPAGGGD  227
+                  A     TPL  + +V+   +  L SL ++   +  LL         F    G D
+Sbjct  173  WRRWKAANPGKVTPLVTYMAVVFWLMWFLASLGLVLEAVLFLLPWS------FGLVEGVD  226
+
+Query  228  PILYQHLFWFFGHPEVYILILPGFGMISHIVTYYSGKK---EPFGYMGMVWAMMSIGFLG  284
+            P++ + LFW+ GHP VY  +LP + +I  I+   +G K   +P   +  +  ++    +G
+Sbjct  227  PLVARTLFWWTGHPIVYFWLLPAYAIIYTILPKQAGGKLVSDPMARLAFLLFLLLSTPVG  286
+
+Query  285  FIVWAHHMFT-VGMDVDTRAYFTSATMIIAIPT-------------------GVKVFSWL  324
+            F    HH F   G+D   +   +  T+ +A+P+                   G  +F W+
+Sbjct  287  F----HHQFADPGIDPTWKMIHSVLTLFVAVPSLMTAFTVAASLEFAGRLRGGRGLFGWI  342
+
+Query  325  ATLHGSNMKWSAAVLWALGFIFLFTVGGLTGIVLANSSLDIVLHDTYYVVAHFHYVLSMG  384
+              L   N  + A VL  LGFI     GG  GIV A+ +LD V+H+T +V  HFH  ++  
+Sbjct  343  RALPWDNPAFVAPVLGLLGFI----PGGAGGIVNASFTLDYVVHNTAWVPGHFHLQVASL  398
+
+Query  385  AVFAIMGGFIHWFPLFSGYTLDQTYAKIHFTIM---FIGVNLTFFPQHFLGLSGMPRR--  439
+                 MG      P  +G  +     ++   ++   F+G+ +     H+ GL  +PRR  
+Sbjct  399  VTLTAMGSLYWLLPNLTGKPISDAQRRLGLAVVWLWFLGMMIMAVGLHWAGLLNVPRRAY  458
+
+Query  440  YSDYPDAYT------TWNILSSVGSFISLTAVMLMIFMIWEAFASK-RKVLMVEEP  488
+             +  PDAY        +N+L+ +   + L A++L I+ ++    S+ RK  + E P
+Sbjct  459  IAQVPDAYPHAAVPMVFNVLAGI---VLLVALLLFIYGLFSVLLSRERKPELAEAP  511
+
+
+> 3WKZ_A Crystal Structure of the Ostrinia furnacalis Group I Chitinase 
+catalytic domain E148Q mutant [Ostrinia furnacalis]
+Length=395
+
+ Score = 29.6 bits (65),  Expect = 2.2, Method: Compositional matrix adjust.
+ Identities = 26/114 (23%), Positives = 42/114 (37%), Gaps = 18/114 (16%)
+
+Query  195  LLLSLPVLAAGITMLLTDRNLN--TTFFDPAGGGDPILYQHLFWFFGHPEVYILILPGFG  252
+            L++ +P      T+   + N N  T     AGGGDP  Y +   F+ + E+   +     
+Sbjct  247  LVVGIPFYGRSFTLSSGNNNYNLGTYINKEAGGGDPAPYTNATGFWAYYEICTEVDTADS  306
+
+Query  253  MISHIVTYYSGKKEPFGYMGMVWA--------------MMSIGFLGFIVWAHHM  292
+              +     +   K P+ Y G  W               +   G+LG + WA  M
+Sbjct  307  KWTKKWDEHG--KCPYAYKGTQWVGYEDPRSVEIKMNWIKEKGYLGAMTWAIDM  358
+
+
+> 7W1F_A Chain A, Probable deoxyguanosinetriphosphate triphosphohydrolase 
+[Pseudomonas aeruginosa] 7W1F_B Chain B, Probable 
+deoxyguanosinetriphosphate triphosphohydrolase [Pseudomonas 
+aeruginosa] 7W1F_C Chain C, Probable deoxyguanosinetriphosphate 
+triphosphohydrolase [Pseudomonas aeruginosa]
+Length=504
+
+ Score = 29.6 bits (65),  Expect = 2.3, Method: Compositional matrix adjust.
+ Identities = 11/27 (41%), Positives = 17/27 (63%), Gaps = 0/27 (0%)
+
+Query  236  WFFGHPEVYILILPGFGMISHIVTYYS  262
+            W F HPEV  L L G+ +I  ++ +Y+
+Sbjct  392  WVFCHPEVETLELQGYRIIQGLLDFYA  418
+
+
+
+Lambda      K        H        a         alpha
+   0.329    0.143    0.466    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 1648061280
+
+
+  Database: pdbaa-chunk.1
+    Posted date:  May 10, 2022  2:34 PM
+  Number of letters in database: 6,208,082
+  Number of sequences in database:  22,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

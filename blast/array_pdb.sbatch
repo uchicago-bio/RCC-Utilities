@@ -27,7 +27,7 @@ DATABASE="/project2/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.${SLURM_ARR
 OUTFILE=$SLURM_ARRAY_TASK_ID".chunk"
 QUERY="/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta"
 
-blastp -query $QUERY \
+time blastp -query $QUERY \
     -db $DATABASE \
     -out $OUTFILE \
     -num_threads 1
