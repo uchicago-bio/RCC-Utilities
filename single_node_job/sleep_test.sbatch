@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --account=mpcs56420
+#SBATCH --account=mpcs56430
 #SBATCH --job-name=sleep_job          # Job name
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
+#SBATCH --mail-user=your_email_here@uchicago.edu    # Where to send mail
 #SBATCH --ntasks=1                    # Run on a single CPU
 #SBATCH --output=%j.sleep_job.out
 #SBATCH --error=%j.sleep_job.err
