@@ -5,7 +5,7 @@
 #SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
 #SBATCH --ntasks=1                             # Run on a single CPU
 #SBATCH --output=%j.job_1.out
-#SBATCH --error=%j.job_2.err
+#SBATCH --error=%j.job_1.err
 
 #
 # Run with command:
@@ -13,9 +13,9 @@
 #
 
 echo "> job_1"
-echo -n "\t> Started: "; date
-echo -n "\t> Present Working Directory: "; pwd
-echo -n "\t> Running on Node: "; hostname
+echo -n "> Started: "; date
+echo -n "> Present Working Directory: "; pwd
+echo -n "> Running on Node: "; hostname
 
 # Run any commands
 time sleep 30
