@@ -43,7 +43,7 @@ try:
     job_2 = submit("job 2", f"--depend=afterany:{job_1}", "job_2.sbatch")
     jobs.append(job_2)
 
-    job_3 = submit("job 3", f"--depend=afterok:{job_2}", "job_3.sbatch")
+    job_3 = submit("job 3", f"--depend=afterok:{job_2}", "job_100.sbatch")
     jobs.append(job_3)
     #print(f"SUBMITTED JOBS: {jobs}")
 
@@ -54,6 +54,7 @@ except ValueError as err:
     for job in jobs:
         print(f"CANCEL JOB: {job}")
         subprocess.run(["scancel", job])
+
 
 # Print out the squeue
 user = os.getlogin()
