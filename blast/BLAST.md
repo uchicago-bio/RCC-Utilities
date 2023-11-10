@@ -123,12 +123,15 @@ ls -v | cat -n | while read n f; do mv -n "$f" "refseq.$n"; done
 ls refseq.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}' | sh
 ```
 
-Run a blast job
+Run a blast job on a portion of the database
 ```
-QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
+CNET_ID=abinkowski
+BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
+QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/XXXXXnr|refseq
 
-blastp -query $QUERY -db $DATABASE -out test.out
+$BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_bigdb.out
+
 ```
 
 # Split a FASTA database
@@ -204,6 +207,7 @@ sbatch multi.py
 ```
 
 
+<del>
 # MPI Blast (Deprecated)
 ----------------------------------------------------------------
 
@@ -211,3 +215,4 @@ Check out this repositories [wiki](https://github.com/uchicago-bio/RCC-Utilities
 instructions on running the scripts. RCC no longer mainains their 
 version but you can install your own.
 
+</del>
