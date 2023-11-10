@@ -14,11 +14,10 @@ Update your `$PATH` so that seen by compute nodes. You could also just address t
 export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
 ```
 
-
+<br/><br/>
 
 # Data
 ----------------------------------------------------------------
-
 * Fasta files for examples
   - `data/`
 
@@ -32,6 +31,8 @@ export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
   - /project2/mpcs56430/bioinformatics/pdbaa-chunk
   - /project2/mpcs56430/bioinformatics/nr 
 
+
+<br/><br/>
 
 # Create PDBaa BLAST database (small database)
 ----------------------------------------------------------------
@@ -48,6 +49,8 @@ gunzip pdbaa.gz
 makeblastdb -in pdbaa -input_type fasta -dbtype prot -out pdbaa
 ```
 
+<br/><br/>
+
 # Run BLAST job on the Login Node
 ----------------------------------------------------------------
 
@@ -55,10 +58,12 @@ Use `protein1.fasta` as the query on the login node. Only do this for testing.
 Your account will be suspended if you do too much work on the login node.
 
 ```
-QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
+CNET_ID=abinkowski
+BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
+QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
 
-blastp -query $QUERY \
+$BLAST_PATH/blastp -query $QUERY \
        -db $DATABASE \
        -out test.out
 ```
@@ -83,9 +88,12 @@ touch /project2/mpcs56430/test.txt
 
 Run a BLAST job:
 ```
-QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
+CNET_ID=abinkowski
+BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
+QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
-blastp -query $QUERY -db $DATABASE -out test.out
+
+$BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_sinteractive.out
 ```
 
 # Creating NR and Refseq BLAST db (large database)
