@@ -143,15 +143,24 @@ Useful command to split up any FASTA format database into multiple files.
 cd /project2/mpcs56430/bioinformatics/pdbaa-chunk
 # Split into 6 equal chunks
 pyfasta split -n 6 pdbaa-chunk 
+```
 
-# Create a blast db for each chunk
+Create a blast db for each chunk
+```
 ls pdbaa-chunk.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}'  | sh
+```
 
-# Test a chunk
-QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
+Test a chunk
+```
+CNET_ID=abinkowski
+BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
+QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.4
 
-blastp -query $QUERY -db $DATABASE -out test.out -num_threads 1
+$BLAST_PATH/blastp -query $QUERY \
+       -db $DATABASE \
+       -num_threads 1 \
+       -out /scratch/midway2/$CNET_ID/test_chunk4.out
 ```
 
 Run each chunk as a job.
@@ -165,7 +174,7 @@ sbatch array_pdb.sbatch
 
 Using an `sinteractive` job maually.
 ```
-sinteractive -A mpcs56420
+sinteractive -A mpcs56430
 
 DATABASE="/project2/mpcs56430/bioinformatics/pdbaa/pdbaa"
 THREADS=1
@@ -180,6 +189,7 @@ DATABASE=/project2/mpcs56430/bioinformatics/pdbaa
 sbatch benchmark.sbatch 
 ```
 
+<del>
 # Multiprocessing
 ----------------------------------------------------------------
 
@@ -207,7 +217,7 @@ sbatch multi.py
 ```
 
 
-<del>
+
 # MPI Blast (Deprecated)
 ----------------------------------------------------------------
 
