@@ -4,7 +4,8 @@
 # Download BLAST
 ----------------------------------------------------------------
 ```
-wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.15.0/
+# Versions https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.15.0/
+wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.15.0+-aarch64-linux.tar.gz
 tar -xfzf tar -xvzf ncbi-blast-2.15.0+-x64-linux.tar.gz
 ```
 
