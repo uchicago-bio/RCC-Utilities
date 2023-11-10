@@ -21,7 +21,14 @@ wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.15.0/
 tar -xfzf tar -xvzf ncbi-blast-2.15.0+-x64-linux.tar.gz
 ```
 
-_Keep the program in your home directory so that it can be read by the compute nodes. Make sure that you use the the entre $PATH when addressing it in your programs._
+Update your `$PATH` so that seen by compute nodes. You could also just address the full executable path in your scripts.
+
+```
+export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
+```
+
+
+
 
 # Data
 ----------------------------------------------------------------
