@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -A mpcs56420
+#SBATCH -A mpcs56430
 #SBATCH --job-name=serial_job_test    # Job name
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
@@ -40,7 +40,7 @@ mkdir -p $WORKDIR
 ################################################################################
 # BLAST arguments
 ################################################################################
-DB="/project2/mpcs56420/db/pdbaa"
+DB="/project2/mpcs56430/db/pdbaa"
 QUERY="spike.fasta"
 BLAST_RESULTS="$SLURM_JOBID.blast-results-$SLURM_TASKS_PER_NODE-$SLURM_CPUS_PER_TASK.txt"
 
