@@ -1,6 +1,6 @@
 # RCC BLAST WORSKSHOP
 
-
+<del>
 # Environment
 ----------------------------------------------------------------
 
@@ -14,9 +14,10 @@ Create an environment using: `mpcs56430.yml`
   `conda activate mpcs56430`
   
   `conda env update --file mpcs56430.yml --prune`
+</del>
 
 # Download BLAST
-
+----------------------------------------------------------------
 ```
 wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.15.0/
 tar -xfzf tar -xvzf ncbi-blast-2.15.0+-x64-linux.tar.gz
@@ -27,6 +28,7 @@ Update your `$PATH` so that seen by compute nodes. You could also just address t
 ```
 export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
 ```
+
 
 
 # Data
