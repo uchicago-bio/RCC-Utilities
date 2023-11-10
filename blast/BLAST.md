@@ -15,6 +15,14 @@ Create an environment using: `mpcs56430.yml`
   
   `conda env update --file mpcs56430.yml --prune`
 
+# Download BLAST
+```
+wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.15.0/
+tar -xfzf tar -xvzf ncbi-blast-2.15.0+-x64-linux.tar.gz
+```
+
+_Keep the program in your home directory so that it can be read by the compute nodes. Make sure that you use the the entre $PATH when addressing it in your programs._
+
 # Data
 ----------------------------------------------------------------
 
