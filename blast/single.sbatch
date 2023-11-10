@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -A mpcs56430
-#SBATCH --job-name=refseq    # Job name
+#SBATCH --job-name=blast_pdbaa        # Job name
 #SBATCH --ntasks=1                    # Run on a single CPU
 #SBATCH --mem=1gb                     # Job memory request
 #SBATCH --time=00:15:00               # Time limit hrs:min:sec
