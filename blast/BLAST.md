@@ -1,20 +1,5 @@
 # RCC BLAST WORSKSHOP
 
-<del>
-# Environment
-----------------------------------------------------------------
-
-Create an environment using: `mpcs56430.yml`
-
-* Conda .yml file to install all the modules necessary for the course (and then some)
-  - [Conda Cheat Sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
-
-* Create environment: `conda env create --file mpcs56430.yml --name mpcs56430`
-* Update existing environment
-  `conda activate mpcs56430`
-  
-  `conda env update --file mpcs56430.yml --prune`
-</del>
 
 # Download BLAST
 ----------------------------------------------------------------
@@ -47,16 +32,6 @@ export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
   - /project2/mpcs56430/bioinformatics/pdbaa-chunk
   - /project2/mpcs56430/bioinformatics/nr 
 
-
-# Setup BLAST
-----------------------------------------------------------------
-
-> This is installed as part of the enviroment
-
-* Install BLAST (if needed)
-```
-conda install -c bioconda blast 
-```
 
 # Create PDBaa BLAST database (small database)
 ----------------------------------------------------------------
