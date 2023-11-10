@@ -9,9 +9,10 @@ Create an environment using: `mpcs56430.yml`
 * Conda .yml file to install all the modules necessary for the course (and then some)
   - [Conda Cheat Sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
 
-* Create environment: `conda env create --file mpcs56430.yml`
+* Create environment: `conda env create --file mpcs56430.yml --name mpcs56430`
 * Update existing environment
   `conda activate mpcs56430`
+  
   `conda env update --file mpcs56430.yml --prune`
 
 # Data
