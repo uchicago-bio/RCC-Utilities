@@ -23,11 +23,13 @@ echo -n "> Hostname:       ";hostname
 
 
 # Use the array task id to change what is being run each time
+CNET_ID=abinkowski
+BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
 DATABASE="/project2/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.${SLURM_ARRAY_TASK_ID}"
 OUTFILE=$SLURM_ARRAY_TASK_ID".chunk"
-QUERY="/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta"
+QUERY="/home/"$CNET_ID"/gh/RCC-Utilities/blast/data/protein1.fasta"
 
-time blastp -query $QUERY \
+time $BLAST_PATH/blastp -query $QUERY \
     -db $DATABASE \
     -out $OUTFILE \
     -num_threads 1
