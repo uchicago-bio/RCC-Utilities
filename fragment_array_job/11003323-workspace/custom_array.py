@@ -42,7 +42,7 @@ for i in range(0,len(chunked_db)):
 # Create a custom sbatch file for this run that uses our nodes and database
 # -----------------------------------------------------------------------------
 sbatch="""#!/bin/bash
-#SBATCH -A mpcs56420
+#SBATCH -A mpcs56430
 #SBATCH --output=%%A-%%j-%%a.out
 #SBATCH --error=%%A-%%j-%%a.err
 #SBATCH --job-name=custom_array_job
