@@ -1,24 +1,23 @@
 # RCC BLAST WORSKSHOP
 
 
-# Download BLAST
+# Environment
 ----------------------------------------------------------------
-```
-# Versions https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.15.0/
-wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.15.0+-aarch64-linux.tar.gz
-tar -xfzf tar -xvzf ncbi-blast-2.15.0+-x64-linux.tar.gz
-```
 
-Update your `$PATH` so that seen by compute nodes. You could also just address the full executable path in your scripts.
+Create an environment using: `mpcs56430.yml`
 
-```
-export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
-```
+* Conda .yml file to install all the modules necessary for the course (and then some)
+  - [Conda Cheat Sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
 
-<br/><br/>
+* Create environment: `conda env create --file mpcs56430.yml --name mpcs56430`
+* Update existing environment
+  `conda activate mpcs56430`
+  
+  `conda env update --file mpcs56430.yml --prune`
 
 # Data
 ----------------------------------------------------------------
+
 * Fasta files for examples
   - `data/`
 
@@ -33,7 +32,15 @@ export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
   - /project2/mpcs56430/bioinformatics/nr 
 
 
-<br/><br/>
+# Setup BLAST
+----------------------------------------------------------------
+
+> This is installed as part of the enviroment
+
+* Install BLAST (if needed)
+```
+conda install -c bioconda blast 
+```
 
 # Create PDBaa BLAST database (small database)
 ----------------------------------------------------------------
@@ -50,8 +57,6 @@ gunzip pdbaa.gz
 makeblastdb -in pdbaa -input_type fasta -dbtype prot -out pdbaa
 ```
 
-<br/><br/>
-
 # Run BLAST job on the Login Node
 ----------------------------------------------------------------
 
@@ -59,12 +64,10 @@ Use `protein1.fasta` as the query on the login node. Only do this for testing.
 Your account will be suspended if you do too much work on the login node.
 
 ```
-CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
-QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
+QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
 
-$BLAST_PATH/blastp -query $QUERY \
+blastp -query $QUERY \
        -db $DATABASE \
        -out test.out
 ```
@@ -89,12 +92,9 @@ touch /project2/mpcs56430/test.txt
 
 Run a BLAST job:
 ```
-CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
-QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
+QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
-
-$BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_sinteractive.out
+blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
 # Creating NR and Refseq BLAST db (large database)
@@ -124,15 +124,12 @@ ls -v | cat -n | while read n f; do mv -n "$f" "refseq.$n"; done
 ls refseq.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}' | sh
 ```
 
-Run a blast job on a portion of the database
+Run a blast job
 ```
-CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
-QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
+QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/XXXXXnr|refseq
 
-$BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_bigdb.out
-
+blastp -query $QUERY -db $DATABASE -out test.out
 ```
 
 # Split a FASTA database
@@ -144,24 +141,15 @@ Useful command to split up any FASTA format database into multiple files.
 cd /project2/mpcs56430/bioinformatics/pdbaa-chunk
 # Split into 6 equal chunks
 pyfasta split -n 6 pdbaa-chunk 
-```
 
-Create a blast db for each chunk
-```
+# Create a blast db for each chunk
 ls pdbaa-chunk.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}'  | sh
-```
 
-Test a chunk
-```
-CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
-QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
+# Test a chunk
+QUERY=/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project2/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.4
 
-$BLAST_PATH/blastp -query $QUERY \
-       -db $DATABASE \
-       -num_threads 1 \
-       -out /scratch/midway2/$CNET_ID/test_chunk4.out
+blastp -query $QUERY -db $DATABASE -out test.out -num_threads 1
 ```
 
 Run each chunk as a job.
@@ -175,7 +163,7 @@ sbatch array_pdb.sbatch
 
 Using an `sinteractive` job maually.
 ```
-sinteractive -A mpcs56430
+sinteractive -A mpcs56420
 
 DATABASE="/project2/mpcs56430/bioinformatics/pdbaa/pdbaa"
 THREADS=1
@@ -190,7 +178,6 @@ DATABASE=/project2/mpcs56430/bioinformatics/pdbaa
 sbatch benchmark.sbatch 
 ```
 
-<del>
 # Multiprocessing
 ----------------------------------------------------------------
 
@@ -218,7 +205,6 @@ sbatch multi.py
 ```
 
 
-
 # MPI Blast (Deprecated)
 ----------------------------------------------------------------
 
@@ -226,4 +212,3 @@ Check out this repositories [wiki](https://github.com/uchicago-bio/RCC-Utilities
 instructions on running the scripts. RCC no longer mainains their 
 version but you can install your own.
 
-</del>

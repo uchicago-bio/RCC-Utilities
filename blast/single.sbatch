@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH -A mpcs56430
-#SBATCH --job-name=blast-protein1-pdbaa    # Job name
+#SBATCH --job-name=blast_pdbaa        # Job name
 #SBATCH --ntasks=1                    # Run on a single CPU
 #SBATCH --mem=1gb                     # Job memory request
 #SBATCH --time=00:15:00               # Time limit hrs:min:sec
 #SBATCH --output=%j.%a.array_job.out
 #SBATCH --error=%j.%a.array_job.err
-#SBATCH --array=1-14
+#SBATCH --array=1
 
 
 
@@ -23,13 +23,11 @@ echo -n "> Hostname:       ";hostname
 
 
 # Use the array task id to change what is being run each time
-CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
 DATABASE="/project2/mpcs56430/bioinformatics/pdbaa/pdbaa"
-OUTFILE=/scratch/midway2/$CNET_ID/$SLURM_ARRAY_TASK_ID".benchmark"
+OUTFILE=$SLURM_ARRAY_TASK_ID".benchmark"
 QUERY="/home/abinkowski/gh/RCC-Utilities/blast/data/protein1.fasta"
 
-time $BLAST_PATH/blastp -query $QUERY \
+time blastp -query $QUERY \
     -db $DATABASE \
     -out $OUTFILE \
     -num_threads $SLURM_ARRAY_TASK_ID
