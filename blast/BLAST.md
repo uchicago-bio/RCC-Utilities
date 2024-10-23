@@ -102,27 +102,59 @@ $BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/te
 
 Download a huge (125G) database from NCBI.
 
+## NR database
 ```
-# NR database
 wget https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
 gunzip *gz
 
 # Number sequentially and create a blast db
 ls -v | cat -n | while read n f; do mv -n "$f" "nr.$n"; done 
 ls nr.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}' | sh
+```
 
-
-# Refseq Database (https://www.biostars.org/p/130274/)
+## Refseq Database (https://www.biostars.org/p/130274/)
+```
 # wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/complete/complete.*.protein.faa.gz
-# wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/complete/complete.nonredundant_protein.*.protein.faa.gz
-```
+# Non-redundant (smaller)
+wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/complete/complete.nonredundant_protein.*.protein.faa.gz
+
 
 ```
-# Number sequentially and create a blast db
-gunzip *gz
-ls -v | cat -n | while read n f; do mv -n "$f" "refseq.$n"; done 
-ls refseq.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}' | sh
+
+# Unzip
 ```
+for y in {1..4}; do echo gunzip *protein."$y".protein.faa.gz \& ; for i in {0..9}; do echo gunzip *protein."$y$i"*.protein.faa.gz \& ; done; done 
+
+```
+
+# Number sequentially and create a blast db
+```
+#gunzip *gz
+#ls -v | cat -n | while read n f; do mv -n "$f" "refseq.$n"; #done 
+#ls refseq.* | awk '{print "makeblastdb -in "$1" -input_type #fasta -dbtype prot -out "$1}' | sh
+```
+
+# Makedb
+Logged into `sinteractive` job.
+``````
+awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}'; done
+
+
+ls complete.nonredundant_protein.1*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+ls complete.nonredundant_protein.2*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+ls complete.nonredundant_protein.3*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+ls complete.nonredundant_protein.4*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+
+ls complete.nonredundant_protein.5*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+ls complete.nonredundant_protein.6*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+ls complete.nonredundant_protein.7*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+ls complete.nonredundant_protein.8*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+ls complete.nonredundant_protein.9*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
+
+
+
+```
+
 
 Run a blast job on a portion of the database
 ```
@@ -135,7 +167,7 @@ $BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/te
 
 ```
 
-# Split a FASTA database
+# Split a FASTA database into Chunks
 ----------------------------------------------------------------
 
 Useful command to split up any FASTA format database into multiple files.
@@ -146,12 +178,13 @@ cd /project2/mpcs56430/bioinformatics/pdbaa-chunk
 pyfasta split -n 6 pdbaa-chunk 
 ```
 
-Create a blast db for each chunk
+## Create a blast db for each chunk
+
 ```
 ls pdbaa-chunk.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype prot -out "$1}'  | sh
 ```
 
-Test a chunk
+## Test a chunked database
 ```
 CNET_ID=abinkowski
 BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
@@ -164,7 +197,7 @@ $BLAST_PATH/blastp -query $QUERY \
        -out /scratch/midway2/$CNET_ID/test_chunk4.out
 ```
 
-Run each chunk as a job.
+## Run each chunk as a job.
 ```
 cd /home/abinkowski/gh/RCC-Utilities/blast
 sbatch array_pdb.sbatch
