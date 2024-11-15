@@ -1,4 +1,4 @@
-# RCC BLAST WORkSHOP
+# Running BLAST at the RCC
 
 
 # Download BLAST
@@ -19,18 +19,18 @@ export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
 
 # Data
 ----------------------------------------------------------------
-* Fasta files for examples
+* Fasta files for the following examples are located in
   - `data/`
 
 * Locations
   - /home - You user home directory
   - /scratch/midway2/ - Large space for temporary storage
-  - /project2/mpcs56430 - Class project directory that we all have permissions for
+  - /project/mpcs56430 - Class project directory that we all have permissions for
 
 * Sequence Databases (for reference):
-  - /project2/mpcs56430/bioinformatics/pdbaa
-  - /project2/mpcs56430/bioinformatics/pdbaa-chunk
-  - /project2/mpcs56430/bioinformatics/nr 
+  - /project/mpcs56430/bioinformatics/pdbaa
+  - /project/mpcs56430/bioinformatics/pdbaa-chunk
+  - /project/mpcs56430/bioinformatics/nr 
 
 
 <br/><br/>
@@ -78,13 +78,13 @@ sinteractive -A mpcs56430
 ```
 
 While you are on a worker node, test that you can read/write 
-to `/scratch` and `/project2/mpcs56430`. Work you do on nodes
+to `/scratch` and `/project/mpcs56430`. Work you do on nodes
 should be using these directories.
 
 ```
 # Test if you can read/write
 touch  /scratch/midway2/<cnetid>/test.txt
-touch /project2/mpcs56430/test.txt
+touch /project/mpcs56430/test.txt
 ```
 
 Run a BLAST job:
@@ -92,7 +92,7 @@ Run a BLAST job:
 CNET_ID=abinkowski
 BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
 QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
-DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
+DATABASE=/project/mpcs56430/bioinformatics/pdbaa/pdbaa
 
 $BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_sinteractive.out
 ```
@@ -161,7 +161,7 @@ Run a blast job on a portion of the database
 CNET_ID=abinkowski
 BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
 QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
-DATABASE=/project2/mpcs56430/bioinformatics/XXXXXnr|refseq
+DATABASE=/project/mpcs56430/bioinformatics/XXXXXnr|refseq
 
 $BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_bigdb.out
 
@@ -173,7 +173,7 @@ $BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/te
 Useful command to split up any FASTA format database into multiple files.
 
 ```
-cd /project2/mpcs56430/bioinformatics/pdbaa-chunk
+cd /project/mpcs56430/bioinformatics/pdbaa-chunk
 # Split into 6 equal chunks
 pyfasta split -n 6 pdbaa-chunk 
 ```
@@ -189,7 +189,7 @@ ls pdbaa-chunk.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype p
 CNET_ID=abinkowski
 BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
 QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
-DATABASE=/project2/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.4
+DATABASE=/project/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.4
 
 $BLAST_PATH/blastp -query $QUERY \
        -db $DATABASE \
@@ -210,7 +210,7 @@ Using an `sinteractive` job maually.
 ```
 sinteractive -A mpcs56430
 
-DATABASE="/project2/mpcs56430/bioinformatics/pdbaa/pdbaa"
+DATABASE="/project/mpcs56430/bioinformatics/pdbaa/pdbaa"
 THREADS=1
 OUTFILE="/scratch/midway2/abinkowski/${THREADS}.txt"
 
