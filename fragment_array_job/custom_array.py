@@ -12,7 +12,7 @@ import subprocess
 # Setup variables to change run behavior
 # -----------------------------------------------------------------------------
 NODES = 10
-DIRECTORY = 'sample.db'
+DATABASE = 'sample.db'
 DATABASE_PREFIX = 'tempdb'
 GENERATED_SBATCH = "generated.sbatch"
 
@@ -42,12 +42,12 @@ for i in range(0,len(chunked_db)):
 # Create a custom sbatch file for this run that uses our nodes and database
 # -----------------------------------------------------------------------------
 sbatch="""#!/bin/bash
-#SBATCH -A mpcs56420
+#SBATCH -A mpcs56430
 #SBATCH --output=%%A-%%j-%%a.out
 #SBATCH --error=%%A-%%j-%%a.err
 #SBATCH --job-name=custom_array_job
 #SBATCH --ntasks=1
-#SBATCH --partition=broadwl
+#SBATCH --partition=caslake
 #SBATCH --array=0-%s
 
 echo "> Custom array job - This file is generated at runtime"
@@ -87,12 +87,12 @@ workspace_folder = job_id + "-workspace"
 
 # Create a sbatch file for a "cleanup" job that will move all the output files
 sbatch="""#!/bin/bash
-#SBATCH -A mpcs56420
+#SBATCH -A mpcs56430
 #SBATCH --output=%%j-cleanup.out
 #SBATCH --error=%%j-cleanup.err
 #SBATCH --job-name=custom_array_job_cleanup
 #SBATCH --ntasks=1
-#SBATCH --partition=broadwl
+#SBATCH --partition=caslake
 #SBATCH --dependency=afterok:%s
 
 date
