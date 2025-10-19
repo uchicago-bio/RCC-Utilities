@@ -1,5 +1,4 @@
 # RCC-Utilities
----------------
 Useful scripts and examples for The University of Chicago's RCC resource (https://rcc.uchicago.edu). 
 
 # Files and Directories
