@@ -1,3 +1,5 @@
+#!/bin/env python
+
 """Many task workflow to fragment, submit and coallate a python script"""
 
 import sys
@@ -8,8 +10,10 @@ import random
 import subprocess
 
 # -----------------------------------------------------------------------------
+#
 # Step 1
 # Setup variables to change run behavior
+#
 # -----------------------------------------------------------------------------
 NODES = 10
 DATABASE = 'sample.db'
@@ -17,8 +21,10 @@ DATABASE_PREFIX = 'tempdb'
 GENERATED_SBATCH = "generated.sbatch"
 
 # -----------------------------------------------------------------------------
+#
 # Step 2
 # Load in database file that is going to be split into equal chunks
+#
 # -----------------------------------------------------------------------------
 with open(DATABASE) as f:
     lines = f.readlines()
@@ -31,15 +37,17 @@ chunks = round(len(lines) / NODES)
 chunked_db = [lines[i:i + chunks] for i in range(0, len(lines), chunks)]
 #print(chunked_db)
 
-# Write out each as a temporary database in the format `DATABASE_PREFIX_#.db"
+# Write out each as a temporary database in the format `DATABASE_PREFIX_##.db"
 for i in range(0,len(chunked_db)):
     filename = "%s_%s.db" % (DATABASE_PREFIX, i)
     with open(filename, "w") as outfile:
         outfile.write("".join(chunked_db[i]))
 
 # -----------------------------------------------------------------------------
+#
 # Step 3
 # Create a custom sbatch file for this run that uses our nodes and database
+#
 # -----------------------------------------------------------------------------
 sbatch="""#!/bin/bash
 #SBATCH -A mpcs56430
@@ -56,12 +64,11 @@ hostname
 pwd
 
 echo "> SLURM VARIABLES"
-echo ">   ArrayJob: $SLURM_ARRAY_JOB_ID JobId: $SLURM_JOB_ID TaskId: $SLURM_ARRAY_TASK_ID"
+echo ">  ArrayJob: $SLURM_ARRAY_JOB_ID JobId: $SLURM_JOB_ID TaskId: $SLURM_ARRAY_TASK_ID"
 echo ">"
 echo "> Run you script here with a database chunk: script.py temp_$SLURM_ARRAY_TASK_ID.db"
 
 sleep 15
-#blastq 
 
 date
 """ % (chunks)

@@ -5,14 +5,14 @@
 #SBATCH --account=mpcs56430
 #SBATCH --job-name=multiprocess
 #SBATCH --output=%j_multiprocess.out
-#SBATCH --partition=broadwl
+#SBATCH --partition=caslake
 
 #SBATCH --cpus-per-task=4    # cores
 #SBATCH --nodes=4            # number of nodes to run on       
 #SBATCH --ntasks-per-node=4  # 
 #SBATCH --ntasks=16          # total tasks to be launcedd
 
-#SBATCH--exclusive
+#SBATCH --exclusive
 #SBATCH --time=00:15:00
 
 import multiprocessing

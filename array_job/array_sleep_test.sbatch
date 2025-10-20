@@ -27,6 +27,11 @@ echo -n "> Hostname:       ";hostname
 # numbers, but we will use two digit when fragmenting (just be consistent)
 PADDED_NUMBER=$(printf %02d $SLURM_ARRAY_TASK_ID)
 
+# Note: You don’t need `srun` in this script because each array element is already
+# its own Slurm job instance.
+#
+# Each array task runs the script independently, so the commands you put directly
+# in the script body are already executed as a “task” by Slurm.
 sleep 30
 
 echo "> Working On: $SLURM_ARRAY_TASK_ID $SLURM_TASK_ID PRETTY_NUMBER: $PADDED_NUMBER"

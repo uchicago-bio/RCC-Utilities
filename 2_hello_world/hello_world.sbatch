@@ -17,5 +17,7 @@ scontrol show hostnames $SLURM_JOB_NODELIST
 # once on each of the 6 different nodes.
 srun bash -c 'echo "$(hostname): $(date)"'
 
+# WARNING: If you forget the 'srun' it will run on only one node
+# bash -c 'echo "$(hostname): $(date)"'
 
 echo "Done..."
