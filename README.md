@@ -1,19 +1,33 @@
 # RCC-Utilities
 Useful scripts and examples for The University of Chicago's RCC resource (https://rcc.uchicago.edu). 
 
-# Files and Directories
-* `.bashrc` file
-  - A starter .bashrc file to put in your shell so that you don't accidentally `rm *`
-* array_job/
-  - Run SLURM array jobs against the refseq database
-* fragment_array_job
-  - A single Python script to fragment, run array job, and collate a BLASTp job
-* mpcs56420.yml
-  - Conda .yml file to install all the modules necessary for the course (and then some)
-  - Create environment: `conda env create --file mpcs56420.yml`
-  - [Conda Cheat Sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
-* sample_data
-  - Fasta files for examples
+## Files and Directories
+* `.bashrc` A starter .bashrc file to put in your shell so that you don't accidentally `rm *`
+
+* `machine_info.py` A pythongn script to identify cpus, cores, and threads.
+
+* `monkey_shakespear.py` A python script to randomly generate Shakespear style sentences.
+
+* `sample_data/` A collection of FASTA files for examples.
+## Sample SLURM Jobs
+* `1_single_node_job` Submits a single job to a single node. Noteably it does not use `srun`, as it isn't needed. 
+
+* `2_hello_world` Submits a job to print "Hellow World" from 6 different notes. The nodes also report their `hostname`.
+
+3_multi_node_job
+4_array_job
+5_fragment_array_job
+6_dependency_workflows
+7_multiprocessing
+RCC-Utilities
+README.md
+blast
+
+sample_data
+
+
+
+
 * single_node_job
   - Run blast on a single node
 * multiprocessing/
