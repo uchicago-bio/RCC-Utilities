@@ -15,6 +15,6 @@ scontrol show hostnames $SLURM_JOB_NODELIST
 # The 'srun' command executes the following command on all allocated tasks.
 # Since we requested 6 nodes with 1 task per node, this will run 'hostname'
 # once on each of the 6 different nodes.
-srun python ../monkey_shakespear.py > book.txt
+srun python ../monkey_shakespear.py >> /home/$USER/monkey_shakespear_book.txt
 
 echo "Done..."
