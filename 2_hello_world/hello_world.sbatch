@@ -15,9 +15,9 @@ scontrol show hostnames $SLURM_JOB_NODELIST
 # The 'srun' command executes the following command on all allocated tasks.
 # Since we requested 6 nodes with 1 task per node, this will run 'hostname'
 # once on each of the 6 different nodes.
-srun bash -c 'echo "$(hostname): $(date)"'
+#srun bash -c 'echo "$(hostname): $(date)"'
 
 # WARNING: If you forget the 'srun' it will run on only one node
-# bash -c 'echo "$(hostname): $(date)"'
+bash -c 'echo "$(hostname): $(date)"'
 
 echo "Done..."

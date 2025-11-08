@@ -16,7 +16,7 @@
 #    sbatch sleep_test.sbatch
 #
 
-cho "This job is running on a single node."
+echo "This job is running on a single node."
 echo "Job started at: $(date)"
 echo "-----------------------------------"
 echo "Node Hostname: $(hostname)"
