@@ -61,7 +61,7 @@ Use `protein1.fasta` as the query on the login node. Only do this for testing.
 Your account will be suspended if you do too much work on the login node.
 
 ```
-CNET_ID=abinkowski
+CNET_ID=
 VERSION=ncbi-blast-2.17.0+
 BLAST_PATH=/home/$CNET_ID/$VERSION/bin
 QUERY=/home/$CNET_ID/RCC-Utilities/blast/data/protein1.fasta
@@ -140,7 +140,7 @@ for y in {1..4}; do echo gunzip *protein."$y".protein.faa.gz \& ; for i in {0..9
 
 # Makedb
 Logged into `sinteractive` job.
-``````
+```
 awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}'; done
 
 
@@ -154,8 +154,6 @@ ls complete.nonredundant_protein.6*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/
 ls complete.nonredundant_protein.7*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
 ls complete.nonredundant_protein.8*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
 ls complete.nonredundant_protein.9*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/makeblastdb  -in "$1" -input_type fasta -dbtype prot -out "substr($1,1,length($1)-4)}' | sh &
-
-
 
 ```
 
