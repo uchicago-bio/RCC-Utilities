@@ -92,19 +92,19 @@ touch /project/mpcs56430/test.txt
 
 Run a BLAST job:
 ```
-CNET_ID=abinkowski
+CNET_ID=?
 VERSION=ncbi-blast-2.17.0+
 BLAST_PATH=/home/$CNET_ID/$VERSION/bin
 QUERY=/home/$CNET_ID/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project/mpcs56430/bioinformatics/pdbaa/pdbaa
 
-$BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_sinteractive.out
+$BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway3/$CNET_ID/test_sinteractive.out
 ```
 
-# Creating NR and Refseq BLAST db (large database)
+# Creating Large BLAST databases (NR and Refseq)
 ----------------------------------------------------------------
-
-Download a huge (125G) database from NCBI.
+> This is for educational purposes only, you do not need to recreate these.
+> The NCBI database is ~125G and will eat up your quota (and take a really long time to finish)
 
 ## NR database
 ```
