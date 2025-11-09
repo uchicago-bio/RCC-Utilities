@@ -161,11 +161,11 @@ ls complete.nonredundant_protein.9*.faa | awk '{print "~/ncbi-blast-2.15.0+/bin/
 Run a blast job on a portion of the database
 ```
 CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
-QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
+BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.17.0+/bin
+QUERY=/home/$CNET_ID/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project/mpcs56430/bioinformatics/XXXXXnr|refseq
 
-$BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_bigdb.out
+$BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway3/$CNET_ID/test_bigdb.out
 
 ```
 
@@ -189,19 +189,19 @@ ls pdbaa-chunk.* | awk '{print "makeblastdb -in "$1" -input_type fasta -dbtype p
 ## Test a chunked database
 ```
 CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
-QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
+BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.17.0+/bin
+QUERY=/home/$CNET_ID/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project/mpcs56430/bioinformatics/pdbaa-chunk/pdbaa-chunk.4
 
 $BLAST_PATH/blastp -query $QUERY \
        -db $DATABASE \
        -num_threads 1 \
-       -out /scratch/midway2/$CNET_ID/test_chunk4.out
+       -out /scratch/midway3/$CNET_ID/test_chunk4.out
 ```
 
 ## Run each chunk as a job.
 ```
-cd /home/abinkowski/gh/RCC-Utilities/blast
+cd /home/abinkowski/RCC-Utilities/blast
 sbatch array_pdb.sbatch
 ```
 
@@ -214,14 +214,14 @@ sinteractive -A mpcs56430
 
 DATABASE="/project/mpcs56430/bioinformatics/pdbaa/pdbaa"
 THREADS=1
-OUTFILE="/scratch/midway2/abinkowski/${THREADS}.txt"
+OUTFILE="/scratch/midway3/abinkowski/${THREADS}.txt"
 
 blastp -query spike.fasta -db $DATABASE -out $OUTFILE  -num_threads $THREADS
 ```
 
 Run as slurm job:
 ```
-DATABASE=/project2/mpcs56430/bioinformatics/pdbaa
+DATABASE=/project/mpcs56430/bioinformatics/pdbaa
 sbatch benchmark.sbatch 
 ```
 
