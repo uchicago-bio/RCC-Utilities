@@ -4,15 +4,17 @@
 # Download BLAST
 ----------------------------------------------------------------
 ```
-# Versions https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.15.0/
-wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.15.0+-aarch64-linux.tar.gz
-tar -xfzf tar -xvzf ncbi-blast-2.15.0+-x64-linux.tar.gz
+VERSION=ncbi-blast-2.17.0+-x64-linux.tar.gz
+
+wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/$VERSION
+tar -xzvf $VERSION
 ```
 
 Update your `$PATH` so that seen by compute nodes. You could also just address the full executable path in your scripts.
 
 ```
-export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
+VERSION=ncbi-blast-2.17.0+
+export PATH=~/$VERSION/bin:$PATH
 ```
 
 <br/><br/>
@@ -23,8 +25,8 @@ export PATH=~/ncbi-blast-2.15.0+/bin:$PATH
   - `data/`
 
 * Locations
-  - /home - You user home directory
-  - /scratch/midway2/ - Large space for temporary storage
+  - /home/<cnetid> - Your user home directory
+  - /scratch/midway3/<cnetid> - Large space for temporary storage
   - /project/mpcs56430 - Class project directory that we all have permissions for
 
 * Sequence Databases (for reference):
@@ -60,9 +62,10 @@ Your account will be suspended if you do too much work on the login node.
 
 ```
 CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
-QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
-DATABASE=/project2/mpcs56430/bioinformatics/pdbaa/pdbaa
+VERSION=ncbi-blast-2.17.0+
+BLAST_PATH=/home/$CNET_ID/$VERSION/bin
+QUERY=/home/$CNET_ID/RCC-Utilities/blast/data/protein1.fasta
+DATABASE=/project/mpcs56430/bioinformatics/pdbaa/pdbaa
 
 $BLAST_PATH/blastp -query $QUERY \
        -db $DATABASE \
@@ -83,15 +86,16 @@ should be using these directories.
 
 ```
 # Test if you can read/write
-touch  /scratch/midway2/<cnetid>/test.txt
+touch  /scratch/midway3/<cnetid>/test.txt
 touch /project/mpcs56430/test.txt
 ```
 
 Run a BLAST job:
 ```
 CNET_ID=abinkowski
-BLAST_PATH=/home/$CNET_ID/ncbi-blast-2.15.0+/bin
-QUERY=/home/$CNET_ID/gh/RCC-Utilities/blast/data/protein1.fasta
+VERSION=ncbi-blast-2.17.0+
+BLAST_PATH=/home/$CNET_ID/$VERSION/bin
+QUERY=/home/$CNET_ID/RCC-Utilities/blast/data/protein1.fasta
 DATABASE=/project/mpcs56430/bioinformatics/pdbaa/pdbaa
 
 $BLAST_PATH/blastp -query $QUERY -db $DATABASE -out /scratch/midway2/$CNET_ID/test_sinteractive.out
