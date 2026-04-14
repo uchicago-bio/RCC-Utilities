@@ -6,16 +6,14 @@ Useful scripts and examples for The University of Chicago's Research Computing C
 
 * **`.bashrc`** — A starter `.bashrc` that adds safety aliases to prevent accidental `rm *` disasters.
 
-* **`machine_info.py`** — Reports the number of physical cores, logical cores, and threads per core using `psutil` and `os.cpu_count()`. Useful for understanding the hardware topology of a node.
+* **`src/machine_info.py`** — Reports the number of physical cores, logical cores, and threads per core using `psutil` and `os.cpu_count()`. Useful for understanding the hardware topology of a node.
 
-* **`monkey_shakespear.py`** — Generates random Shakespearean-style sentences by combining subjects, verbs, objects, and adverbs. Each sentence is prefixed with the hostname, making it easy to see which node produced it. Used by several of the SLURM demos below.
+* **`src/monkey_shakespear.py`** — Generates random Shakespearean-style sentences by combining subjects, verbs, objects, and adverbs. Each sentence is prefixed with the hostname, making it easy to see which node produced it. Used by several of the SLURM demos below.
 
 ## Data
 
-* **`sample_data/`** — A collection of FASTA files and a sample database used by the examples.
-
-* **`blast/`** — A benchmarking demonstration using BLASTp for sequence alignment. *Note: This has not been updated for Midway3.*
-
+* **`data/`** — A collection of FASTA files and a sample database used by the examples.
+  
 ## Sample SLURM Jobs
 
 The examples are numbered in order of increasing complexity. Each builds on concepts from the previous one.
@@ -78,6 +76,11 @@ Shows how to chain jobs so that each one waits for the previous one to finish. I
 A **hybrid** approach that combines SLURM multi-node allocation with Python's `multiprocessing.Pool`. The SLURM directives request 4 nodes with 4 CPUs per task, and the Python script reads SLURM environment variables to configure the pool size accordingly.
 
 Each worker receives a database chunk identifier, simulates processing with a random sleep, and writes output to a file tagged with the job ID, node count, and chunk number. This pattern maximizes utilization by using SLURM for inter-node distribution and `multiprocessing` for intra-node parallelism.
+
+
+### `8_blast/`
+A benchmarking demonstration using BLASTp for sequence alignment. *Note: This has not been updated for Midway3.*
+
 
 ## Usage
 
