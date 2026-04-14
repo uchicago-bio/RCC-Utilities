@@ -25,6 +25,6 @@ echo "-----------------------------------"
 # Your actual commands would go here.
 # For this example, we'll just sleep for a short time.
 echo "Running a sample command (sleeping for 10 seconds)..."
-python ../monkey_shakespear.py
+python ../src/monkey_shakespear.py
 
 echo "Job finished at: $(date)"

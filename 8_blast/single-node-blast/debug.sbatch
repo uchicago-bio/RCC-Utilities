@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=mpcs56420                 # Allocation
+#SBATCH --account=mpcs56430           # Allocation
 #SBATCH --job-name=serial_job_test    # Job name
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=abinkowski@uchicago.edu    # Where to send mail
